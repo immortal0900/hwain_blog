@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: 지식저장 공유
 ---
 
 This is a blank Quartz installation.
