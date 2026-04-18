@@ -1,12 +1,12 @@
 {
   "version": 1,
   "device_id": "desktopimmortal",
-  "page_token": "1427744",
+  "page_token": "1428033",
   "last_synced_at": null,
   "files": {
     "_Index_of_content.md": {
-      "mtime": 1776527993.901318,
-      "size": 257,
+      "mtime": 1776536059.4707358,
+      "size": 233,
       "drive_id": "1OEqI6YFoKw2_HtO4aNnXJSspAvY8yg61"
     },
     "프로그래밍/_Index_of_프로그래밍.md": {
@@ -25,169 +25,419 @@
       "drive_id": "1jKOgceG4FVVwy9amXzq3uHPCbOO41c7H"
     },
     "_Index_of_무제.md": {
-      "mtime": 1776527990.889017,
+      "mtime": 1776536054.9668653,
       "size": 131,
       "drive_id": "1h0lX3WsX6JS4n9LDoor9_vuE083ADWf5"
     },
     "프로그래밍_데이터수집_사이트/데이터수집사이트_자료수집.md": {
-      "mtime": 1776535774.7846437,
+      "mtime": 1776536000.8352666,
       "size": 2412,
       "drive_id": "1na6V2RJFbchkCpjUvuO3_2BV1BzKccKx"
     },
     "프로그래밍_설계원칙/SOLID_ O와 D의 차이.md": {
-      "mtime": 1776535774.7916417,
+      "mtime": 1776536002.0399487,
       "size": 3119,
       "drive_id": "1btCnU-UR-8iHkapm62IE_NCLqLgFl6QT"
     },
     "프로그래밍_설계원칙/고수준 모듈과 저수준 모듈(SOLID DIP).md": {
-      "mtime": 1776535774.8006425,
+      "mtime": 1776536003.9263089,
       "size": 3694,
       "drive_id": "1NCmgZM2FMSTkIf2v8YJEmPrYslN_7y4J"
     },
     "프로그래밍_설계원칙/SOLID원칙.md": {
-      "mtime": 1776535774.7956398,
+      "mtime": 1776536002.9760535,
       "size": 2680,
       "drive_id": "1IhNSllJsi8GnFE-diLYrqBnKlptv_cDV"
     },
     "프로그래밍_웹개발/웹크롤링.md": {
-      "mtime": 1776535774.8096473,
+      "mtime": 1776536006.0309603,
       "size": 3027,
       "drive_id": "1bEMGwn4S6GNr-4WnNaMzwwxe93MKoY_q"
     },
     "프로그래밍_터미널_CLI/bash 문법.md": {
-      "mtime": 1776535774.8136423,
+      "mtime": 1776536007.195776,
       "size": 10756,
       "drive_id": "1UXf37s2Q8QC2lrGPHZCUnr8u0aHXhORW"
     },
     "프로그래밍_웹개발/HTML vs CSS vs JavaScript 차이.md": {
-      "mtime": 1776535774.8046434,
+      "mtime": 1776536005.1022687,
       "size": 2031,
       "drive_id": "1gVY9GYVSxATWGl7CcB9qe2YHVqltFwxl"
     },
     "프로그래밍_환경설정/IDE 가 가상환경의 파이썬 인식 못할때.md": {
-      "mtime": 1776535774.8166513,
+      "mtime": 1776536008.091642,
       "size": 2881,
       "drive_id": "1hkF60W3vjo3rOwbEJARpy9Nh4TQPDswP"
     },
     "프로그래밍_환경설정/가상환경 세팅 방법.md": {
-      "mtime": 1776535774.826645,
+      "mtime": 1776536010.948057,
       "size": 3703,
       "drive_id": "1xmhMImCeVYryz_O0czQ7jB6u04rfsi0X"
     },
     "프로그래밍_환경설정/sys.path(python이 모듈을 찾을때 검색하는 디렉토리 경로)사용법.md": {
-      "mtime": 1776535774.8196447,
+      "mtime": 1776536010.0031888,
       "size": 1563,
       "drive_id": "1j-7dZ6f7HV_GQTBLNrooBKCxRAscL9oN"
     },
     "프로그래밍_환경설정/UV_SYNC_GUIDE.md": {
-      "mtime": 1776535774.8236465,
+      "mtime": 1776536009.057819,
       "size": 4298,
       "drive_id": "1VldHprnAirxhpXlS6YCrBMpxnG6LRxpM"
     },
     "프로그래밍_환경설정/운영체제와 상관없는 경로설정.md": {
-      "mtime": 1776535774.8406472,
+      "mtime": 1776536013.798045,
       "size": 14923,
       "drive_id": "1K3mtlYKNLutpTRSGfAkIG4BLjNI_OUbl"
     },
     "프로그래밍_Agent/AI AGENT TASK 분해 기준 단위.md": {
-      "mtime": 1776535774.8436496,
+      "mtime": 1776535873.2342026,
       "size": 1512,
       "drive_id": "1odZkmvoG_S46Syu3aXVEMS0oxa-2ZKq2"
     },
     "프로그래밍_환경설정/새로운기기_세팅 절차.md": {
-      "mtime": 1776535774.836648,
+      "mtime": 1776536012.785851,
       "size": 796,
       "drive_id": "1Jd4zl23834dNKM__FWEADdcNJzhkFH5P"
     },
     "프로그래밍_환경설정/가상환경 재설치 uv.md": {
-      "mtime": 1776535774.8336473,
+      "mtime": 1776536011.8675015,
       "size": 4701,
       "drive_id": "1KXZvrgPfXKUitnOvb5SwyOiI-nX_8RVp"
     },
     "프로그래밍_Agent/langgraph_invoke()+래핑(Wrapping).md": {
-      "mtime": 1776535774.8516471,
+      "mtime": 1776535879.8099208,
       "size": 2904,
       "drive_id": "1G9S5yr-vYxW9QNSWAQMj8lham_nfShRb"
     },
     "프로그래밍_Agent/ReAct vs CoT의 핵심 차이.md": {
-      "mtime": 1776535774.8576474,
+      "mtime": 1776535875.1523478,
       "size": 1611,
       "drive_id": "19uPuJJDzpFyqWigwzellG5wGK1-l5KrJ"
     },
     "프로그래밍_Agent/LLM Integration(통합)과 Inference Pipeline(추론 파이프라인).md": {
-      "mtime": 1776535774.8546464,
+      "mtime": 1776535874.1848433,
       "size": 3512,
       "drive_id": "1azR9l-8y3XS2mdoEBKimkQy4XFHzWomp"
     },
     "프로그래밍_Agent/langchain_with_structured_output의 강제력.md": {
-      "mtime": 1776535774.84665,
+      "mtime": 1776535878.8379922,
       "size": 613,
       "drive_id": "1jL91dutMt4njG7cMTq6ZH6ykt1-Tsuh3"
     },
     "프로그래밍_Agent/vLLM 핵심장점.md": {
-      "mtime": 1776535774.860649,
+      "mtime": 1776535880.7361557,
       "size": 3256,
       "drive_id": "1MDP4NPu7SeubWyB9rhJNhFoq8BmZ3waR"
     },
     "프로그래밍_DevOps 인프라/GitHub Actions.md": {
-      "mtime": 1776535774.8716545,
+      "mtime": 1776535883.8489707,
       "size": 3238,
       "drive_id": "1xxQ_9DmyvV0Sqv-OAHaNXCXQrWXEMwbi"
     },
     "프로그래밍_DevOps 인프라/CI CD 파이프라인.md": {
-      "mtime": 1776535774.868651,
+      "mtime": 1776535882.8870702,
       "size": 2694,
       "drive_id": "16dTPtnp8B3zRK_DkJo8LhalBTughDT4A"
     },
     "프로그래밍_Agent/with_structured_output.md": {
-      "mtime": 1776535774.8646514,
+      "mtime": 1776535881.8841996,
       "size": 4565,
       "drive_id": "1CYZLo3nY0WYh5UWzmV51Ki5BDMsoHBWo"
     },
     "프로그래밍_Fine-tunning/GGUF란_가중치,토크나이저, 모델구조를 파일 하나로.md": {
-      "mtime": 1776535774.874652,
+      "mtime": 1776535887.7119095,
       "size": 3827,
       "drive_id": "1aM3KmSKDVgUUSJqeBQAY8iLU1ChhR5IK"
     },
     "프로그래밍_Fine-tunning/LoRA vs DoRA.md": {
-      "mtime": 1776535774.8776522,
+      "mtime": 1776535888.8383756,
       "size": 8817,
       "drive_id": "1TPMUFfSthqA-qIZKLG8NpsiRbI1sl62-"
     },
     "프로그래밍_git/git exclude 사용.md": {
-      "mtime": 1776535774.8846545,
+      "mtime": 1776535996.320878,
       "size": 2086,
       "drive_id": "1HYrgL7aTbIOixqpW9h7mCvWpSlj7Jrqp"
     },
     "프로그래밍_git/GitHub_사용법.md": {
-      "mtime": 1776535774.891653,
+      "mtime": 1776535992.7201161,
       "size": 1785,
       "drive_id": "1IlS997eT0X2U7xmk70MlHfvyI4RDWLUR"
     },
     "프로그래밍_git/git push origin main.md": {
-      "mtime": 1776535774.887657,
+      "mtime": 1776535997.2811058,
       "size": 2599,
       "drive_id": "1fkuykMe8b7aM6dupgh0C5j0__ygaw3jY"
     },
     "프로그래밍_Fine-tunning/파인튜닝 종합정리.md": {
-      "mtime": 1776535774.881654,
+      "mtime": 1776535892.5052161,
       "size": 9909,
       "drive_id": "1nGUeln5rGaFb-Jcx1gb_PxU-FTHyxCZF"
     },
     "프로그래밍_git/강의노트_Git 복구하기.md": {
-      "mtime": 1776535774.902656,
+      "mtime": 1776535999.0723097,
       "size": 3428,
       "drive_id": "1Ms7owgfghGWaip4YHP-Cg1PzHyVRb1JX"
     },
     "프로그래밍_git/git_로컬에서 새 레포지토리로.md": {
-      "mtime": 1776535774.8946562,
+      "mtime": 1776535998.0925157,
       "size": 380,
       "drive_id": "1EekCX8MNOJXkGOVvELJsZCWhg88ozzu4"
     },
     "프로그래밍_git/강의노트_Git 설정.md": {
-      "mtime": 1776535774.9056566,
+      "mtime": 1776536053.2882915,
       "size": 3349,
       "drive_id": "1RzubSdcpsKnO9gPqYiUebBYi5LyIoiLR"
+    },
+    "강의노트_Git_branch.md": {
+      "mtime": 1776536054.2044642,
+      "size": 9956,
+      "drive_id": "1_nx3sBlVDNbs6z1Pq4zekmDT1jIwwBiW"
+    },
+    "강의노트_Git과 github 설치.md": {
+      "mtime": 1776536056.1995146,
+      "size": 2994,
+      "drive_id": "1srGZny2R9khQy5DwCf5rtnbbFL75Hiwi"
+    },
+    "프로그래밍_Agent/_Index_of_프로그래밍_Agent.md": {
+      "mtime": 1776536064.012044,
+      "size": 877,
+      "drive_id": "1SZNsFutnXZFUY1SmSj1KD9_-OGoQGQAQ"
+    },
+    "프로그래밍_DevOps 인프라/_Index_of_프로그래밍_DevOps 인프라.md": {
+      "mtime": 1776536065.1244566,
+      "size": 292,
+      "drive_id": "1Rt4DUs21gIJL8RUyQhsQrALU7RGFk-qd"
+    },
+    "프로그래밍_Fine-tunning/_Index_of_프로그래밍_Fine-tunning.md": {
+      "mtime": 1776536066.1870902,
+      "size": 464,
+      "drive_id": "14F3jWlBl_WLEIIFCfhPYtN_wPQgkWp3Q"
+    },
+    "프로그래밍_Python/Python_basic/_Index_of_Python_basic.md": {
+      "mtime": 1776536069.3050923,
+      "size": 579,
+      "drive_id": "1aBgvsPO6HXwKrT8y5mXbumN0uudM5wLm"
+    },
+    "프로그래밍_Python/Python_basic/isinstance랑 getattr.md": {
+      "mtime": 1776536070.4378567,
+      "size": 1529,
+      "drive_id": "1gIlXT2-bTIWu_3df-dHoLlEPwoZd9m3l"
+    },
+    "프로그래밍_Python/Python_basic/파이썬에서 () 소괄호와 [] 대괄호.md": {
+      "mtime": 1776536071.3493733,
+      "size": 3576,
+      "drive_id": "1LFP8CNp__s3TrIQPY9GV5D-QCxvNiO8U"
+    },
+    "프로그래밍_Python/Python_basic/파이썬에서 `.`, `대괄호`의 쓰임(내부에 있는 무언가를 지칭한다).md": {
+      "mtime": 1776536072.278745,
+      "size": 5220,
+      "drive_id": "1qALVs_NZieUyXW_DH-fslUD9JhAhOPZa"
+    },
+    "프로그래밍_Python/Python_class/_Index_of_Python_class.md": {
+      "mtime": 1776536073.3924565,
+      "size": 1035,
+      "drive_id": "12I9PnHvMvDH8BNekk3Yghz2Hd8ZShpcP"
+    },
+    "프로그래밍_Python/Python_class/class_@abstractmethod_추상 클래스.md": {
+      "mtime": 1776536074.3794842,
+      "size": 3010,
+      "drive_id": "1u799IBRYoua9-C3G_KO0BuFgNoRMe7D-"
+    },
+    "프로그래밍_Python/Python_class/class_`__init__`.md": {
+      "mtime": 1776536076.1698792,
+      "size": 4731,
+      "drive_id": "1wgtMT_0plxrdRM0UVLmmwmA9zG_mv8rC"
+    },
+    "프로그래밍_Python/Python_class/class_다중상속(부모를 여럿두는것).md": {
+      "mtime": 1776536077.053621,
+      "size": 1153,
+      "drive_id": "1tq3TmoaIG7NzB6j_qxlrEXCRoxMdzgam"
+    },
+    "프로그래밍_Python/Python_class/class_상속시`super()` 사용.md": {
+      "mtime": 1776536075.2755628,
+      "size": 4939,
+      "drive_id": "1NEu123HwT1oM8e0Gm2w8J7YaC_DOXWq5"
+    },
+    "프로그래밍_Python/Python_class/class_오버라이딩.md": {
+      "mtime": 1776535775.0016642,
+      "size": 6672,
+      "drive_id": "1m9dKzV5QQQyZaGXnGM4aPMyVYX5hYakG"
+    },
+    "프로그래밍_Python/Python_class/class_인스턴스.md": {
+      "mtime": 1776535775.004666,
+      "size": 2596,
+      "drive_id": "1yExL4kCKp-HcZZ7Mzwkbjx5YvRXU3NnN"
+    },
+    "프로그래밍_Python/Python_class/class_타입힌트.md": {
+      "mtime": 1776535775.0076673,
+      "size": 1437,
+      "drive_id": "1jFTnMdHt_JtAGMIBwFpXsJ-gNfgAsgOj"
+    },
+    "프로그래밍_Python/Python_class/class_파라미터.md": {
+      "mtime": 1776535775.0116687,
+      "size": 2831,
+      "drive_id": "1YAsFll_F2MFklpU-SAscB_9p8gk7nycU"
+    },
+    "프로그래밍_Python/Python_class/class에서 self. 필요성.md": {
+      "mtime": 1776535775.015671,
+      "size": 3849,
+      "drive_id": "1aGd1oJgQtTopx0Wjd5opNrcN9izKT5DC"
+    },
+    "프로그래밍_Python/Python_모듈과 객체/_Index_of_Python_모듈과 객체.md": {
+      "mtime": 1776535778.0214746,
+      "size": 222,
+      "drive_id": "1jxVj7nJJONWWekJnqYH7Kf-z5J979Ynq"
+    },
+    "프로그래밍_Python/Python_모듈과 객체/모듈과 객체.md": {
+      "mtime": 1776535775.0276701,
+      "size": 32930,
+      "drive_id": "10aInhqAT_I8MsQEgUQTtH2T6T03oMBRT"
+    },
+    "프로그래밍_Python/Python_함수/@데코레이터.md": {
+      "mtime": 1776535775.036671,
+      "size": 8077,
+      "drive_id": "17lCWoudnR8qnXOzH37tzTP2jYDv_-jii"
+    },
+    "프로그래밍_Python/Python_함수/_Index_of_Python_함수.md": {
+      "mtime": 1776535778.0124688,
+      "size": 976,
+      "drive_id": "1T8oIADhF-IscgmUN9TPcnFj38ljkIk4l"
+    },
+    "프로그래밍_Python/Python_함수/lambda와 순회함수.md": {
+      "mtime": 1776535775.0436738,
+      "size": 5710,
+      "drive_id": "1KC--YKpejzAYVHmkrl9_vq987-IjPMiR"
+    },
+    "프로그래밍_Python/Python_함수/반환 타입 힌트(화살표➡️).md": {
+      "mtime": 1776535775.0476687,
+      "size": 1020,
+      "drive_id": "1Ew5zAnWhLnbDAvaPhSBar6m-UtEKt260"
+    },
+    "프로그래밍_Python/Python_함수/클로저(Closure)란.md": {
+      "mtime": 1776535775.051674,
+      "size": 13256,
+      "drive_id": "1jHjRO88CfDLlLxYw8t5rFY8MAdjBakhu"
+    },
+    "프로그래밍_Python/Python_함수/함수(별args, 별별kwargs).md": {
+      "mtime": 1776535775.0546725,
+      "size": 2657,
+      "drive_id": "1eAAHP7Nbgy2m9BdMeMD2txM9HVq0NeHv"
+    },
+    "프로그래밍_Python/Python_함수/함수경로(=none 의 의미).md": {
+      "mtime": 1776535775.058672,
+      "size": 3665,
+      "drive_id": "1HVBFVaqluW6qSF1OHsghgfmgXmC8RUKy"
+    },
+    "프로그래밍_Python/Python_함수/함수의 반환값을 파라미터로 넣기.md": {
+      "mtime": 1776535775.0626721,
+      "size": 4032,
+      "drive_id": "1RmP3UEu8kuxF0rGl7xqA90aX4SHPJQaU"
+    },
+    "프로그래밍_Python/Python_함수/함수의 타입 힌트.md": {
+      "mtime": 1776535775.0666752,
+      "size": 1496,
+      "drive_id": "11Vt25zScG5jPFirQtqSvrRItTQQ6vnzN"
+    },
+    "프로그래밍_Python/_Index_of_프로그래밍_Python.md": {
+      "mtime": 1776535777.9954681,
+      "size": 550,
+      "drive_id": "1oC781TXT_fDoOOXZJdG2laUJJ-yBzek5"
+    },
+    "프로그래밍_RAG/BM25와 PGroonga의 관계.md": {
+      "mtime": 1776535775.070678,
+      "size": 3425,
+      "drive_id": "1d29I5TsTVUxIoFztmyw42D1zKqzre87h"
+    },
+    "프로그래밍_RAG/GRAPH RAG/BERT엔티티추출BIO란.md": {
+      "mtime": 1776535775.0846746,
+      "size": 1940,
+      "drive_id": "1obOMHEHXrwpMji7jFOMgY7H82UmfGGSV"
+    },
+    "프로그래밍_RAG/GRAPH RAG/Graph DB의 중복방지.md": {
+      "mtime": 1776535775.0886793,
+      "size": 1878,
+      "drive_id": "18eAwRQ_GFjWfzneBpUFimufyiJkJUlwp"
+    },
+    "프로그래밍_RAG/GRAPH RAG/_Index_of_GRAPH RAG.md": {
+      "mtime": 1776535777.9784691,
+      "size": 1251,
+      "drive_id": "11JEVqZMTr5N6w1WcZlNiwFZlLF3lrXMF"
+    },
+    "프로그래밍_RAG/GRAPH RAG/graph rag의 저장과 검색.md": {
+      "mtime": 1776535775.0926757,
+      "size": 2754,
+      "drive_id": "1hiu4X3TaAKauUK-Nf_zrbvFD0ALM8EBZ"
+    },
+    "프로그래밍_RAG/GRAPH RAG/hybride graph rag시 vector 기반 엔티티 추출이면 벡터 검색을 안해도 되는가.md": {
+      "mtime": 1776535775.0956764,
+      "size": 1727,
+      "drive_id": "1wJfFKvfq6WJF4YI_JryEWvXTKNydV01Z"
+    },
+    "프로그래밍_RAG/GRAPH RAG/neo4j에 벡터 저장이 가능한지.md": {
+      "mtime": 1776535775.099676,
+      "size": 4431,
+      "drive_id": "1-1UTwNXuOCG3ZIByBrxrWFMJI3GIEjOX"
+    },
+    "프로그래밍_RAG/GRAPH RAG/엔티티 추출방식 비교.md": {
+      "mtime": 1776535775.1076808,
+      "size": 4091,
+      "drive_id": "18CKUuYf0brgk4Kr2GF5U4aERIsGxrn49"
+    },
+    "프로그래밍_RAG/GRAPH RAG/전용 RAG DB를 외부 LLM 호출시 사용.md": {
+      "mtime": 1776535775.1126773,
+      "size": 2282,
+      "drive_id": "1NvZvMRLiU1btfLZFLIW0SUwEqzHbezUt"
+    },
+    "프로그래밍_RAG/Graph rag.md": {
+      "mtime": 1776535775.073676,
+      "size": 329,
+      "drive_id": "1D9fKRhLboZtr1o9N0eDtKFU7ywL5m37Y"
+    },
+    "프로그래밍_RAG/RAG_basic/BGE-M3.md": {
+      "mtime": 1776535775.115679,
+      "size": 8779,
+      "drive_id": "1-etxuK5SYabZ2BhmFkNf_I4M4-VDBVYg"
+    },
+    "프로그래밍_RAG/RAG_basic/RAG_rangchain 이외에 다른 방식.md": {
+      "mtime": 1776535775.1206796,
+      "size": 9407,
+      "drive_id": "1adyjm-IWPcHOY-gLftYDtA8q24rpL62c"
+    },
+    "프로그래밍_RAG/RAG_basic/RAG_용어정리.md": {
+      "mtime": 1776535775.1256807,
+      "size": 5385,
+      "drive_id": "1k_rgoD0w0NCTz_UOHRNariY8TMAsCBGw"
+    },
+    "프로그래밍_RAG/RAG_basic/_Index_of_RAG_basic.md": {
+      "mtime": 1776535777.968466,
+      "size": 452,
+      "drive_id": "1L7C5Fjn4nHNMuFsL-oqdrxt8cIaKgN7t"
+    },
+    "프로그래밍_RAG/RAG_basic/retriever_추천.md": {
+      "mtime": 1776535775.1296854,
+      "size": 17219,
+      "drive_id": "1lVfxsA9dGxoB59VA0hS8JEUF9rB_d8m1"
+    },
+    "프로그래밍_RAG/_Index_of_프로그래밍_RAG.md": {
+      "mtime": 1776535777.9584634,
+      "size": 692,
+      "drive_id": "1GY2almRTsQRpead4lPAVFgVL05dE_Nx8"
+    },
+    "프로그래밍_RAG/pgvector 인덱싱을 text-embedding-3-large 로 하면 차원손실.md": {
+      "mtime": 1776535775.0776732,
+      "size": 3645,
+      "drive_id": "1PrOE_gEkmE6rADXO4IdcdCoNtRwOYERG"
+    },
+    "프로그래밍_RAG/벡터유사도에 관하여.md": {
+      "mtime": 1776535775.081675,
+      "size": 12012,
+      "drive_id": "17mFNT5HLeKFMb31_PLX1JAJ8zSLmkytR"
+    },
+    "프로그래밍_git/_Index_of_프로그래밍_git.md": {
+      "mtime": 1776535778.1244836,
+      "size": 2391,
+      "drive_id": "1QpRv_WAjDoXl-En3JKVmORLCtLd38-G4"
     }
   }
 }
