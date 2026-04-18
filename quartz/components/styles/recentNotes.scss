@@ -1,23 +1,60 @@
 .recent-notes {
+  margin-top: 1.5rem;
+
   & > h3 {
-    margin: 0.5rem 0 0 0;
-    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--lightgray);
   }
 
   & > ul.recent-ul {
     list-style: none;
-    margin-top: 1rem;
+    margin: 0;
     padding-left: 0;
 
-    & > li {
-      margin: 1rem 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
+    & > li.recent-li {
+      margin: 0.5rem 0;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--lightgray);
+      border-radius: 8px;
+      transition:
+        border-color 0.12s ease,
+        background-color 0.12s ease,
+        transform 0.12s ease;
+
+      &:hover {
+        border-color: var(--secondary);
+        background-color: var(--highlight);
+      }
+
+      .section > .desc {
+        & > h3 {
+          margin: 0;
+          font-size: 1.1rem;
+          font-weight: 600;
+          line-height: 1.45;
+
+          & > a {
+            background-color: transparent;
+          }
+        }
       }
 
       .section > .meta {
-        margin: 0 0 0.5rem 0;
-        opacity: 0.6;
+        margin: 0.35rem 0 0 0;
+        opacity: 0.55;
+        font-size: 0.85em;
+      }
+
+      .section > .tags {
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
       }
     }
   }

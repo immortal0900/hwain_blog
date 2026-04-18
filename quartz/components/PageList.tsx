@@ -69,10 +69,14 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
       {list.map((page) => {
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
+        const isFolder = isFolderPath(page.slug ?? "")
 
         return (
-          <li class="section-li">
+          <li class={`section-li ${isFolder ? "is-folder" : "is-file"}`}>
             <div class="section">
+              <span class="section-icon" aria-hidden="true">
+                {isFolder ? "📁" : "📄"}
+              </span>
               <p class="meta">
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>

@@ -26,8 +26,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
     Component.ConditionalRender({
       component: Component.RecentNotes({
-        title: "Latest note",
-        limit: 1,
+        title: "최근 글",
+        limit: 5,
         showTags: false,
         filter: (f) =>
           f.slug !== "index" && !(f.slug ?? "").split("/").pop()!.startsWith("_Index_of_"),
