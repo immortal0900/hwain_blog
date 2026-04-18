@@ -1,0 +1,214 @@
+<h2 class="sr-only">Harness scenario timeline showing what happens when human intervenes at each step</h2>
+<style>
+.step{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin:0 0 2px}
+.step.active{border-color:var(--color-border-info);border-width:2px}
+.step-head{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.step-num{min-width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500}
+.step-num.auto{background:var(--color-background-info);color:var(--color-text-info)}
+.step-num.human{background:var(--color-background-warning);color:var(--color-text-warning)}
+.step-num.gen{background:var(--color-background-success);color:var(--color-text-success)}
+.step-title{font-weight:500;font-size:15px;flex:1}
+.step-tag{font-size:11px;padding:2px 8px;border-radius:var(--border-radius-md)}
+.tag-auto{background:var(--color-background-info);color:var(--color-text-info)}
+.tag-wait{background:var(--color-background-warning);color:var(--color-text-warning)}
+.tag-interactive{background:var(--color-background-success);color:var(--color-text-success)}
+.step-body{display:none;padding:12px 0 0 38px;font-size:14px;line-height:1.7;color:var(--color-text-secondary)}
+.step.active .step-body{display:block}
+.actor{display:inline-block;font-size:12px;font-weight:500;padding:1px 6px;border-radius:var(--border-radius-md);margin:0 2px}
+.a-script{background:var(--color-background-info);color:var(--color-text-info)}
+.a-human{background:var(--color-background-warning);color:var(--color-text-warning)}
+.a-tg{background:var(--color-background-danger);color:var(--color-text-danger)}
+.a-agent{background:var(--color-background-success);color:var(--color-text-success)}
+.file-flow{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 12px;margin:8px 0;font-family:var(--font-mono);font-size:13px;line-height:1.6}
+.branch{border-left:2px solid var(--color-border-warning);padding-left:12px;margin:8px 0}
+.branch-label{font-size:13px;font-weight:500;color:var(--color-text-warning);margin-bottom:4px}
+.gap{font-size:12px;color:var(--color-text-tertiary);text-align:center;padding:4px 0}
+.legend{display:flex;gap:16px;flex-wrap:wrap;padding:0 0 12px;font-size:13px;color:var(--color-text-secondary)}
+.nav{display:flex;gap:8px;justify-content:center;padding:12px 0 0}
+</style>
+
+<div class="legend">
+<span><span class="actor a-script">script</span> run-cycle.sh</span>
+<span><span class="actor a-agent">agent</span> claude -p</span>
+<span><span class="actor a-human">you</span> 네가 직접</span>
+<span><span class="actor a-tg">telegram</span> 봇 수신/발신</span>
+</div>
+
+<div id="steps"></div>
+<div class="nav">
+<button onclick="prev()">Prev</button>
+<button onclick="next()">Next</button>
+<button onclick="showAll()">All</button>
+</div>
+
+<script>
+const S=[
+{n:"1",t:"auto",title:"run-cycle.sh 시작",tag:"auto",body:`<span class="actor a-script">script</span> <code>./harness/run-cycle.sh "LangGraph 부동산 분석 에이전트"</code> 실행
+<br><br><span class="actor a-script">script</span> telegram-receiver.sh를 백그라운드로 시작 (PID 기록)
+<br><span class="actor a-script">script</span> 체크포인트 확인 → "none" → 처음부터 시작
+<br><span class="actor a-script">script</span> spec.md 없음 + 프롬프트 있음 → <b>Planner 생성 모드</b>`},
+
+{n:"2",t:"auto",title:"Planner 실행 (자동)",tag:"auto",body:`<span class="actor a-agent">agent</span> <code>claude -p --agent planner</code> 실행
+<br><span class="actor a-script">script</span> cost-tracker.sh planner start (타이머 시작)
+<div class="file-flow">생성되는 파일:<br>  artifacts/spec.md ← 전체 제품 스펙<br>  artifacts/specs/langgraph-state.md ← State/Node/Edge 상세<br>  artifacts/specs/db-schema.md ← 테이블 정의<br>  artifacts/plan-review.md ← (생성 모드에선 없을 수 있음)</div>
+<span class="actor a-script">script</span> cost-tracker.sh planner end (4분 32초 기록)
+<br><span class="actor a-script">script</span> 체크포인트 저장: <code>planning_done</code>`},
+
+{n:"3",t:"auto",title:"Telegram으로 파일 전송 (자동)",tag:"auto",body:`<span class="actor a-tg">telegram</span> notify.sh 가 파일들을 순서대로 전송:
+<div class="file-flow">📋 spec.md → sendDocument<br>📎 specs/langgraph-state.md → sendDocument<br>📎 specs/db-schema.md → sendDocument</div>
+<span class="actor a-script">script</span> wait_for_approval() 진입 → <b>대기 시작</b>
+<br><br>이 시점에서 터미널은 멈춰 있고, 2초마다 체크:
+<br>• 로컬 Enter 입력?
+<br>• artifacts/.approval-signal 파일 존재?`},
+
+{n:"★",t:"human",title:"네가 개입하는 지점 — spec.md가 마음에 안 듦",tag:"wait",body:`<b>상황:</b> Telegram에서 spec.md를 열어보니 State 스키마에 messages 필드 reducer가 빠져있고, 병렬 에이전트 간 State 충돌 해결 전략이 없음.
+<br><br><b>방법 A: Telegram으로 수정된 파일 전송</b>
+<div class="branch">
+<div class="branch-label">Telegram에서</div>
+1. spec.md를 폰에서 수정<br>
+2. 봇에게 파일 전송, caption: <code>artifacts/spec.md</code><br>
+3. <span class="actor a-tg">telegram</span> receiver가 다운로드 → artifacts/spec.md 덮어쓰기<br>
+4. 봇 응답: "✅ 파일 저장 완료: artifacts/spec.md"<br>
+5. specs/langgraph-state.md도 마찬가지로 수정 후 전송<br>
+   caption: <code>artifacts/specs/langgraph-state.md</code><br>
+6. "계속" 또는 "/resume" 전송<br>
+7. <span class="actor a-tg">telegram</span> receiver가 .approval-signal 생성<br>
+8. <span class="actor a-script">script</span> wait_for_approval()이 감지 → 다음 단계 진행
+</div>
+
+<b>방법 B: 직접 프로젝트 폴더에서 수정</b>
+<div class="branch">
+<div class="branch-label">터미널/에디터에서</div>
+1. 다른 터미널 열기<br>
+2. <code>vi artifacts/spec.md</code> 또는 VSCode로 직접 수정<br>
+3. <code>vi artifacts/specs/langgraph-state.md</code> 수정<br>
+4. run-cycle.sh가 돌고 있는 터미널에서 Enter<br>
+5. <span class="actor a-script">script</span> wait_for_approval()이 Enter 감지 → 다음 단계 진행
+</div>
+
+<b>두 방법 모두 결과는 동일:</b> artifacts/에 수정된 파일이 저장된 상태로 다음 단계가 시작됨.
+<br><br><b>핵심:</b> 하네스는 파일의 <i>내용</i>을 검증하지 않는다. 네가 저장한 파일이 그대로 다음 에이전트에 전달된다. "어떻게 저장했는지"는 중요하지 않고, "저장된 파일이 artifacts/에 있는지"만 중요하다.`},
+
+{n:"4",t:"auto",title:"Sprint Contract 생성 (자동)",tag:"auto",body:`<span class="actor a-script">script</span> 체크포인트 저장: <code>contract</code>
+<br><span class="actor a-agent">agent</span> <code>claude -p</code> 실행 — 다음을 읽음:
+<div class="file-flow">읽는 파일:<br>  templates/sprint-contract-template.md ← 템플릿 형식<br>  artifacts/spec.md ← 네가 수정한 버전!<br>  artifacts/specs/*.md ← 네가 수정한 버전!<br>  artifacts/progress-log.md ← (첫 스프린트면 없음)</div>
+→ artifacts/sprint-contract.md 생성
+<br><span class="actor a-tg">telegram</span> sprint-contract.md 파일 전송
+<br><span class="actor a-script">script</span> wait_for_approval() 진입 → 대기`},
+
+{n:"★",t:"human",title:"네가 개입하는 지점 — Contract도 수정 가능",tag:"wait",body:`Sprint Contract를 보니 P0에 들어갈 항목이 P1으로 분류되어 있음.
+<br><br>방법은 동일:
+<br>• <b>Telegram:</b> 수정된 파일 전송 (caption: <code>artifacts/sprint-contract.md</code>) → "/resume"
+<br>• <b>직접:</b> 파일 수정 → Enter
+<br><br>Contract가 괜찮으면 그냥 Enter 또는 "/resume"만 보내면 됨.`},
+
+{n:"5",t:"gen",title:"Generator 세션 시작 (interactive)",tag:"interactive",body:`<span class="actor a-script">script</span> 체크포인트: <code>generating</code>
+<br><span class="actor a-tg">telegram</span> "🔨 Generator 세션 시작" + sprint-contract.md 전송
+<br><br><span class="actor a-agent">agent</span> <code>claude</code> (interactive) 실행
+<br><br>Generator가 CLAUDE.md를 자동 로드하고 세션 시작 절차를 따름:
+<div class="file-flow">Generator가 읽는 파일 (순서대로):<br>  1. artifacts/progress-log.md (없으면 스킵)<br>  2. artifacts/spec.md ← 네가 수정한 버전<br>  3. artifacts/specs/langgraph-state.md ← 네가 수정한 버전<br>  4. artifacts/sprint-contract.md<br>  5. artifacts/qa-report.md (없으면 스킵)<br>  6. git log --oneline -10</div>
+
+<b>너는 이 세션에서 직접 코딩 지시를 내린다.</b>
+<br>• "State 스키마부터 구현해줘"
+<br>• "이 노드에 ReAct 패턴 적용해"
+<br>• 중간 점검: <code>@evaluator 지금까지 한 거 빠르게 확인해줘</code>
+<br><br><b>세션 종료 시 Generator가 자동으로 해야 할 것:</b>
+<div class="file-flow">Generator가 작성/업데이트하는 파일:<br>  artifacts/progress-log.md ← 세션 기록 (필수!)<br>  artifacts/sprint-contract.md ← 완료 항목 [x] 체크<br>  artifacts/decisions/decision-001.md ← 판단 기록 (있으면)<br>  Git commit ← 소스 코드 변경사항</div>
+<code>/exit</code>으로 세션 종료`},
+
+{n:"6",t:"auto",title:"progress-log 검증 (자동)",tag:"auto",body:`<span class="actor a-script">script</span> Generator 세션 종료 감지
+<br><span class="actor a-script">script</span> Generator 소요 시간 기록 → harness-cost-log.txt
+<br><br><span class="actor a-script">script</span> <b>progress-log.md 업데이트 여부 확인:</b>
+<div class="file-flow">확인 방법:<br>  progress-log.md의 수정 시간 vs Generator 시작 시간<br>  수정 시간이 시작 시간보다 이전이면 → 업데이트 안 한 것</div>
+
+<div class="branch">
+<div class="branch-label">업데이트 안 했으면</div>
+<span class="actor a-tg">telegram</span> "⚠️ Generator가 progress-log.md를 업데이트하지 않았습니다" + 파일 전송
+<br>→ 다음 Evaluator가 이 점을 지적할 수 있음
+</div>`},
+
+{n:"7",t:"auto",title:"Evaluator 실행 (자동)",tag:"auto",body:`<span class="actor a-script">script</span> 체크포인트: <code>evaluating</code>
+<br><span class="actor a-agent">agent</span> <code>claude -p --agent evaluator</code> 실행
+<div class="file-flow">Evaluator가 읽는 파일:<br>  artifacts/spec.md<br>  artifacts/sprint-contract.md<br>  artifacts/specs/*.md<br>  artifacts/progress-log.md ← "미처리 이슈" 확인<br>  src/, tests/ ← 소스 코드 탐색<br><br>Evaluator가 실행하는 것:<br>  pytest / npm test (가능하면)<br>  ruff check / lint (설정되어 있으면)</div>
+→ artifacts/qa-report.md 생성
+<br><span class="actor a-script">script</span> cost-tracker.sh evaluator end (8분 44초 기록)`},
+
+{n:"8",t:"auto",title:"결과 판단 + 전체 알림 (자동)",tag:"auto",body:`<span class="actor a-tg">telegram</span> 순서대로 파일 전송:
+<div class="file-flow">💰 harness-cost-log.txt (비용 요약)<br>✅ qa-report.md (PASS인 경우)<br>   또는<br>❌ qa-report.md (FAIL인 경우)<br>📊 progress-log.md (작업 기록)</div>
+
+<div class="branch">
+<div class="branch-label">PASS인 경우</div>
+<span class="actor a-script">script</span> sprint-contract.md → sprint-1-done.md 아카이브
+<br><span class="actor a-script">script</span> 체크포인트 클리어
+<br><span class="actor a-script">script</span> "다음 스프린트: ./harness/run-cycle.sh"
+</div>
+
+<div class="branch">
+<div class="branch-label">FAIL인 경우</div>
+<span class="actor a-tg">telegram</span> decisions/*.md도 전송 (있으면)
+<br><span class="actor a-tg">telegram</span> "다음 행동을 선택하세요: 1) 재진입 2) Evaluator 조정 3) 강제 진행"
+<br><span class="actor a-script">script</span> 체크포인트 클리어 + 스크립트 종료
+</div>`},
+
+{n:"★",t:"human",title:"FAIL 후 네가 개입하는 지점",tag:"wait",body:`<b>상황:</b> qa-report.md를 보니 "기능 완성도 5/10 FAIL — sprint-contract P0 항목 2개 미구현"
+<br><br><b>선택지 1: Generator 재진입</b>
+<div class="branch">
+<div class="branch-label">가장 일반적</div>
+<code>./harness/run-cycle.sh</code> 재실행
+<br>→ spec.md 있음 + 이전 리뷰 READY → Planner 스킵
+<br>→ sprint-contract.md 있음 → Contract 생성 스킵
+<br>→ Generator 세션 시작 → qa-report.md의 FAIL 항목 먼저 수정
+<br>→ /exit → Evaluator 재실행
+</div>
+
+<b>선택지 2: Evaluator 기준 조정</b>
+<div class="branch">
+<div class="branch-label">기준이 너무 엄격할 때</div>
+<code>vi .claude/agents/evaluator/AGENT.md</code>
+<br>예: 테스트 커버리지 FAIL 기준을 4점 → 3점으로 완화
+<br><code>./harness/run-evaluator.sh</code> (Evaluator만 재실행)
+<br>→ 새 qa-report.md 생성 → PASS/FAIL 재판정
+</div>
+
+<b>선택지 3: 강제 진행</b>
+<div class="branch">
+<div class="branch-label">일단 넘어가고 나중에 고치기</div>
+<code>mv artifacts/sprint-contract.md artifacts/sprint-1-done.md</code>
+<br><code>./harness/run-cycle.sh</code>
+<br>→ 다음 Sprint Contract 생성부터 시작
+</div>`},
+
+{n:"9",t:"auto",title:"다음 스프린트 사이클",tag:"auto",body:`<code>./harness/run-cycle.sh</code> 재실행
+<br><br><span class="actor a-script">script</span> spec.md 있음 → Planner 리뷰 모드
+<br><span class="actor a-agent">agent</span> 이전 리뷰가 READY면 → Planner 스킵
+<br><span class="actor a-script">script</span> sprint-contract.md 없음 → 새 Contract 생성
+<br><br>이 때 Contract 생성 에이전트는 다음을 읽음:
+<div class="file-flow">artifacts/sprint-1-done.md ← 이전 스프린트 완료 기록<br>artifacts/progress-log.md ← Generator의 누적 작업 기록<br>artifacts/spec.md ← 전체 스펙에서 남은 기능 파악</div>
+
+→ Sprint #2 Contract 생성 → Telegram 전송 → 대기 → Generator → Evaluator → ...
+<br><br><b>이 사이클이 모든 스프린트가 완료될 때까지 반복된다.</b>`}
+];
+
+let cur=0,allOpen=false;
+function render(){
+  const el=document.getElementById('steps');
+  el.innerHTML=S.map((s,i)=>{
+    const act=allOpen||(i===cur)?'active':'';
+    const tagClass=s.tag==='auto'?'tag-auto':s.tag==='wait'?'tag-wait':'tag-interactive';
+    const numClass=s.t==='auto'?'auto':s.t==='human'?'human':'gen';
+    return `<div class="step ${act}" onclick="toggle(${i})">
+      <div class="step-head">
+        <div class="step-num ${numClass}">${s.n}</div>
+        <div class="step-title">${s.title}</div>
+        <span class="step-tag ${tagClass}">${s.tag}</span>
+      </div>
+      <div class="step-body">${s.body}</div>
+    </div>`;
+  }).join('');
+}
+function toggle(i){if(!allOpen){cur=i;render();}}
+function next(){if(cur<S.length-1){cur++;allOpen=false;render();}}
+function prev(){if(cur>0){cur--;allOpen=false;render();}}
+function showAll(){allOpen=!allOpen;render();}
+render();
+</script>
