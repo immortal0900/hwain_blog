@@ -8602,3 +8602,267 @@
 {"id": "ea2ea47fe33f4b4d9281669a585e986c", "resolved": true, "ts": 1776788343.3571408}
 {"id": "71d939c57cde4116ae38a3941ec44dd2", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.md", "reason": "local_modified"}, "ts": 1776788380.1036983}
 {"id": "71d939c57cde4116ae38a3941ec44dd2", "resolved": true, "ts": 1776788382.540591}
+{"id": "bcdb86b838e64cf99d3c970441c65ea2", "action": {"type": "delete_local", "path": "_Index_of_content.md", "reason": "remote_removed"}, "ts": 1776788510.417247}
+{"id": "bcdb86b838e64cf99d3c970441c65ea2", "resolved": true, "ts": 1776788510.4242468}
+{"id": "c0ceb26222fa4eacaf6481eb1f96c068", "action": {"type": "upload", "path": "프로그래밍_Agent/ReAct vs CoT의 핵심 차이.md", "reason": "local_modified"}, "ts": 1776788510.4252489}
+{"id": "c0ceb26222fa4eacaf6481eb1f96c068", "resolved": true, "ts": 1776788510.4272532}
+{"id": "6e165eef2b6f41178396275f2d64a780", "action": {"type": "upload", "path": "프로그래밍_Agent/LLM Integration(통합)과 Inference Pipeline(추론 파이프라인).md", "reason": "local_modified"}, "ts": 1776788510.4282467}
+{"id": "6e165eef2b6f41178396275f2d64a780", "resolved": true, "ts": 1776788510.4302464}
+{"id": "c6809f851bbb46d9b6cb366e7956ac21", "action": {"type": "upload", "path": "프로그래밍_Agent/with_structured_output.md", "reason": "local_modified"}, "ts": 1776788510.4312499}
+{"id": "c6809f851bbb46d9b6cb366e7956ac21", "resolved": true, "ts": 1776788510.4332561}
+{"id": "e94597d0642043479a95f145e4bfd22f", "action": {"type": "upload", "path": "프로그래밍_Agent/vLLM 핵심장점.md", "reason": "local_modified"}, "ts": 1776788510.4342556}
+{"id": "e94597d0642043479a95f145e4bfd22f", "resolved": true, "ts": 1776788510.436255}
+{"id": "fbb6f304adf444aca0f76d37c3185392", "action": {"type": "upload", "path": "프로그래밍_Agent/langgraph_invoke()+래핑(Wrapping).md", "reason": "local_modified"}, "ts": 1776788510.4382546}
+{"id": "fbb6f304adf444aca0f76d37c3185392", "resolved": true, "ts": 1776788510.4392545}
+{"id": "3df6cbdda62d4765a92f50c1915de5c1", "action": {"type": "upload", "path": "프로그래밍_DevOps 인프라/CI CD 파이프라인.md", "reason": "local_modified"}, "ts": 1776788510.4402547}
+{"id": "3df6cbdda62d4765a92f50c1915de5c1", "resolved": true, "ts": 1776788510.4422548}
+{"id": "39c1b65a74b846ca84e7c76534a737b4", "action": {"type": "upload", "path": "프로그래밍_Agent/langchain_with_structured_output의 강제력.md", "reason": "local_modified"}, "ts": 1776788510.4432547}
+{"id": "39c1b65a74b846ca84e7c76534a737b4", "resolved": true, "ts": 1776788510.445257}
+{"id": "64884c86535d4feab9e15f6458e2392c", "action": {"type": "upload", "path": "프로그래밍_Fine-tunning/파인튜닝 종합정리.md", "reason": "local_modified"}, "ts": 1776788510.4462554}
+{"id": "64884c86535d4feab9e15f6458e2392c", "resolved": true, "ts": 1776788510.4472551}
+{"id": "be80fcbed9304eaf9e8c39c7f7a27d68", "action": {"type": "upload", "path": "프로그래밍_Fine-tunning/LoRA vs DoRA.md", "reason": "local_modified"}, "ts": 1776788510.4487627}
+{"id": "be80fcbed9304eaf9e8c39c7f7a27d68", "resolved": true, "ts": 1776788510.4507754}
+{"id": "db01da1e34004f028dc7653c4fcecc29", "action": {"type": "upload", "path": "프로그래밍_Fine-tunning/GGUF란_가중치,토크나이저, 모델구조를 파일 하나로.md", "reason": "local_modified"}, "ts": 1776788510.4517708}
+{"id": "db01da1e34004f028dc7653c4fcecc29", "resolved": true, "ts": 1776788510.4537718}
+{"id": "0706d0691dbc40959e6720ac767edac8", "action": {"type": "upload", "path": "프로그래밍_DevOps 인프라/GitHub Actions.md", "reason": "local_modified"}, "ts": 1776788510.4547708}
+{"id": "0706d0691dbc40959e6720ac767edac8", "resolved": true, "ts": 1776788510.4557695}
+{"id": "12b2253985074819a2d80b7e33dd3f85", "action": {"type": "upload", "path": "프로그래밍_Python/Python_basic/isinstance랑 getattr.md", "reason": "local_modified"}, "ts": 1776788510.4577708}
+{"id": "12b2253985074819a2d80b7e33dd3f85", "resolved": true, "ts": 1776788510.458771}
+{"id": "61ffec50f2924dd9a30761c92604fa2e", "action": {"type": "upload", "path": "프로그래밍_Python/Python_basic/파이썬에서 () 소괄호와 [] 대괄호.md", "reason": "local_modified"}, "ts": 1776788510.4607697}
+{"id": "61ffec50f2924dd9a30761c92604fa2e", "resolved": true, "ts": 1776788510.4627705}
+{"id": "5ef549d7d11a44cead80a126d60fbd57", "action": {"type": "upload", "path": "프로그래밍_Python/Python_basic/파이썬에서 `.`, `대괄호`의 쓰임(내부에 있는 무언가를 지칭한다).md", "reason": "local_modified"}, "ts": 1776788510.4637702}
+{"id": "5ef549d7d11a44cead80a126d60fbd57", "resolved": true, "ts": 1776788510.46477}
+{"id": "668720f74d704710b7623d13ef7c781f", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_다중상속(부모를 여럿두는것).md", "reason": "local_modified"}, "ts": 1776788510.4657714}
+{"id": "668720f74d704710b7623d13ef7c781f", "resolved": true, "ts": 1776788510.467771}
+{"id": "b54619739b964b53bc686938ab52526b", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_`__init__`.md", "reason": "local_modified"}, "ts": 1776788510.4687712}
+{"id": "b54619739b964b53bc686938ab52526b", "resolved": true, "ts": 1776788510.4707708}
+{"id": "f118664d8f84419a865f0c192b9afc5f", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_@abstractmethod_추상 클래스.md", "reason": "local_modified"}, "ts": 1776788510.4717705}
+{"id": "f118664d8f84419a865f0c192b9afc5f", "resolved": true, "ts": 1776788510.4727702}
+{"id": "2737fb56373e454e845a9226c74ea08e", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_타입힌트.md", "reason": "local_modified"}, "ts": 1776788510.473771}
+{"id": "2737fb56373e454e845a9226c74ea08e", "resolved": true, "ts": 1776788510.4757705}
+{"id": "730a0e347f154551967c5febb6b758e2", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_파라미터.md", "reason": "local_modified"}, "ts": 1776788510.476771}
+{"id": "730a0e347f154551967c5febb6b758e2", "resolved": true, "ts": 1776788510.4777708}
+{"id": "4349a4de04f74ab1a300f7487b3dc298", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_인스턴스.md", "reason": "local_modified"}, "ts": 1776788510.4787705}
+{"id": "4349a4de04f74ab1a300f7487b3dc298", "resolved": true, "ts": 1776788510.4807703}
+{"id": "4e5b8aea0915488f969c34a56664bb4b", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_오버라이딩.md", "reason": "local_modified"}, "ts": 1776788510.48177}
+{"id": "4e5b8aea0915488f969c34a56664bb4b", "resolved": true, "ts": 1776788510.4827695}
+{"id": "29faae85a9c8454cbbf8b5c7ba53e41c", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class_상속시`super()` 사용.md", "reason": "local_modified"}, "ts": 1776788510.483773}
+{"id": "29faae85a9c8454cbbf8b5c7ba53e41c", "resolved": true, "ts": 1776788510.4857705}
+{"id": "b5639c2b545641d0aa1912d2df2be0c7", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/@데코레이터.md", "reason": "local_modified"}, "ts": 1776788510.4867706}
+{"id": "b5639c2b545641d0aa1912d2df2be0c7", "resolved": true, "ts": 1776788510.4877717}
+{"id": "202440ae67e242d38a92d2648c725b59", "action": {"type": "upload", "path": "프로그래밍_Python/Python_모듈과 객체/모듈과 객체.md", "reason": "local_modified"}, "ts": 1776788510.4897723}
+{"id": "202440ae67e242d38a92d2648c725b59", "resolved": true, "ts": 1776788510.4907713}
+{"id": "d16c63fb93cd419c8f10b2e1ea8b1a6c", "action": {"type": "upload", "path": "프로그래밍_Python/Python_class/class에서 self. 필요성.md", "reason": "local_modified"}, "ts": 1776788510.4917715}
+{"id": "d16c63fb93cd419c8f10b2e1ea8b1a6c", "resolved": true, "ts": 1776788510.4937716}
+{"id": "0721effe447e4f6782235419e551b8bc", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/lambda와 순회함수.md", "reason": "local_modified"}, "ts": 1776788510.4947712}
+{"id": "0721effe447e4f6782235419e551b8bc", "resolved": true, "ts": 1776788510.4957724}
+{"id": "02b731e92388432a9bcf707ac7d47f03", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/함수(별args, 별별kwargs).md", "reason": "local_modified"}, "ts": 1776788510.4967709}
+{"id": "02b731e92388432a9bcf707ac7d47f03", "resolved": true, "ts": 1776788510.4987745}
+{"id": "1fc153cbb2834e6fb72899fe3a074347", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/반환 타입 힌트(화살표➡️).md", "reason": "local_modified"}, "ts": 1776788510.4997718}
+{"id": "1fc153cbb2834e6fb72899fe3a074347", "resolved": true, "ts": 1776788510.501771}
+{"id": "a3e8a7c63a2f4de9be9fef5dcb7ce8c0", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/클로저(Closure)란.md", "reason": "local_modified"}, "ts": 1776788510.5027707}
+{"id": "a3e8a7c63a2f4de9be9fef5dcb7ce8c0", "resolved": true, "ts": 1776788510.5037713}
+{"id": "f5e2810cf7da4d1b89911c44fe4279cb", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/함수의 타입 힌트.md", "reason": "local_modified"}, "ts": 1776788510.504773}
+{"id": "f5e2810cf7da4d1b89911c44fe4279cb", "resolved": true, "ts": 1776788510.506774}
+{"id": "811fe852cff749f0b9d76c28317290ea", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/함수의 반환값을 파라미터로 넣기.md", "reason": "local_modified"}, "ts": 1776788510.507772}
+{"id": "811fe852cff749f0b9d76c28317290ea", "resolved": true, "ts": 1776788510.508772}
+{"id": "2e358f40066f44518916be509f253351", "action": {"type": "upload", "path": "프로그래밍_RAG/BM25와 PGroonga의 관계.md", "reason": "local_modified"}, "ts": 1776788510.5097718}
+{"id": "2e358f40066f44518916be509f253351", "resolved": true, "ts": 1776788510.5117714}
+{"id": "7825b28635984cd28478a97029a4ff10", "action": {"type": "upload", "path": "프로그래밍_Python/Python_함수/함수경로(=none 의 의미).md", "reason": "local_modified"}, "ts": 1776788510.5127716}
+{"id": "7825b28635984cd28478a97029a4ff10", "resolved": true, "ts": 1776788510.5137715}
+{"id": "650aabd89e4b4e769f8adb490b5d5f2a", "action": {"type": "upload", "path": "프로그래밍_RAG/GRAPH RAG/hybride graph rag시 vector 기반 엔티티 추출이면 벡터 검색을 안해도 되는가.md", "reason": "local_modified"}, "ts": 1776788510.5147727}
+{"id": "650aabd89e4b4e769f8adb490b5d5f2a", "resolved": true, "ts": 1776788510.516775}
+{"id": "30fb6ee6d4914876a5577391f8844737", "action": {"type": "upload", "path": "프로그래밍_RAG/GRAPH RAG/Graph DB의 중복방지.md", "reason": "local_modified"}, "ts": 1776788510.5177732}
+{"id": "30fb6ee6d4914876a5577391f8844737", "resolved": true, "ts": 1776788510.5197735}
+{"id": "ee6e08e4f893430d855f7f823056973c", "action": {"type": "upload", "path": "프로그래밍_RAG/GRAPH RAG/neo4j에 벡터 저장이 가능한지.md", "reason": "local_modified"}, "ts": 1776788510.5207732}
+{"id": "ee6e08e4f893430d855f7f823056973c", "resolved": true, "ts": 1776788510.522773}
+{"id": "4953c51d288247399efd761e32924ba0", "action": {"type": "upload", "path": "프로그래밍_RAG/GRAPH RAG/graph rag의 저장과 검색.md", "reason": "local_modified"}, "ts": 1776788510.5237722}
+{"id": "4953c51d288247399efd761e32924ba0", "resolved": true, "ts": 1776788510.5247717}
+{"id": "add6be4aa8a843178403ba6c58f72421", "action": {"type": "upload", "path": "프로그래밍_RAG/GRAPH RAG/_Index_of_GRAPH RAG.md", "reason": "local_modified"}, "ts": 1776788510.5257719}
+{"id": "add6be4aa8a843178403ba6c58f72421", "resolved": true, "ts": 1776788510.5277722}
+{"id": "8d5ae3bcd8e6484583a4d127ee4c4f0b", "action": {"type": "upload", "path": "프로그래밍_RAG/RAG_basic/RAG_rangchain 이외에 다른 방식.md", "reason": "local_modified"}, "ts": 1776788510.5287735}
+{"id": "8d5ae3bcd8e6484583a4d127ee4c4f0b", "resolved": true, "ts": 1776788510.5297742}
+{"id": "9697d9ff25224f62996669df017487b4", "action": {"type": "upload", "path": "프로그래밍_RAG/RAG_basic/RAG_용어정리.md", "reason": "local_modified"}, "ts": 1776788510.5307724}
+{"id": "9697d9ff25224f62996669df017487b4", "resolved": true, "ts": 1776788510.5327716}
+{"id": "f435c9d42784444f9ea8f5571a1ddfd4", "action": {"type": "upload", "path": "프로그래밍_RAG/RAG_basic/retriever_추천.md", "reason": "local_modified"}, "ts": 1776788510.5337803}
+{"id": "f435c9d42784444f9ea8f5571a1ddfd4", "resolved": true, "ts": 1776788510.5357776}
+{"id": "1eee83a55b9e452db991e6c7c2170860", "action": {"type": "upload", "path": "프로그래밍_RAG/RAG_basic/BGE-M3.md", "reason": "local_modified"}, "ts": 1776788510.5367794}
+{"id": "1eee83a55b9e452db991e6c7c2170860", "resolved": true, "ts": 1776788510.538777}
+{"id": "6231a41ae33e4f008d51ad0b63242c31", "action": {"type": "upload", "path": "프로그래밍_RAG/GRAPH RAG/전용 RAG DB를 외부 LLM 호출시 사용.md", "reason": "local_modified"}, "ts": 1776788510.5397775}
+{"id": "6231a41ae33e4f008d51ad0b63242c31", "resolved": true, "ts": 1776788510.5407777}
+{"id": "cd9172bc3c324c90900d6dee1fe8a3f8", "action": {"type": "upload", "path": "프로그래밍_langfuse/_Index_of_프로그래밍_langfuse.md", "reason": "local_modified"}, "ts": 1776788510.5417774}
+{"id": "cd9172bc3c324c90900d6dee1fe8a3f8", "resolved": true, "ts": 1776788510.5427778}
+{"id": "9d6a5152a3e846d286cec40dbaf0fde9", "action": {"type": "upload", "path": "프로그래밍_git/_Index_of_프로그래밍_git.md", "reason": "local_modified"}, "ts": 1776788510.5447779}
+{"id": "9d6a5152a3e846d286cec40dbaf0fde9", "resolved": true, "ts": 1776788510.5457776}
+{"id": "be2889d5db454c6882c1cd212dbcb4ad", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse_OpenTelemetry 컨텍스트 분리(Detach) 에러.md", "reason": "local_modified"}, "ts": 1776788510.5467772}
+{"id": "be2889d5db454c6882c1cd212dbcb4ad", "resolved": true, "ts": 1776788510.5482829}
+{"id": "b92ea0ffdfb24ae08e22d6fcafd608d6", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse vs langsmith.md", "reason": "local_modified"}, "ts": 1776788510.5492904}
+{"id": "b92ea0ffdfb24ae08e22d6fcafd608d6", "resolved": true, "ts": 1776788510.551293}
+{"id": "4361f644d1744c64a1d66fda62600925", "action": {"type": "upload", "path": "프로그래밍_RAG/벡터유사도에 관하여.md", "reason": "local_modified"}, "ts": 1776788510.55329}
+{"id": "4361f644d1744c64a1d66fda62600925", "resolved": true, "ts": 1776788510.5542905}
+{"id": "343fc872f51a42468d1e0d8dc2bce5ed", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse_propagate_attributes()의 원래 역할.md", "reason": "local_modified"}, "ts": 1776788510.5552897}
+{"id": "343fc872f51a42468d1e0d8dc2bce5ed", "resolved": true, "ts": 1776788510.557289}
+{"id": "4bf525dad77540c7abae815165e13be3", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse_SessionID_ContextVar.md", "reason": "local_modified"}, "ts": 1776788510.558291}
+{"id": "4bf525dad77540c7abae815165e13be3", "resolved": true, "ts": 1776788510.5592904}
+{"id": "06919d4022ba49539c130df7a2268277", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse_span_id attributes 뜻.md", "reason": "local_modified"}, "ts": 1776788510.560292}
+{"id": "06919d4022ba49539c130df7a2268277", "resolved": true, "ts": 1776788510.56229}
+{"id": "c27e6cbc6af046808180267525792549", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse_한번 호출한 분량 분리해서 호출.md", "reason": "local_modified"}, "ts": 1776788510.5632896}
+{"id": "c27e6cbc6af046808180267525792549", "resolved": true, "ts": 1776788510.5642903}
+{"id": "e332812dd02846658c43037520bd3f61", "action": {"type": "upload", "path": "프로그래밍_데이터베이스/AI_DB선택 참고.md", "reason": "local_modified"}, "ts": 1776788510.5652914}
+{"id": "e332812dd02846658c43037520bd3f61", "resolved": true, "ts": 1776788510.5672936}
+{"id": "59b7225620bd48dbab0a0edb135184b8", "action": {"type": "upload", "path": "프로그래밍_langfuse/langfuse_한번 요청시 나온 토큰등 추적 정보를 묶어서 보기.md", "reason": "local_modified"}, "ts": 1776788510.5682893}
+{"id": "59b7225620bd48dbab0a0edb135184b8", "resolved": true, "ts": 1776788510.57029}
+{"id": "78c70da6fd8848f6850af22981d45692", "action": {"type": "upload", "path": "프로그래밍_데이터베이스/redis 와 celery.md", "reason": "local_modified"}, "ts": 1776788510.5712907}
+{"id": "78c70da6fd8848f6850af22981d45692", "resolved": true, "ts": 1776788510.5722897}
+{"id": "03671ef485fd429d9cc4b6b3af104fba", "action": {"type": "upload", "path": "프로그래밍_설계원칙/_Index_of_프로그래밍_설계원칙.md", "reason": "local_modified"}, "ts": 1776788510.5732906}
+{"id": "03671ef485fd429d9cc4b6b3af104fba", "resolved": true, "ts": 1776788510.5742903}
+{"id": "cb2af8c49bdc490f91980b4002616767", "action": {"type": "upload", "path": "프로그래밍_데이터베이스/TCP 연결과 IDLE 커넥션 pgBouncer psycopg2 SQLAlchemy.md", "reason": "local_modified"}, "ts": 1776788510.5752902}
+{"id": "cb2af8c49bdc490f91980b4002616767", "resolved": true, "ts": 1776788510.5762906}
+{"id": "89a23617b5744b7aa90c1bccdbfbb3d4", "action": {"type": "upload", "path": "프로그래밍_데이터베이스/PostgreSQL, SQLAlchemy, pgvector 관계.md", "reason": "local_modified"}, "ts": 1776788510.5772903}
+{"id": "89a23617b5744b7aa90c1bccdbfbb3d4", "resolved": true, "ts": 1776788510.5792902}
+{"id": "0da360d7367d409794cbf31666c548cc", "action": {"type": "upload", "path": "프로그래밍_환경설정/sys.path(python이 모듈을 찾을때 검색하는 디렉토리 경로)사용법.md", "reason": "local_modified"}, "ts": 1776788510.5812914}
+{"id": "0da360d7367d409794cbf31666c548cc", "resolved": true, "ts": 1776788510.5832975}
+{"id": "ce64cca4cd4f4517929cb4a95a27a1a0", "action": {"type": "upload", "path": "프로그래밍_환경설정/가상환경 세팅 방법.md", "reason": "local_modified"}, "ts": 1776788510.584292}
+{"id": "ce64cca4cd4f4517929cb4a95a27a1a0", "resolved": true, "ts": 1776788510.5852919}
+{"id": "792709f563b74844849c77b08bcfda38", "action": {"type": "upload", "path": "프로그래밍_환경설정/UV_SYNC_GUIDE.md", "reason": "local_modified"}, "ts": 1776788510.5862908}
+{"id": "792709f563b74844849c77b08bcfda38", "resolved": true, "ts": 1776788510.5882916}
+{"id": "c3e74aba4c5e44f2968284289933d32f", "action": {"type": "upload", "path": "프로그래밍_환경설정/IDE 가 가상환경의 파이썬 인식 못할때.md", "reason": "local_modified"}, "ts": 1776788510.5892916}
+{"id": "c3e74aba4c5e44f2968284289933d32f", "resolved": true, "ts": 1776788510.5902915}
+{"id": "4c2a7e3c00d944a4a5836ac9f67a5004", "action": {"type": "upload", "path": "프로그래밍_환경설정/운영체제와 상관없는 경로설정.md", "reason": "local_modified"}, "ts": 1776788510.5912907}
+{"id": "4c2a7e3c00d944a4a5836ac9f67a5004", "resolved": true, "ts": 1776788510.5932903}
+{"id": "cd9ae166b18f4c7ca1ee42c1d1d32253", "action": {"type": "upload", "path": "프로그래밍_환경설정/가상환경 재설치 uv.md", "reason": "local_modified"}, "ts": 1776788510.5942914}
+{"id": "cd9ae166b18f4c7ca1ee42c1d1d32253", "resolved": true, "ts": 1776788510.5952926}
+{"id": "93636be506bd45aca43e4876d7e1eb73", "action": {"type": "upload", "path": "프로그래밍_환경설정/새로운기기_세팅 절차.md", "reason": "local_modified"}, "ts": 1776788510.5962908}
+{"id": "93636be506bd45aca43e4876d7e1eb73", "resolved": true, "ts": 1776788510.5982907}
+{"id": "9f6e73e318714043af781a295b4d5be6", "action": {"type": "upload", "path": "프로그래밍_CS/시간복잡도_기초.md", "reason": "local_modified"}, "ts": 1776788510.5992901}
+{"id": "9f6e73e318714043af781a295b4d5be6", "resolved": true, "ts": 1776788510.6012914}
+{"id": "94ebd7705a284c87a69fec79d9146426", "action": {"type": "upload", "path": "Excalidraw/_Index_of_Excalidraw.md", "reason": "local_modified"}, "ts": 1776788510.602293}
+{"id": "94ebd7705a284c87a69fec79d9146426", "resolved": true, "ts": 1776788510.6032906}
+{"id": "65532467788640a983e4d2eaafa6d11b", "action": {"type": "upload", "path": "Excalidraw/Drawing 2026-04-20 00.49.22.excalidraw.md", "reason": "local_modified"}, "ts": 1776788510.604292}
+{"id": "65532467788640a983e4d2eaafa6d11b", "resolved": true, "ts": 1776788510.6052918}
+{"id": "fabaa57301d14847aeb53a1282c2085b", "action": {"type": "upload", "path": "프로그래밍_CS/직렬화_JSON_YAML.md", "reason": "local_modified"}, "ts": 1776788510.6062913}
+{"id": "fabaa57301d14847aeb53a1282c2085b", "resolved": true, "ts": 1776788510.6072915}
+{"id": "5997f36afe534629846bad8c349eccd3", "action": {"type": "upload", "path": "프로그래밍_CS/해시맵.md", "reason": "local_modified"}, "ts": 1776788510.608291}
+{"id": "5997f36afe534629846bad8c349eccd3", "resolved": true, "ts": 1776788510.6102931}
+{"id": "0ea5436268cc4b259a0654f197f9fa49", "action": {"type": "upload", "path": "프로그래밍_Fine-tunning/Untitled", "reason": "local_modified"}, "ts": 1776788510.6122923}
+{"id": "0ea5436268cc4b259a0654f197f9fa49", "resolved": true, "ts": 1776788510.6132913}
+{"id": "2487034bf62a4819aeb43ce39ed7be1b", "action": {"type": "upload", "path": "프로그래밍_OS/동시성과 async-await.md", "reason": "local_modified"}, "ts": 1776788510.6142917}
+{"id": "2487034bf62a4819aeb43ce39ed7be1b", "resolved": true, "ts": 1776788510.6152923}
+{"id": "af4d1a612f6843238a6d8af9a7eb51f0", "action": {"type": "upload", "path": "프로그래밍_CS/큐.md", "reason": "local_modified"}, "ts": 1776788510.6162946}
+{"id": "af4d1a612f6843238a6d8af9a7eb51f0", "resolved": true, "ts": 1776788510.6182914}
+{"id": "af497f98f26743209edc6b9e7d0f1765", "action": {"type": "upload", "path": "프로그래밍_OS/메모리 구조.md", "reason": "local_modified"}, "ts": 1776788510.6192925}
+{"id": "af497f98f26743209edc6b9e7d0f1765", "resolved": true, "ts": 1776788510.6212928}
+{"id": "3421a3eec4774fdaa1b0464fbf2cc2ca", "action": {"type": "upload", "path": "프로그래밍_CS/트리.md", "reason": "local_modified"}, "ts": 1776788510.622292}
+{"id": "3421a3eec4774fdaa1b0464fbf2cc2ca", "resolved": true, "ts": 1776788510.6232917}
+{"id": "7299890872ec4e6e8ae601f620be4b43", "action": {"type": "upload", "path": "프로그래밍_OS/환경변수.md", "reason": "local_modified"}, "ts": 1776788510.6242933}
+{"id": "7299890872ec4e6e8ae601f620be4b43", "resolved": true, "ts": 1776788510.6262934}
+{"id": "9e80456a0f36478e94b1227c6a34fcda", "action": {"type": "upload", "path": "프로그래밍_OS/프로세스 vs 스레드.md", "reason": "local_modified"}, "ts": 1776788510.6272926}
+{"id": "9e80456a0f36478e94b1227c6a34fcda", "resolved": true, "ts": 1776788510.6282935}
+{"id": "0a82ba8dacaf41719cf6686a0a96256a", "action": {"type": "upload", "path": "프로그래밍_네트워크/HTTP_HTTPS.md", "reason": "local_modified"}, "ts": 1776788510.6292932}
+{"id": "0a82ba8dacaf41719cf6686a0a96256a", "resolved": true, "ts": 1776788510.6312923}
+{"id": "6a0ecfdc5d344e4d9b8075366fea1084", "action": {"type": "upload", "path": "프로그래밍_네트워크/DNS.md", "reason": "local_modified"}, "ts": 1776788510.6322918}
+{"id": "6a0ecfdc5d344e4d9b8075366fea1084", "resolved": true, "ts": 1776788510.6343033}
+{"id": "a86db01f775b4900a4c66499b06ed039", "action": {"type": "upload", "path": "프로그래밍_OS/파일 I-O.md", "reason": "local_modified"}, "ts": 1776788510.6353}
+{"id": "a86db01f775b4900a4c66499b06ed039", "resolved": true, "ts": 1776788510.6362998}
+{"id": "0dce6034d87b4f918d63efbf3eea9d8e", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/DIP(고수준 모듈과 저수준 모듈).md", "reason": "local_modified"}, "ts": 1776788510.6383}
+{"id": "0dce6034d87b4f918d63efbf3eea9d8e", "resolved": true, "ts": 1776788510.6392996}
+{"id": "6111f5e0bd774b879a9c4c847030a5c3", "action": {"type": "upload", "path": "프로그래밍_네트워크/포트.md", "reason": "local_modified"}, "ts": 1776788510.6403022}
+{"id": "6111f5e0bd774b879a9c4c847030a5c3", "resolved": true, "ts": 1776788510.6413004}
+{"id": "2b662df69eec4a11a470a09cd3b861ba", "action": {"type": "upload", "path": "프로그래밍_네트워크/프록시.md", "reason": "local_modified"}, "ts": 1776788510.6423004}
+{"id": "2b662df69eec4a11a470a09cd3b861ba", "resolved": true, "ts": 1776788510.6443028}
+{"id": "bc1185b770d546bcb91041fe521a3c85", "action": {"type": "upload", "path": "프로그래밍_네트워크/WebSocket.md", "reason": "local_modified"}, "ts": 1776788510.645301}
+{"id": "bc1185b770d546bcb91041fe521a3c85", "resolved": true, "ts": 1776788510.6463013}
+{"id": "111c96257af84743bfcb9673a9abe7cc", "action": {"type": "upload", "path": "프로그래밍_네트워크/REST_API.md", "reason": "local_modified"}, "ts": 1776788510.6473012}
+{"id": "111c96257af84743bfcb9673a9abe7cc", "resolved": true, "ts": 1776788510.648808}
+{"id": "753e71e443614766b911c6686730de00", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/LSP (Liskov Substitution).md", "reason": "local_modified"}, "ts": 1776788510.649816}
+{"id": "753e71e443614766b911c6686730de00", "resolved": true, "ts": 1776788510.6518164}
+{"id": "62715fcceddb46ff867478bdfff84dab", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/SOLID_ O와 D의 차이.md", "reason": "local_modified"}, "ts": 1776788510.6528146}
+{"id": "62715fcceddb46ff867478bdfff84dab", "resolved": true, "ts": 1776788510.6538148}
+{"id": "0534b9323a50429bbb50866cbe782176", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/OCP (개방 폐쇄 원칙).md", "reason": "local_modified"}, "ts": 1776788510.6548142}
+{"id": "0534b9323a50429bbb50866cbe782176", "resolved": true, "ts": 1776788510.6568172}
+{"id": "f108710934d44c69a89f0f3860255859", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/SOLID원칙.md", "reason": "local_modified"}, "ts": 1776788510.6578162}
+{"id": "f108710934d44c69a89f0f3860255859", "resolved": true, "ts": 1776788510.658815}
+{"id": "86ec15d6442845bbbaf0acf6a39e3bdb", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/SOLID_index.md", "reason": "local_modified"}, "ts": 1776788510.659815}
+{"id": "86ec15d6442845bbbaf0acf6a39e3bdb", "resolved": true, "ts": 1776788510.660815}
+{"id": "d269cf4025e2418d890b289c512d4633", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Adapter 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6618147}
+{"id": "d269cf4025e2418d890b289c512d4633", "resolved": true, "ts": 1776788510.663816}
+{"id": "52c6f022d5e64c8dab350ddaffb89e82", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Builder 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6648157}
+{"id": "52c6f022d5e64c8dab350ddaffb89e82", "resolved": true, "ts": 1776788510.6658154}
+{"id": "0343b8194ed74c48a4af988994a9e829", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Chain of Responsibility 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6668198}
+{"id": "0343b8194ed74c48a4af988994a9e829", "resolved": true, "ts": 1776788510.6688142}
+{"id": "fc47496ebbbc46bfbe977fb075b25c85", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/SRP (단일 책임 원칙).md", "reason": "local_modified"}, "ts": 1776788510.6698148}
+{"id": "fc47496ebbbc46bfbe977fb075b25c85", "resolved": true, "ts": 1776788510.6708162}
+{"id": "e46aa9ccd3314594afa715afddeef705", "action": {"type": "upload", "path": "프로그래밍_설계원칙/SOLID 원칙/역할별 인터페이스 분리(SOLID ISP).md", "reason": "local_modified"}, "ts": 1776788510.671816}
+{"id": "e46aa9ccd3314594afa715afddeef705", "resolved": true, "ts": 1776788510.6738153}
+{"id": "003cc8c62995460282ca43c62fd38268", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Facade 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6748152}
+{"id": "003cc8c62995460282ca43c62fd38268", "resolved": true, "ts": 1776788510.6758158}
+{"id": "7b4d55597e194752869e5af9cc245aa2", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Factory 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6768155}
+{"id": "7b4d55597e194752869e5af9cc245aa2", "resolved": true, "ts": 1776788510.677816}
+{"id": "8e0ecddf7572493d9dbfb602131d52df", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Iterator 패턴(순회).md", "reason": "local_modified"}, "ts": 1776788510.6788156}
+{"id": "8e0ecddf7572493d9dbfb602131d52df", "resolved": true, "ts": 1776788510.679816}
+{"id": "2eaed7fb0ccc424eb9297012926c6aa3", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Command 패턴(요청의 객체화).md", "reason": "local_modified"}, "ts": 1776788510.6808157}
+{"id": "2eaed7fb0ccc424eb9297012926c6aa3", "resolved": true, "ts": 1776788510.6828172}
+{"id": "8313a23b7bfa41f5848f745ee16e7151", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Decorator 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6838176}
+{"id": "8313a23b7bfa41f5848f745ee16e7151", "resolved": true, "ts": 1776788510.6848183}
+{"id": "8431610916fa47deb8f504fd1a8603db", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Observer 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6858172}
+{"id": "8431610916fa47deb8f504fd1a8603db", "resolved": true, "ts": 1776788510.6878161}
+{"id": "6526341c5d67431cb385a4344e195ff9", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Mediator 패턴(중재자).md", "reason": "local_modified"}, "ts": 1776788510.6888173}
+{"id": "6526341c5d67431cb385a4344e195ff9", "resolved": true, "ts": 1776788510.6898167}
+{"id": "0c1a91b70cb048579bb320253dfbad2d", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Proxy 패턴(대리 처리).md", "reason": "local_modified"}, "ts": 1776788510.6908174}
+{"id": "0c1a91b70cb048579bb320253dfbad2d", "resolved": true, "ts": 1776788510.691816}
+{"id": "8da8cda9a9624e7c8cd702fc1db7be39", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Pub-Sub 패턴.md", "reason": "local_modified"}, "ts": 1776788510.6928155}
+{"id": "8da8cda9a9624e7c8cd702fc1db7be39", "resolved": true, "ts": 1776788510.6948166}
+{"id": "c54e15006a464653b227d27742fa81e1", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/State 패턴.md", "reason": "local_modified"}, "ts": 1776788510.695815}
+{"id": "c54e15006a464653b227d27742fa81e1", "resolved": true, "ts": 1776788510.6968164}
+{"id": "ac4e36a8f4334434b72d9d75c6693e7b", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Repository 패턴(데이터 접근 통일).md", "reason": "local_modified"}, "ts": 1776788510.6978166}
+{"id": "ac4e36a8f4334434b72d9d75c6693e7b", "resolved": true, "ts": 1776788510.6988163}
+{"id": "12dfb9b31cdb4181b22d2d624bfe6375", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Template Method 패턴.md", "reason": "local_modified"}, "ts": 1776788510.7008247}
+{"id": "12dfb9b31cdb4181b22d2d624bfe6375", "resolved": true, "ts": 1776788510.7028182}
+{"id": "f2ceefa5f33f441eb0ef377235b9623e", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Singleton 패턴.md", "reason": "local_modified"}, "ts": 1776788510.7038178}
+{"id": "f2ceefa5f33f441eb0ef377235b9623e", "resolved": true, "ts": 1776788510.7048182}
+{"id": "3fc760cadc244583b315c7290845db38", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/Strategy 패턴.md", "reason": "local_modified"}, "ts": 1776788510.7058177}
+{"id": "3fc760cadc244583b315c7290845db38", "resolved": true, "ts": 1776788510.7078166}
+{"id": "b735b25e63be400f8bc6f3df1e7c97ea", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/API Gateway 패턴.md", "reason": "local_modified"}, "ts": 1776788510.7088182}
+{"id": "b735b25e63be400f8bc6f3df1e7c97ea", "resolved": true, "ts": 1776788510.7098176}
+{"id": "b8f1a7e4c9584452aea85b06675487f6", "action": {"type": "upload", "path": "프로그래밍_설계원칙/디자인패턴/디자인패턴_index.md", "reason": "local_modified"}, "ts": 1776788510.710817}
+{"id": "b8f1a7e4c9584452aea85b06675487f6", "resolved": true, "ts": 1776788510.712817}
+{"id": "e9bdb1bdb9a74d0a8633033d4ed7573b", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/CQRS 패턴.md", "reason": "local_modified"}, "ts": 1776788510.7138174}
+{"id": "e9bdb1bdb9a74d0a8633033d4ed7573b", "resolved": true, "ts": 1776788510.7148175}
+{"id": "5453cbbf3729436aba3a9fcdf5a0c7f8", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/MVC 패턴.md", "reason": "local_modified"}, "ts": 1776788510.7168193}
+{"id": "5453cbbf3729436aba3a9fcdf5a0c7f8", "resolved": true, "ts": 1776788510.718819}
+{"id": "52c560d8df7a4327aa5e27213f3595ad", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/Event-Driven 아키텍처.md", "reason": "local_modified"}, "ts": 1776788510.7198188}
+{"id": "52c560d8df7a4327aa5e27213f3595ad", "resolved": true, "ts": 1776788510.7208183}
+{"id": "62d7155adb3e4bb2b0862651c21eb65f", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/Microservices vs Monolith.md", "reason": "local_modified"}, "ts": 1776788510.7218192}
+{"id": "62d7155adb3e4bb2b0862651c21eb65f", "resolved": true, "ts": 1776788510.7238202}
+{"id": "8d8cc1ff1ff64bc3ba56d7bd80aec577", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/Orchestrator-Worker 아키텍처.md", "reason": "local_modified"}, "ts": 1776788510.7248182}
+{"id": "8d8cc1ff1ff64bc3ba56d7bd80aec577", "resolved": true, "ts": 1776788510.7258186}
+{"id": "e4249f734dd641179a71371f8d0535b2", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/Pipeline 아키텍처.md", "reason": "local_modified"}, "ts": 1776788510.7268176}
+{"id": "e4249f734dd641179a71371f8d0535b2", "resolved": true, "ts": 1776788510.7288175}
+{"id": "2e979324d05d46e3acee915aa8c127be", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/아키텍처패턴_index.md", "reason": "local_modified"}, "ts": 1776788510.7298203}
+{"id": "2e979324d05d46e3acee915aa8c127be", "resolved": true, "ts": 1776788510.7318182}
+{"id": "82d41858ea244d1393a5beb70e4e655b", "action": {"type": "upload", "path": "프로그래밍_설계원칙/아키텍처패턴/Pub-Sub 아키텍처.md", "reason": "local_modified"}, "ts": 1776788510.7328198}
+{"id": "82d41858ea244d1393a5beb70e4e655b", "resolved": true, "ts": 1776788510.7348275}
+{"id": "8a5080379f8f443f91f93f5468a9fd5e", "action": {"type": "upload", "path": "프로그래밍_설계원칙/코딩 앱 설계 원칙/YAGNI (필요할 때 만든다).md", "reason": "local_modified"}, "ts": 1776788510.7358263}
+{"id": "8a5080379f8f443f91f93f5468a9fd5e", "resolved": true, "ts": 1776788510.737827}
+{"id": "1d35a6887ba741468e3f54ce70e95fc8", "action": {"type": "upload", "path": "프로그래밍_설계원칙/코딩 앱 설계 원칙/코딩 앱 설계 원칙_index.md", "reason": "local_modified"}, "ts": 1776788510.7388282}
+{"id": "1d35a6887ba741468e3f54ce70e95fc8", "resolved": true, "ts": 1776788510.739828}
+{"id": "115137657600436299bcf2041db230ee", "action": {"type": "upload", "path": "프로그래밍_설계원칙/코딩 앱 설계 원칙/Composition over Inheritance.md", "reason": "local_modified"}, "ts": 1776788510.7408268}
+{"id": "115137657600436299bcf2041db230ee", "resolved": true, "ts": 1776788510.7428267}
+{"id": "58dafb3d2e5444498a4bf74ecb706200", "action": {"type": "upload", "path": "프로그래밍_설계원칙/코딩 앱 설계 원칙/_Index_of_코딩 앱 설계 원칙.md", "reason": "local_modified"}, "ts": 1776788510.7438293}
+{"id": "58dafb3d2e5444498a4bf74ecb706200", "resolved": true, "ts": 1776788510.7448268}
+{"id": "d46a48990337465288a98fa45fd95c52", "action": {"type": "upload", "path": "프로그래밍_설계원칙/코딩 앱 설계 원칙/12-Factor App.md", "reason": "local_modified"}, "ts": 1776788510.745829}
+{"id": "d46a48990337465288a98fa45fd95c52", "resolved": true, "ts": 1776788510.746826}
+{"id": "20c0f29d255c42e8a74508a22acf02f1", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/_Index_of_프로젝트_슈퍼개발자프로젝트.md", "reason": "local_modified"}, "ts": 1776788510.7493417}
+{"id": "20c0f29d255c42e8a74508a22acf02f1", "resolved": true, "ts": 1776788510.7503436}
+{"id": "73d91a1d233648d4acb4a3b5c1479e52", "action": {"type": "upload", "path": "프로그래밍_환경설정/Untitled", "reason": "local_modified"}, "ts": 1776788510.7523422}
+{"id": "73d91a1d233648d4acb4a3b5c1479e52", "resolved": true, "ts": 1776788510.7533433}
+{"id": "89f2542f7d0c496ea5a610e1f46c45fd", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/첨부파일/Gemini_Generated_Image_tfxrgstfxrgstfxr.png", "reason": "local_modified"}, "ts": 1776788510.7543447}
+{"id": "89f2542f7d0c496ea5a610e1f46c45fd", "resolved": true, "ts": 1776788510.777343}
+{"id": "5cd04a7e84984126983fe53b3ff5496e", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260420200731.png", "reason": "local_modified"}, "ts": 1776788510.778345}
+{"id": "5cd04a7e84984126983fe53b3ff5496e", "resolved": true, "ts": 1776788510.7803428}
+{"id": "5cee21f38e7440c990ebbe9c80bcd633", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260421190448.png", "reason": "local_modified"}, "ts": 1776788510.7813444}
+{"id": "5cee21f38e7440c990ebbe9c80bcd633", "resolved": true, "ts": 1776788510.783346}
+{"id": "13b5a328acc043269bf1e39fd527bbd8", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260421223746.png", "reason": "local_modified"}, "ts": 1776788510.7843437}
+{"id": "13b5a328acc043269bf1e39fd527bbd8", "resolved": true, "ts": 1776788510.7863436}
+{"id": "86c1bd8e6a424534acb2a585b968b1a4", "action": {"type": "upload", "path": "프로젝트_슈퍼개발자프로젝트/첨부파일/제목 없는 디자인 (3).png", "reason": "local_modified"}, "ts": 1776788510.7873435}
+{"id": "86c1bd8e6a424534acb2a585b968b1a4", "resolved": true, "ts": 1776788510.795343}
