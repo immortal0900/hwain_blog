@@ -451,7 +451,7 @@ Planner는 기획자다. 세션을 **2개로 쪼개어** 운영한다.
 
 **Mode D**: 사용자가 텍스트로 전달사항을 주는 경우에는 세션이 새로 열리고, 기존 작업물과 사용자 지시문을 함께 읽는다. 계획이 매번 바뀌지 않도록 `spec.md`는 한 번 생성되면 모든 에이전트가 수정 불가지만, **Mode D만은 예외적으로 수정을 허용**한다.
 
-> 📎 **Planner I/O 상세 스펙**은 글 끝 부록 참조.
+> 📎 [[#부록 Planner I/O 상세 스펙]]은 글 끝 부록 참조.
 
 ### Generator Agent: 편집자
 
@@ -646,3 +646,15 @@ Planner는 원래 작업을 하면 안 된다.
 
 그래서 다음 글은 MEMEX다.
 
+
+---
+
+## 부록: Planner I/O 상세 스펙
+
+| 구분 | Mode A (생성) | Mode B (리뷰) | Mode C (Sprint Contract) |
+| --- | --- | --- | --- |
+| **트리거** | `spec.md` 없음 + 사용자 요청 | `spec.md` 존재 (`--plan` 포함) | `sprint-contract.md` 없음 (매 스프린트 시작) |
+| **호출 빈도** | 프로젝트당 1회 | 프로젝트당 0~1회 (A 경로면 호출 안 됨) | 프로젝트당 N회 (스프린트 수만큼) |
+| **읽음** | • 사용자 요청 <br>• `templates/INDEX.md` <br>• 선정된 `templates/*.md` | • `artifacts/spec.md` <br>• `artifacts/specs/*.md` (있으면) <br>• `templates/INDEX.md` <br>• 선정된 `templates/*.md` | • `artifacts/spec.md` <br>• `artifacts/specs/*.md` <br>• `artifacts/progress-log.md` (2번째~) <br>• `artifacts/sprint-*-done.md` (이전 완료분) <br>• `templates/sprint-contract-template.md` <br>• `templates/INDEX.md` (specs/ 비었을 때만) |
+| **생성** | • `artifacts/spec.md` <br>• `artifacts/specs/*.md` | • `artifacts/plan-review.md` (READY / NEEDS_REVISION) <br>• `artifacts/specs/*.md` (specs/ 비었을 때) | • `artifacts/sprint-contract.md` (frontmatter + 본문) <br>• `artifacts/specs/*.md` (specs/ 비었을 때 예외) |
+| **Fallback 규칙** | 템플릿 없거나 매칭 안 되면 `spec.md` 내용만으로 specs 생성 | A와 동일 | A와 동일 (specs/ 비어있을 때만 예외 적용) |
