@@ -1,7 +1,1939 @@
 {
-  "version": 1,
+  "version": 2,
   "device_id": "desktopimmortal",
-  "page_token": "1428697",
+  "page_token": "1441734",
   "last_synced_at": null,
-  "files": {}
+  "known_device_ids": [
+    "desktopimmortal"
+  ],
+  "files": {
+    "_Index_of_content.md": {
+      "mtime": 1776788307.6045945,
+      "size": 691,
+      "drive_id": "1xNmbc7NA1zvj5VowmINloX7_cGmAtgUJ",
+      "version": {
+        "desktopi": 1776788312623
+      },
+      "md5": "1b68cb6950d716adf4952ab8d6e9fd46"
+    },
+    "index.md": {
+      "mtime": 1776600665.13195,
+      "size": 49,
+      "drive_id": "1e4LNZHyhgcKUEfezu8IVPGlACgAAxy-T",
+      "version": {
+        "desktopi": 1776631384669
+      },
+      "deleted": true,
+      "deleted_at": 1776631384.6690006
+    },
+    "프로그래밍_Agent/AI AGENT TASK 분해 기준 단위.md": {
+      "mtime": 1776740053.2655203,
+      "size": 2789,
+      "drive_id": "1L__g3dsBBhBNM-GAvAtHjYOYaHrA4J4-",
+      "version": {
+        "desktopi": 1776743013360
+      },
+      "md5": "310d8832d33477618d76b81e6d76a1fe"
+    },
+    "프로그래밍_Agent/LLM Integration(통합)과 Inference Pipeline(추론 파이프라인).md": {
+      "mtime": 1776740105.1157422,
+      "size": 5024,
+      "drive_id": "1kUi_vOhusTdcYTVe_CL3WgoDJB7Q8BWQ",
+      "version": {
+        "desktopi": 1776743015807
+      },
+      "md5": "05bd6ba52b5964b176adb7b669e736ef"
+    },
+    "프로그래밍_Agent/ReAct vs CoT의 핵심 차이.md": {
+      "mtime": 1776740156.1837876,
+      "size": 4227,
+      "drive_id": "11lBbl7WvgYx4YW7zifWQ1u-XqUBBoU1a",
+      "version": {
+        "desktopi": 1776743017980
+      },
+      "md5": "a5fbb47a67dff26a8122da022d123eee"
+    },
+    "프로그래밍_Agent/_Index_of_프로그래밍_Agent.md": {
+      "mtime": 1776600673.1210017,
+      "size": 877,
+      "drive_id": "1GYkzsdx5jLZHni9uvNL2GPQcJVRW8eYx",
+      "version": {
+        "desktopi": 1776743331718
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.71838
+    },
+    "프로그래밍_Agent/langchain_with_structured_output의 강제력.md": {
+      "mtime": 1776740213.0995336,
+      "size": 5353,
+      "drive_id": "10sTj0H5T_2SC07XL2yEfjcTF-DtRAOmy",
+      "version": {
+        "desktopi": 1776743022613
+      },
+      "md5": "e1f3de2b61b208e4009a532d27aaf7a0"
+    },
+    "프로그래밍_Agent/langgraph_invoke()+래핑(Wrapping).md": {
+      "mtime": 1776740268.2408817,
+      "size": 5866,
+      "drive_id": "1HMIB5KYWSCRXnKFNe37Zsqe4kJ0OtelU",
+      "version": {
+        "desktopi": 1776743024720
+      },
+      "md5": "2af63b6b6d182e8aa166db082e9f7ec6"
+    },
+    "프로그래밍_Agent/vLLM 핵심장점.md": {
+      "mtime": 1776740332.6290267,
+      "size": 7017,
+      "drive_id": "1PfTK-h9hUch3ZlasWu50ydMJAuWpwl-T",
+      "version": {
+        "desktopi": 1776743026896
+      },
+      "md5": "8321a7ce4fcffd5e555b88eff704ab88"
+    },
+    "프로그래밍_Agent/with_structured_output.md": {
+      "mtime": 1776740396.897468,
+      "size": 6736,
+      "drive_id": "1YFqyxoXUxlpSzEQKKAXYqaZPspf48iFa",
+      "version": {
+        "desktopi": 1776743029098
+      },
+      "md5": "2b01a542ca6b00eee12078239823757e"
+    },
+    "프로그래밍_DevOps 인프라/CI CD 파이프라인.md": {
+      "mtime": 1776737965.2641306,
+      "size": 7958,
+      "drive_id": "1YqZeHXsyPvz1IILUekJQ4MkC_xJNQ1dg",
+      "version": {
+        "desktopi": 1776743044969
+      },
+      "md5": "f8aff74dabbb96615b72a0573138c467"
+    },
+    "프로그래밍_DevOps 인프라/GitHub Actions.md": {
+      "mtime": 1776738048.8499973,
+      "size": 12216,
+      "drive_id": "11RoAVkWaPhFfxfKmr9SZoURS5xl51V1Q",
+      "version": {
+        "desktopi": 1776743047238
+      },
+      "md5": "0420f72fdc62a0d022d1f6669e70e818"
+    },
+    "프로그래밍_DevOps 인프라/_Index_of_프로그래밍_DevOps 인프라.md": {
+      "mtime": 1776600679.0821848,
+      "size": 292,
+      "drive_id": "1MT0CKvdBhsAke5acFM3vBHdozvW_MMFb",
+      "version": {
+        "desktopi": 1776743331723
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7233808
+    },
+    "프로그래밍_Fine-tunning/GGUF란_가중치,토크나이저, 모델구조를 파일 하나로.md": {
+      "mtime": 1776737695.897307,
+      "size": 7629,
+      "drive_id": "1tHFtwA72j1Y4cux6WJrVcct6YhvWaXYh",
+      "version": {
+        "desktopi": 1776743051118
+      },
+      "md5": "22c455b4b4c562df9b5a99445d5f24eb"
+    },
+    "프로그래밍_Fine-tunning/LoRA vs DoRA.md": {
+      "mtime": 1776737770.392,
+      "size": 9639,
+      "drive_id": "1lbdrlnhIpFcpFoIHAu29Tfe8fWkwATbm",
+      "version": {
+        "desktopi": 1776743053416
+      },
+      "md5": "64af6a044ca5f8217202f52a90f7a3fb"
+    },
+    "프로그래밍_Fine-tunning/_Index_of_프로그래밍_Fine-tunning.md": {
+      "mtime": 1776600682.4265056,
+      "size": 464,
+      "drive_id": "1FVeFGY19Grx_3pVFUcZyA54Rfm2C1F9U",
+      "version": {
+        "desktopi": 1776743331727
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7273822
+    },
+    "프로그래밍_Fine-tunning/파인튜닝 종합정리.md": {
+      "mtime": 1776737899.2521005,
+      "size": 17631,
+      "drive_id": "1fTMsGeqh2hvN8f0VjxSuE_9SzhVxXjuw",
+      "version": {
+        "desktopi": 1776743060113
+      },
+      "md5": "3f39d997d376a094cfcee62212c5b573"
+    },
+    "프로그래밍_Python/Python_basic/_Index_of_Python_basic.md": {
+      "mtime": 1776600683.9275637,
+      "size": 579,
+      "drive_id": "1ENhBAmCs157ORC0vJqOtDSjOBB3D1UQo",
+      "version": {
+        "desktopi": 1776743331732
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7323804
+    },
+    "프로그래밍_Python/Python_basic/isinstance랑 getattr.md": {
+      "mtime": 1776735848.7625556,
+      "size": 6688,
+      "drive_id": "1_D6VhN2UgFKI8_Doe-klo2pR6FVRW7sk",
+      "version": {
+        "desktopi": 1776743077652
+      },
+      "md5": "5b752863d8e48ffea7c5565ae47f1688"
+    },
+    "프로그래밍_Python/Python_basic/파이썬에서 () 소괄호와 [] 대괄호.md": {
+      "mtime": 1776735854.4191754,
+      "size": 7050,
+      "drive_id": "1JXU7onoLig5a70xL2prcWtqufPCB6NO9",
+      "version": {
+        "desktopi": 1776743079704
+      },
+      "md5": "1eef57f81610bc3a98f987180f9cae7c"
+    },
+    "프로그래밍_Python/Python_basic/파이썬에서 `.`, `대괄호`의 쓰임(내부에 있는 무언가를 지칭한다).md": {
+      "mtime": 1776735862.4123864,
+      "size": 8111,
+      "drive_id": "126HHZhrjgKyyBMzAbqDVOUkw8eIuJsM-",
+      "version": {
+        "desktopi": 1776743081871
+      },
+      "md5": "3252a3918b838cf8641340b8fbc6832f"
+    },
+    "프로그래밍_Python/Python_class/_Index_of_Python_class.md": {
+      "mtime": 1776600689.3745189,
+      "size": 1035,
+      "drive_id": "1vJscHx1gRomWmSBRrMTHTE_uvqDbcLD7",
+      "version": {
+        "desktopi": 1776743331736
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7363882
+    },
+    "프로그래밍_Python/Python_class/class_@abstractmethod_추상 클래스.md": {
+      "mtime": 1776736357.5064173,
+      "size": 12468,
+      "drive_id": "13xwZqncKH2urkHckbmFKssOJUuMhR9aJ",
+      "version": {
+        "desktopi": 1776743085187
+      },
+      "md5": "143f758991d1ec482a3de49d63f08b64"
+    },
+    "프로그래밍_Python/Python_class/class_`__init__`.md": {
+      "mtime": 1776736031.546846,
+      "size": 10375,
+      "drive_id": "18vJYFjwZpV5fa7Eir6LujFQt94r3HTUJ",
+      "version": {
+        "desktopi": 1776743087529
+      },
+      "md5": "908035fc0a9590bfd1a20a53d0b64846"
+    },
+    "프로그래밍_Python/Python_class/class_다중상속(부모를 여럿두는것).md": {
+      "mtime": 1776736528.2982733,
+      "size": 10552,
+      "drive_id": "1pFGNu8QMVzYeKdHS3acx5jtJSO4HuEhB",
+      "version": {
+        "desktopi": 1776743089643
+      },
+      "md5": "56171b416e4206d566f3a6e5c054e0bf"
+    },
+    "프로그래밍_Python/Python_class/class_상속시`super()` 사용.md": {
+      "mtime": 1776736613.9846697,
+      "size": 11439,
+      "drive_id": "1C5H3mDK0KPflHBtQJzbNLJqROXFvrM5a",
+      "version": {
+        "desktopi": 1776743091802
+      },
+      "md5": "e91fa04366eed116d90a43b6459fc6f2"
+    },
+    "프로그래밍_Python/Python_class/class_오버라이딩.md": {
+      "mtime": 1776736446.953282,
+      "size": 12108,
+      "drive_id": "1nwfveWzkMjWXut0PYTfVDFdugdlU239i",
+      "version": {
+        "desktopi": 1776743094121
+      },
+      "md5": "43ad203d9f3243b331d1bfaf4a0dbdd8"
+    },
+    "프로그래밍_Python/Python_class/class_인스턴스.md": {
+      "mtime": 1776735954.3085122,
+      "size": 8707,
+      "drive_id": "1O3RW8GTzoumyQAdqZl69VNqc7f7h4iGJ",
+      "version": {
+        "desktopi": 1776743096391
+      },
+      "md5": "2360a4ad84e4624fe6c8ac0abe494f66"
+    },
+    "프로그래밍_Python/Python_class/class_타입힌트.md": {
+      "mtime": 1776736264.8516977,
+      "size": 10221,
+      "drive_id": "1fdC-UznQdzoSAQJo1UGhjsldOsC9HWPe",
+      "version": {
+        "desktopi": 1776743098764
+      },
+      "md5": "5f1126c0a95033f2a3bd49f8b7e69eea"
+    },
+    "프로그래밍_Python/Python_class/class_파라미터.md": {
+      "mtime": 1776736188.1628993,
+      "size": 11348,
+      "drive_id": "17Df7vUBUtZM08DyZErCH-IjhUGIbbTlx",
+      "version": {
+        "desktopi": 1776743100992
+      },
+      "md5": "4c88b511c8fcdb9fd5d08bb6fe85e304"
+    },
+    "프로그래밍_Python/Python_class/class에서 self. 필요성.md": {
+      "mtime": 1776736106.4047585,
+      "size": 9851,
+      "drive_id": "1e0TvZeuKmqxwyZFSDm0NYurAMVrUT5WO",
+      "version": {
+        "desktopi": 1776743103386
+      },
+      "md5": "2a7cb29a4ee742a65e5aab021fab49bf"
+    },
+    "프로그래밍_Python/Python_모듈과 객체/_Index_of_Python_모듈과 객체.conflict-desktopimmortal-20260419-031626.md": {
+      "mtime": 1776600697.7758615,
+      "size": 222,
+      "drive_id": "1-mACPWKjSt_soAnuvyqZXK0QgnShbBEX",
+      "version": {
+        "desktopi": 1776743331741
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7413802
+    },
+    "프로그래밍_Python/Python_모듈과 객체/_Index_of_Python_모듈과 객체.md": {
+      "mtime": 1776600698.761615,
+      "size": 430,
+      "drive_id": "1AbYg6JPPWQ20yq3ppaNL89gYWYYN-_ui",
+      "version": {
+        "desktopi": 1776743331746
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7463808
+    },
+    "프로그래밍_Python/Python_모듈과 객체/모듈과 객체.md": {
+      "mtime": 1776735958.2139988,
+      "size": 46537,
+      "drive_id": "1V3-X20LU4c2ggnhs33ihvqEhiTRXBA3G",
+      "version": {
+        "desktopi": 1776743109063
+      },
+      "md5": "7ed3d5e341cfd315c78849e37f6a459c"
+    },
+    "프로그래밍_Python/Python_함수/@데코레이터.md": {
+      "mtime": 1776736664.0933094,
+      "size": 16153,
+      "drive_id": "1ZkWVIHu4B04WRohDc0t19t0TExNsuLCN",
+      "version": {
+        "desktopi": 1776743111324
+      },
+      "md5": "eafdf14d267416fdd966e0f0f0750e4e"
+    },
+    "프로그래밍_Python/Python_함수/_Index_of_Python_함수.md": {
+      "mtime": 1776600702.037928,
+      "size": 976,
+      "drive_id": "1rMTOTFcXeCHFNSxW-tf6AqgZlwY06kN0",
+      "version": {
+        "desktopi": 1776743331749
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7493806
+    },
+    "프로그래밍_Python/Python_함수/lambda와 순회함수.md": {
+      "mtime": 1776736433.1949122,
+      "size": 9255,
+      "drive_id": "1tgoBjlk3b9dIVuNT30CE7v8e-ZL_qVud",
+      "version": {
+        "desktopi": 1776743114947
+      },
+      "md5": "229ec20d333e9bf1f32e63b32b8ef2cf"
+    },
+    "프로그래밍_Python/Python_함수/반환 타입 힌트(화살표➡️).md": {
+      "mtime": 1776736030.620635,
+      "size": 6893,
+      "drive_id": "1408EFvetiW8ODXu0taImN-8f78MURnfo",
+      "version": {
+        "desktopi": 1776743116985
+      },
+      "md5": "6fd6f4677325a23dfe6c75ba0c6cfb4f"
+    },
+    "프로그래밍_Python/Python_함수/클로저(Closure)란.md": {
+      "mtime": 1776736533.8777041,
+      "size": 12830,
+      "drive_id": "1FZB_48z-zsrYPD3MZ_E8dDkaKQTWgSzd",
+      "version": {
+        "desktopi": 1776743119146
+      },
+      "md5": "3e2c1526f98abcb3a5b0ac80ea882f33"
+    },
+    "프로그래밍_Python/Python_함수/함수(별args, 별별kwargs).md": {
+      "mtime": 1776736202.689648,
+      "size": 9328,
+      "drive_id": "1M5OjfAnyaTyv1bsB8O_lOlZFGWz2bqI8",
+      "version": {
+        "desktopi": 1776743121287
+      },
+      "md5": "18e6030f0527ef7b58a5d05cbcaddee7"
+    },
+    "프로그래밍_Python/Python_함수/함수경로(=none 의 의미).md": {
+      "mtime": 1776736284.102411,
+      "size": 10186,
+      "drive_id": "1vLX1b49yuZapk-1aijdQF2MoPg72lix2",
+      "version": {
+        "desktopi": 1776743123387
+      },
+      "md5": "536ab960005c418cb930db7786ff0013"
+    },
+    "프로그래밍_Python/Python_함수/함수의 반환값을 파라미터로 넣기.md": {
+      "mtime": 1776736355.0313725,
+      "size": 8607,
+      "drive_id": "17cOWW6Qr511wXGSEbZ7_ocbdaqqKZtnY",
+      "version": {
+        "desktopi": 1776743125454
+      },
+      "md5": "a51bbb3288e6e8e6af4b7fc890929820"
+    },
+    "프로그래밍_Python/Python_함수/함수의 타입 힌트.md": {
+      "mtime": 1776736124.1594357,
+      "size": 9614,
+      "drive_id": "1b4tE8n8Ab4a4xXbHU8t9vTXjCBdDa5Ld",
+      "version": {
+        "desktopi": 1776743127731
+      },
+      "md5": "67cbb9f60d6a85526ccbb0faf3c66a3a"
+    },
+    "프로그래밍_RAG/BM25와 PGroonga의 관계.md": {
+      "mtime": 1776737926.5194018,
+      "size": 7841,
+      "drive_id": "14Ey2tRg3k-SVivJ0mSYh4w5WnCvhmWVn",
+      "version": {
+        "desktopi": 1776743129800
+      },
+      "md5": "5817e823e3555b93f2b3834a3abb87f4"
+    },
+    "프로그래밍_RAG/GRAPH RAG/BERT엔티티추출BIO란.md": {
+      "mtime": 1776736551.5371082,
+      "size": 2298,
+      "drive_id": "1waIIg1fNHFTfemzRpn3msZJhTscaPY0V",
+      "version": {
+        "desktopi": 1776743131842
+      },
+      "md5": "9817ba5909d30927bf22276d1a05fe72"
+    },
+    "프로그래밍_RAG/GRAPH RAG/Graph DB의 중복방지.md": {
+      "mtime": 1776736597.2374494,
+      "size": 2750,
+      "drive_id": "10_7JiFNaPxswSZR-0YFQB8s-YwyT_HpQ",
+      "version": {
+        "desktopi": 1776743133961
+      },
+      "md5": "51499c6af2ddbad222ad2abcfa86a807"
+    },
+    "프로그래밍_RAG/GRAPH RAG/_Index_of_GRAPH RAG.md": {
+      "mtime": 1776503847.716586,
+      "size": 944,
+      "drive_id": "1ZedywacDIMWPeCsKpz5V-MpQ0y_E6Y3E",
+      "version": {
+        "desktopi": 1776743136137
+      },
+      "md5": "464a84f11f089806bc681d82d35fb879"
+    },
+    "프로그래밍_RAG/GRAPH RAG/graph rag의 저장과 검색.md": {
+      "mtime": 1776736658.115374,
+      "size": 3829,
+      "drive_id": "1-v4HD010idK-ziV2oLBekuygfJJmW0JH",
+      "version": {
+        "desktopi": 1776743138231
+      },
+      "md5": "6e5a0c535a75ddf4ca6f1b7370ff4e62"
+    },
+    "프로그래밍_RAG/GRAPH RAG/hybride graph rag시 vector 기반 엔티티 추출이면 벡터 검색을 안해도 되는가.md": {
+      "mtime": 1776736695.8544908,
+      "size": 2445,
+      "drive_id": "1aWlTMCasFkNUmf-JoQuOz_dyHdUdNhLs",
+      "version": {
+        "desktopi": 1776743140405
+      },
+      "md5": "e191f79b91af0cf17d8459b87180c8ea"
+    },
+    "프로그래밍_RAG/GRAPH RAG/neo4j에 벡터 저장이 가능한지.md": {
+      "mtime": 1776736752.8211694,
+      "size": 5382,
+      "drive_id": "1tnW6PipE5QEUjhVtp4TgoT0YixNk1p8u",
+      "version": {
+        "desktopi": 1776743142383
+      },
+      "md5": "6a642da32b39b1f9f3b457adff00bc8a"
+    },
+    "프로그래밍_RAG/GRAPH RAG/엔티티 추출방식 비교.md": {
+      "mtime": 1776736809.3744204,
+      "size": 4756,
+      "drive_id": "1Rok9DLqmOn0iemo_nhV4yQhqPh1N4mrb",
+      "version": {
+        "desktopi": 1776743144370
+      },
+      "md5": "d5451732dbf739aef5f0bdb64a20aae7"
+    },
+    "프로그래밍_RAG/GRAPH RAG/전용 RAG DB를 외부 LLM 호출시 사용.md": {
+      "mtime": 1776736849.4580517,
+      "size": 2916,
+      "drive_id": "1q69BqpE-6gRl79TyocNPkKcoUHg8KloE",
+      "version": {
+        "desktopi": 1776743146604
+      },
+      "md5": "6932ac39bcf06a026a92953caab9a4ff"
+    },
+    "프로그래밍_RAG/Graph rag.md": {
+      "mtime": 1776600716.8933778,
+      "size": 329,
+      "drive_id": "1urMfMoE8X9LMriiPYSQgnh4UX6uWQdA7",
+      "version": {
+        "desktopi": 1776600478133
+      },
+      "md5": "c3acca9b2d8e54ec43fe7c99a8dbfc3c"
+    },
+    "프로그래밍_RAG/RAG_basic/BGE-M3.md": {
+      "mtime": 1776737461.7804577,
+      "size": 8468,
+      "drive_id": "1PEPe1UwDMvSN-60EE1qXHetiBwh6zzO9",
+      "version": {
+        "desktopi": 1776743148601
+      },
+      "md5": "5be91a266eb90266330d46b5e4368951"
+    },
+    "프로그래밍_RAG/RAG_basic/RAG_rangchain 이외에 다른 방식.md": {
+      "mtime": 1776738108.9077687,
+      "size": 10639,
+      "drive_id": "1aQIlhTu6hkCrDmZl68DGiKIh2bnOFXQ_",
+      "version": {
+        "desktopi": 1776743150730
+      },
+      "md5": "1e288fb3795ef08b58745b454be9e87b"
+    },
+    "프로그래밍_RAG/RAG_basic/RAG_용어정리.md": {
+      "mtime": 1776737543.503086,
+      "size": 9214,
+      "drive_id": "1bsHbyDLFNYrKTuAzwWrzptpoYGG3AdK9",
+      "version": {
+        "desktopi": 1776743152961
+      },
+      "md5": "7270ee8bf4d0434df3f83b8730f0641d"
+    },
+    "프로그래밍_RAG/RAG_basic/_Index_of_RAG_basic.md": {
+      "mtime": 1776600726.4062655,
+      "size": 452,
+      "drive_id": "1lvvgR10h2X6ULXL62mQEhJQdW08j5Zzn",
+      "version": {
+        "desktopi": 1776743331754
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7543802
+    },
+    "프로그래밍_RAG/RAG_basic/retriever_추천.md": {
+      "mtime": 1776738259.6866288,
+      "size": 16959,
+      "drive_id": "198QAuTJZttLnhVshjaDcOc7_tcyoOmC_",
+      "version": {
+        "desktopi": 1776743156581
+      },
+      "md5": "5d0a2c13f6f3db9236938ab411c55216"
+    },
+    "프로그래밍_RAG/_Index_of_프로그래밍_RAG.md": {
+      "mtime": 1776600731.983434,
+      "size": 692,
+      "drive_id": "1ng-GnxbMK2jTMjSVwp1C8fyTuGTE9bWV",
+      "version": {
+        "desktopi": 1776743331760
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7603822
+    },
+    "프로그래밍_RAG/pgvector 인덱싱을 text-embedding-3-large 로 하면 차원손실.md": {
+      "mtime": 1776600732.9236002,
+      "size": 3645,
+      "drive_id": "12EbcE2TNxKNekn2XaO06OzpuyF5_9FqH",
+      "version": {
+        "desktopi": 1776600495563
+      },
+      "md5": "61c14a4cc19abdecf87faff2515edb83"
+    },
+    "프로그래밍_RAG/벡터유사도에 관하여.md": {
+      "mtime": 1776737856.817343,
+      "size": 9553,
+      "drive_id": "1zI6P52AaW3Rqes6hbsZBlobG2BRFN7mZ",
+      "version": {
+        "desktopi": 1776743160459
+      },
+      "md5": "d72a199bc577a230ba52dc74e84d3ef4"
+    },
+    "프로그래밍_git/GitHub_사용법.md": {
+      "mtime": 1776600729.6854563,
+      "size": 1785,
+      "drive_id": "1_vaR_3-UV9tRhkSgvmMlHcqt9RBU-91W",
+      "version": {
+        "desktopi": 1776600501074
+      },
+      "md5": "7e4775b8a0ce149ddf8ba060bb493c5b"
+    },
+    "프로그래밍_git/_Index_of_프로그래밍_git.md": {
+      "mtime": 1776503883.0340185,
+      "size": 2914,
+      "drive_id": "1cgO7uuc85iUiDwLDdHWaUKFyE7ifiWEO",
+      "version": {
+        "desktopi": 1776743163356
+      },
+      "md5": "a4bedf50a4db1922e4adb0b8151d4bf2"
+    },
+    "프로그래밍_git/git exclude 사용.md": {
+      "mtime": 1776600735.0508728,
+      "size": 2086,
+      "drive_id": "1eW_K-069u0Pm80bZpYYE2GZihIa9znKH",
+      "version": {
+        "desktopi": 1776600505848
+      },
+      "md5": "6b53458daf83d21a9ede7bf0af3f25e2"
+    },
+    "프로그래밍_git/git push origin main.md": {
+      "mtime": 1776600738.2280853,
+      "size": 2599,
+      "drive_id": "1AepLfXA4p4RDMGS7PUC_nXz2ZRCkBd3F",
+      "version": {
+        "desktopi": 1776600508183
+      },
+      "md5": "28cf03bcb015269997c8473f62a10e3d"
+    },
+    "프로그래밍_git/git_로컬에서 새 레포지토리로.md": {
+      "mtime": 1776600737.1563244,
+      "size": 380,
+      "drive_id": "1QtP1k4v0StBPIU-P6hF54_HOcrwxhu9D",
+      "version": {
+        "desktopi": 1776600510650
+      },
+      "md5": "353f1935eed70927f2083a8be8124b6a"
+    },
+    "프로그래밍_git/강의노트_Git 복구하기.md": {
+      "mtime": 1776600741.7793152,
+      "size": 3428,
+      "drive_id": "1qBWotjC-nL9bAlUAoiXBxIonFSZznuJi",
+      "version": {
+        "desktopi": 1776600512901
+      },
+      "md5": "1c018ab625f19cc2d8b44ecae381b1b7"
+    },
+    "프로그래밍_git/강의노트_Git 설정.md": {
+      "mtime": 1776600739.2596066,
+      "size": 3349,
+      "drive_id": "1kyd9gK51kR6d2ii-y6_tHBEpaiU7Gone",
+      "version": {
+        "desktopi": 1776600515259
+      },
+      "md5": "9f154d982bb0fa9c203fe10eb5a4c2c2"
+    },
+    "프로그래밍_git/강의노트_Git_branch.md": {
+      "mtime": 1776600736.1353188,
+      "size": 9956,
+      "drive_id": "1_DpOueZLf2mZFJ5mHGzyJddG40Yr8v7n",
+      "version": {
+        "desktopi": 1776600517671
+      },
+      "md5": "018f077ee58366c0a70785bb54f21ac7"
+    },
+    "프로그래밍_git/강의노트_Git과 github 설치.md": {
+      "mtime": 1776600740.554849,
+      "size": 2994,
+      "drive_id": "1GjyWS1TjU8b7HPbs4iUfbk_NoLX8HEtC",
+      "version": {
+        "desktopi": 1776600520120
+      },
+      "md5": "66374ad29a5025a4aacbdb5eb4a0dc8d"
+    },
+    "프로그래밍_git/강의노트_Git소스코드.md": {
+      "mtime": 1776600742.9042702,
+      "size": 2459,
+      "drive_id": "1JNvwsZXfjHoBkJzkqK_CcY-jkirOyzQn",
+      "version": {
+        "desktopi": 1776600522574
+      },
+      "md5": "9a4976f769515b90cf1d68f97f10937c"
+    },
+    "프로그래밍_git/강의노트_Git에 버전 추가하기.md": {
+      "mtime": 1776600744.3015375,
+      "size": 6414,
+      "drive_id": "17tIQBE74rO4PWpR4ruexi7fuOsXTwTMY",
+      "version": {
+        "desktopi": 1776600525072
+      },
+      "md5": "d42a8956376e882b9a69b8eb193402bc"
+    },
+    "프로그래밍_git/강의노트_Git에서 보이지 않게 설정.md": {
+      "mtime": 1776600745.4688773,
+      "size": 2148,
+      "drive_id": "1mzigqapDnZyWmXok8PCCzw7mkEJ9YBp9",
+      "version": {
+        "desktopi": 1776600527684
+      },
+      "md5": "c36a4c1d3415d4d09831e15b622845a1"
+    },
+    "프로그래밍_git/기존 REPOSITORY 끊고 새 REPO 연결_FORK 한 상황에서 완전히 마이그레이션 진행한 경우.md": {
+      "mtime": 1776600746.4674425,
+      "size": 3457,
+      "drive_id": "16Z0fKCsmnT_B6oPVL3Ao6ZdM868jkPK5",
+      "version": {
+        "desktopi": 1776600530348
+      },
+      "md5": "76dc7a2f59cc5f3fd75f85f6cce02661"
+    },
+    "프로그래밍_git/로컬 git 레포지토리가 손상되어서 push 해도 반영이 안되는 경우.md": {
+      "mtime": 1776600747.4621992,
+      "size": 8552,
+      "drive_id": "186n3CH6seR1RMX78MSrNr95pm6Fy6ZrB",
+      "version": {
+        "desktopi": 1776600533088
+      },
+      "md5": "ccde3575a643bc7a7e57767b922f04d4"
+    },
+    "프로그래밍_git/스테이징에서 제거 git cach 에서 제거.md": {
+      "mtime": 1776600748.618624,
+      "size": 2355,
+      "drive_id": "1fU_cfttGWZzXmIQAg6crJxp2qZ6g8VbP",
+      "version": {
+        "desktopi": 1776600535645
+      },
+      "md5": "ea02149a05127434507e394946e18cec"
+    },
+    "프로그래밍_git/원본 폴더에서 원본 FORK 후 FORK한 저장소에 연결 방법.md": {
+      "mtime": 1776600750.1088147,
+      "size": 3147,
+      "drive_id": "1M7wI4dxXVmx-nVg9kpH0yeTO5g3TWrAB",
+      "version": {
+        "desktopi": 1776600538006
+      },
+      "md5": "c236ebc07ae4b092ed7cb1157337a9cd"
+    },
+    "프로그래밍_git/자료수집_gitgub 토큰, api.md": {
+      "mtime": 1776600751.4963264,
+      "size": 632,
+      "drive_id": "1g6mzF_7XASvzDf7IFDSLDNSsTZ-FFHf-",
+      "version": {
+        "desktopi": 1776600540379
+      },
+      "md5": "48a40236a3c19123e2e2478f744130e1"
+    },
+    "프로그래밍_git/질의응답_git,github관련t질.md": {
+      "mtime": 1776600753.7725787,
+      "size": 10937,
+      "drive_id": "1Pvwzl3cn9OKw_uPS-8ZBD51Se_k7CMR1",
+      "version": {
+        "desktopi": 1776600543048
+      },
+      "md5": "d8421e2f1670019ea9dc95492027f852"
+    },
+    "프로그래밍_git/최근 commit 되돌리기.md": {
+      "mtime": 1776600752.676881,
+      "size": 1778,
+      "drive_id": "1FtbrXg26grcY92FObJHmqfAiceZJMPFv",
+      "version": {
+        "desktopi": 1776600545404
+      },
+      "md5": "f855c539ecaefab48314022205531600"
+    },
+    "프로그래밍_langfuse/_Index_of_프로그래밍_langfuse.md": {
+      "mtime": 1776503890.924548,
+      "size": 478,
+      "drive_id": "1fu_B_Bn7_CsGh_Wmw_EToUxPGSlLPwEB",
+      "version": {
+        "desktopi": 1776743165507
+      },
+      "md5": "480015265ef473b0ab0ec8a30a6acd58"
+    },
+    "프로그래밍_langfuse/langfuse vs langsmith.md": {
+      "mtime": 1776736381.884527,
+      "size": 9549,
+      "drive_id": "1NTT2XUmWMCx_ZnoTh6XM6EBL6W-ecViE",
+      "version": {
+        "desktopi": 1776743167590
+      },
+      "md5": "6b5c5a09bea8a38aa3e2636aac583206"
+    },
+    "프로그래밍_langfuse/langfuse_OpenTelemetry 컨텍스트 분리(Detach) 에러.md": {
+      "mtime": 1776736458.3911555,
+      "size": 6629,
+      "drive_id": "1tsoWSwNkKoehNnredjZ7zdYllkauT6qh",
+      "version": {
+        "desktopi": 1776743169695
+      },
+      "md5": "789a940fe45191c1e1aebe533ee54e66"
+    },
+    "프로그래밍_langfuse/langfuse_SessionID_ContextVar.md": {
+      "mtime": 1776736503.057603,
+      "size": 4077,
+      "drive_id": "1wmDUaFX8EFKaSCD1fcucqf1jyNZRE_Qk",
+      "version": {
+        "desktopi": 1776743171828
+      },
+      "md5": "ad100ec9c24f9008aa36c85fce60c86e"
+    },
+    "프로그래밍_langfuse/langfuse_propagate_attributes()의 원래 역할.md": {
+      "mtime": 1776736545.3123558,
+      "size": 3488,
+      "drive_id": "1N7TXHkU-egOpChc1a0WKaNPoQINXfpIb",
+      "version": {
+        "desktopi": 1776743174093
+      },
+      "md5": "4b3a80072eab153d9dce7ea375333d1c"
+    },
+    "프로그래밍_langfuse/langfuse_span_id attributes 뜻.md": {
+      "mtime": 1776736580.809486,
+      "size": 2324,
+      "drive_id": "1i7LoA_y7_2AzoROKFFDUadS4CeApfa12",
+      "version": {
+        "desktopi": 1776743176229
+      },
+      "md5": "353802709c98125acecb749c73b38ad4"
+    },
+    "프로그래밍_langfuse/langfuse_한번 요청시 나온 토큰등 추적 정보를 묶어서 보기.md": {
+      "mtime": 1776736618.9668775,
+      "size": 2543,
+      "drive_id": "1BZQ1cmCiPCFoq6uDx10--0TzXnDv9_ab",
+      "version": {
+        "desktopi": 1776743178494
+      },
+      "md5": "ff24b184d6ca815c84d7237e7470cd06"
+    },
+    "프로그래밍_langfuse/langfuse_한번 호출한 분량 분리해서 호출.md": {
+      "mtime": 1776736665.1782746,
+      "size": 4902,
+      "drive_id": "1e4aNEd9NDVs9Q6HnnwRAG34m4tWaajYk",
+      "version": {
+        "desktopi": 1776743180674
+      },
+      "md5": "a0e774ef5ad64c4997ce1c8aa2a1f07a"
+    },
+    "프로그래밍_데이터베이스/AI_DB선택 참고.md": {
+      "mtime": 1776739523.6702998,
+      "size": 8840,
+      "drive_id": "1nXvlGil_jzynMEAHnf_Y3w3wMDLLT7sf",
+      "version": {
+        "desktopi": 1776743200883
+      },
+      "md5": "71e6628da492a9f350f8919e5b85f249"
+    },
+    "프로그래밍_데이터베이스/PostgreSQL, SQLAlchemy, pgvector 관계.md": {
+      "mtime": 1776739577.8188627,
+      "size": 6337,
+      "drive_id": "1Z_PUOVp9BPkmsbsabAuQLESezuRJcluN",
+      "version": {
+        "desktopi": 1776743203109
+      },
+      "md5": "e8e4a536357bb7c4c1452baff8262697"
+    },
+    "프로그래밍_데이터베이스/TCP 연결과 IDLE 커넥션 pgBouncer psycopg2 SQLAlchemy.md": {
+      "mtime": 1776739644.7228487,
+      "size": 6608,
+      "drive_id": "1IHslQyPxOfvYztNzjZBkWaj6LlD8dbco",
+      "version": {
+        "desktopi": 1776743205361
+      },
+      "md5": "e0ad79cc27394aca79c036a136408493"
+    },
+    "프로그래밍_데이터베이스/_Index_of_프로그래밍_데이터베이스.md": {
+      "mtime": 1776600770.0512514,
+      "size": 584,
+      "drive_id": "11tC_pS1eSRysxbFjz6lRLa67ARFIzeKH",
+      "version": {
+        "desktopi": 1776743331772
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.77239
+    },
+    "프로그래밍_데이터베이스/redis 와 celery.md": {
+      "mtime": 1776739755.9526424,
+      "size": 13587,
+      "drive_id": "14waid8SpeItURrPAmmsItcLYgfWr4u2J",
+      "version": {
+        "desktopi": 1776743209019
+      },
+      "md5": "853af22b7c222811c1979da23d455e63"
+    },
+    "프로그래밍_데이터수집_사이트/_Index_of_프로그래밍_데이터수집_사이트.md": {
+      "mtime": 1776600768.5834763,
+      "size": 259,
+      "drive_id": "1bORzShmAREEtoRL28V0N23teMTsD-xxo",
+      "version": {
+        "desktopi": 1776743331776
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7768984
+    },
+    "프로그래밍_데이터수집_사이트/데이터수집사이트_자료수집.md": {
+      "mtime": 1776600771.2790623,
+      "size": 2412,
+      "drive_id": "1e-DIz52VmM0YiTCcr3954AtBpQUxjcWr",
+      "version": {
+        "desktopi": 1776600584133
+      },
+      "md5": "04db5e00f9f13d31f1674547264fa781"
+    },
+    "프로그래밍_설계원칙/SOLID_ O와 D의 차이.md": {
+      "mtime": 1776600773.833493,
+      "size": 3119,
+      "drive_id": "1_K4y5uWrGKyygcxRpP6daIFUm09U_u_V",
+      "version": {
+        "desktopi": 1776743331780
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7809052
+    },
+    "프로그래밍_설계원칙/SOLID원칙.md": {
+      "mtime": 1776600772.5100732,
+      "size": 2680,
+      "drive_id": "1rc7JOPGzv0so_aCufDXb4BHy5sezXT_X",
+      "version": {
+        "desktopi": 1776743331784
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.784907
+    },
+    "프로그래밍_설계원칙/_Index_of_프로그래밍_설계원칙.md": {
+      "mtime": 1776745522.79881,
+      "size": 271,
+      "drive_id": "1W5hIEDOxFmxdqTFTwYWHP6OWnz0fvxQz",
+      "version": {
+        "desktopi": 1776745539413
+      },
+      "md5": "b35ea116968a57bee06953c4a5f9bae5"
+    },
+    "프로그래밍_설계원칙/고수준 모듈과 저수준 모듈(SOLID DIP).md": {
+      "mtime": 1776600776.2822137,
+      "size": 3694,
+      "drive_id": "1GAMLBmqUOk6btT7Lm8cIBgG_HslwoD_I",
+      "version": {
+        "desktopi": 1776743331787
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7879052
+    },
+    "프로그래밍_웹개발/HTML vs CSS vs JavaScript 차이.md": {
+      "mtime": 1776600778.656185,
+      "size": 2031,
+      "drive_id": "1A5Ykf7m9pl7wlAeqOEJ0WAVQ1KYlYT1r",
+      "version": {
+        "desktopi": 1776600597278
+      },
+      "md5": "e96fe95527435b96819fc701550dc37e"
+    },
+    "프로그래밍_웹개발/_Index_of_프로그래밍_웹개발.md": {
+      "mtime": 1776600775.1870823,
+      "size": 296,
+      "drive_id": "1zHUacavCz98-eHJVKj_HlCaVXDX8l7iD",
+      "version": {
+        "desktopi": 1776743331797
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7979097
+    },
+    "프로그래밍_웹개발/웹크롤링.md": {
+      "mtime": 1776600779.750841,
+      "size": 3027,
+      "drive_id": "1hb0-UMSMVsvUW9BgXJNpJgTZ2XFNeB5y",
+      "version": {
+        "desktopi": 1776600602008
+      },
+      "md5": "5f213aa85f9a70969ff5810f199819bc"
+    },
+    "프로그래밍_터미널_CLI/bash 문법.md": {
+      "mtime": 1776600780.7580254,
+      "size": 10756,
+      "drive_id": "1hqwbDUzDjFBsaE2mJihooyrEwcb5URHv",
+      "version": {
+        "desktopi": 1776600604826
+      },
+      "md5": "6a6bae46febcb54f2b41dbf16b50760b"
+    },
+    "프로그래밍_환경설정/IDE 가 가상환경의 파이썬 인식 못할때.md": {
+      "mtime": 1776739149.4534135,
+      "size": 5874,
+      "drive_id": "1V0p7t3UN5Jzsz6ZrNtlyHH9IrgLrNKFp",
+      "version": {
+        "desktopi": 1776743265474
+      },
+      "md5": "28f282e6a7e0b87126b10b92208324e4"
+    },
+    "프로그래밍_환경설정/UV_SYNC_GUIDE.md": {
+      "mtime": 1776739226.2341976,
+      "size": 7055,
+      "drive_id": "1cLre4EI5kOQ2VGcpM6EysYlBE0qAWF9w",
+      "version": {
+        "desktopi": 1776743267998
+      },
+      "md5": "84a61adb066f6201f5d25d8e3cdda758"
+    },
+    "프로그래밍_환경설정/_Index_of_프로그래밍_환경설정.md": {
+      "mtime": 1776600784.969427,
+      "size": 954,
+      "drive_id": "1G87-Xr5wfrBlI88k91qi5vr6Il994vfG",
+      "version": {
+        "desktopi": 1776743331801
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.8019052
+    },
+    "프로그래밍_환경설정/sys.path(python이 모듈을 찾을때 검색하는 디렉토리 경로)사용법.md": {
+      "mtime": 1776739070.0229926,
+      "size": 5981,
+      "drive_id": "1Wjwh9lhk5LbIGknED3-Q4KUgHKYVtA5H",
+      "version": {
+        "desktopi": 1776743274417
+      },
+      "md5": "921eaf53634cb38f0b6ad799839c5bf3"
+    },
+    "프로그래밍_환경설정/가상환경 세팅 방법.md": {
+      "mtime": 1776739301.52899,
+      "size": 6887,
+      "drive_id": "1rkMBfXm4ZwiCU-DKiqx1B_C50G6IzYn6",
+      "version": {
+        "desktopi": 1776743276614
+      },
+      "md5": "3b0b6269ac9843f9450f10e933820f22"
+    },
+    "프로그래밍_환경설정/가상환경 재설치 uv.md": {
+      "mtime": 1776739368.7285285,
+      "size": 6869,
+      "drive_id": "127HtcS9pl2DLX287H7S7eFen9v0Z5MXv",
+      "version": {
+        "desktopi": 1776743278647
+      },
+      "md5": "20b7524f32e44b07bb828611dd0e23b3"
+    },
+    "프로그래밍_환경설정/새로운기기_세팅 절차.md": {
+      "mtime": 1776739428.9860878,
+      "size": 5487,
+      "drive_id": "1aHxEba1Vjh66tEy83ILuNBXcZK45azxj",
+      "version": {
+        "desktopi": 1776743280722
+      },
+      "md5": "6c5d09f25979a99c85604b89fce58455"
+    },
+    "프로그래밍_환경설정/운영체제와 상관없는 경로설정.md": {
+      "mtime": 1776739561.024521,
+      "size": 14475,
+      "drive_id": "1AzRwB6xJ1NDPULMl8kgVi8_aluQmahxi",
+      "version": {
+        "desktopi": 1776743282960
+      },
+      "md5": "1b6904f5c84532f7a6acf6818b082c69"
+    },
+    "프로젝트_무적개발자프로젝트/무적 개발자 프로젝트 기획.md": {
+      "mtime": 1776600792.7038827,
+      "size": 503,
+      "drive_id": "13ybcLzFTvY9EA6OiJTZGP8xK1J-U8dmN",
+      "version": {
+        "desktopi": 1776610947714
+      },
+      "deleted": true,
+      "deleted_at": 1776610947.714983
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.md": {
+      "mtime": 1776671445.6420252,
+      "size": 13077,
+      "drive_id": "1YTjZ0vG1v5zyqGrDlxRs9XuikIfcwmWO",
+      "version": {
+        "desktopi": 1776671574775
+      },
+      "deleted": true,
+      "deleted_at": 1776671574.7756324
+    },
+    "프로젝트_슈퍼개발자프로젝트/_Index_of_프로젝트_슈퍼개발자프로젝트.md": {
+      "mtime": 1776763736.7882247,
+      "size": 595,
+      "drive_id": "1mzWdXOJreBN6ezuD1pKmPbcUGA_8rD8a",
+      "version": {
+        "desktopi": 1776763741808
+      },
+      "md5": "2254f8315373c5cac3a802f10d3325b3"
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflict-20260420-002559-desktopi.md": {
+      "mtime": 1776612360.1250029,
+      "size": 1288,
+      "drive_id": "11dfaZYLEe5sXpk89b3R-NI474vZZhYh5",
+      "version": {
+        "desktopi": 1776615230301
+      },
+      "deleted": true,
+      "deleted_at": 1776615230.3013852
+    },
+    "Excalidraw/Drawing 2026-04-20 00.49.22.excalidraw.md": {
+      "mtime": 1776614194.7288377,
+      "size": 3870,
+      "drive_id": "1NW_7On0b2YCKY_dar90Vpt6rGGuWUaiC",
+      "version": {
+        "desktopi": 1776614199739
+      },
+      "md5": "415cf9c76143a347ad131b55b7d06339"
+    },
+    "Excalidraw/_Index_of_Excalidraw.md": {
+      "mtime": 1776613820.7374923,
+      "size": 408,
+      "drive_id": "1zHlQ0GHE48WOhmMmyRL5eDcMCOxMXehd",
+      "version": {
+        "desktopi": 1776613825747
+      },
+      "md5": "deeb2dbbe1591b6a3b73ce40a64ed75c"
+    },
+    "Excalidraw/Drawing 2026-04-20 00.49.22.excalidraw.sync-conflict-20260420-005017-desktopi.md": {
+      "mtime": 1776613818.0306234,
+      "size": 3824,
+      "drive_id": "1anyAn4gl91hl2jz4rIc5yrUYVZRhnatK",
+      "version": {
+        "desktopi": 1776616095569
+      },
+      "deleted": true,
+      "deleted_at": 1776616095.56913
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflict-20260420-010942-desktopi.md": {
+      "mtime": 1776614982.5088594,
+      "size": 2038,
+      "drive_id": "16F1vXNyXRCLCX64DcQ0xR6IJps8PTVLU",
+      "version": {
+        "desktopi": 1776616095564
+      },
+      "deleted": true,
+      "deleted_at": 1776616095.5649996
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflic-20260t420-002559-desktopi.md": {
+      "mtime": 1776612360.1250029,
+      "size": 1288,
+      "drive_id": "1X0kY1JXKm_mSIE5qZEmLDBroPKikTbRS",
+      "version": {
+        "desktopi": 1776616095561
+      },
+      "deleted": true,
+      "deleted_at": 1776616095.561998
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflict-20260420-043914-desktopi.md": {
+      "mtime": 1776627554.686855,
+      "size": 7522,
+      "drive_id": "1QW8wyvoD25nvSFNhUL5G0b_MkKyvLk3I",
+      "version": {
+        "desktopi": 1776631067354
+      },
+      "deleted": true,
+      "deleted_at": 1776631067.3544507
+    },
+    "프로젝트_슈퍼개발자프로젝트/무제.md": {
+      "mtime": 1776631062.8573508,
+      "size": 0,
+      "drive_id": "1K8Zje64LYP-nf4-ynWKLdFUHP1AtxFkU",
+      "version": {
+        "desktopi": 1776631170278
+      },
+      "deleted": true,
+      "deleted_at": 1776631170.2781487
+    },
+    "프로젝트_슈퍼개발자프로젝트/MEMEX 기획.md": {
+      "mtime": 1776671512.6870635,
+      "size": 5957,
+      "drive_id": "1mbOBNO3J22qLsm6vKPTM23Yk8uWwBJpT",
+      "version": {
+        "desktopi": 1776671607922
+      },
+      "deleted": true,
+      "deleted_at": 1776671607.922282
+    },
+    "MEMEX 기획.md": {
+      "mtime": 1776631170.9254875,
+      "size": 0,
+      "drive_id": "1tGIZSnIbUdWCDDbpSrwA6oMZFahd3Izs",
+      "version": {
+        "desktopi": 1776631374283
+      },
+      "deleted": true,
+      "deleted_at": 1776631374.2832844
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflict-20260420-055226-desktopi.md": {
+      "mtime": 1776631947.0659652,
+      "size": 3077,
+      "drive_id": "1-o-wfUeIMF4_XVbXlgfZj6zBsacNNzcs",
+      "version": {
+        "desktopi": 1776633541663
+      },
+      "deleted": true,
+      "deleted_at": 1776633541.6631753
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflict-20260420-074415-desktopi.md": {
+      "mtime": 1776638656.3038876,
+      "size": 5516,
+      "drive_id": "1xSEllPTA389NkPUk5jOevZj6arQXqWwy",
+      "version": {
+        "desktopi": 1776639043603
+      },
+      "deleted": true,
+      "deleted_at": 1776639043.603868
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트 기획.sync-conflict-20260420-075016-desktopi.md": {
+      "mtime": 1776639016.4929566,
+      "size": 6424,
+      "drive_id": "1WMLi4gP1baalijcJBMYVKbgCE2GCXTdq",
+      "version": {
+        "desktopi": 1776639043606
+      },
+      "deleted": true,
+      "deleted_at": 1776639043.6068685
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.md": {
+      "mtime": 1776788375.0929193,
+      "size": 40202,
+      "drive_id": "1RYIdZfp_eovkTwjEXeRwc2bPIefAUb92",
+      "version": {
+        "desktopi": 1776788380109
+      },
+      "md5": "7af8bf63a3d39eeb7b37ea5de6b30c72"
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_MEMEX 기획.md": {
+      "mtime": 1776788037.8809185,
+      "size": 10668,
+      "drive_id": "1ApQRlc4joG3Vg7dTCyIAoVQfsT6_yCxG",
+      "version": {
+        "desktopi": 1776788321889
+      },
+      "deleted": true,
+      "deleted_at": 1776788321.8895404
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_MEMEX 기획.sync-conflict-20260420-165828-desktopi.md": {
+      "mtime": 1776671908.6014311,
+      "size": 6268,
+      "drive_id": "150vDwixAg-0Ro7M8H8rtp5Ol88Zu3zyq",
+      "version": {
+        "desktopi": 1776673418868
+      },
+      "deleted": true,
+      "deleted_at": 1776673418.8683858
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260420-180114-desktopi.md": {
+      "mtime": 1776675674.353312,
+      "size": 17306,
+      "drive_id": "1FFNp553HCprfP09OTkU6j-YfKjiOmsz7",
+      "version": {
+        "desktopi": 1776678997536
+      },
+      "deleted": true,
+      "deleted_at": 1776678997.5365345
+    },
+    "슈퍼 개발자 프로젝트_PART1.sync-conflict-20260420-180114-desktopi.md": {
+      "mtime": 1776675701.9793599,
+      "size": 17306,
+      "drive_id": "1vGdsprIspBc10qQUoinqAQX7wEWRTaYe",
+      "version": {
+        "desktopi": 1776679038278
+      },
+      "deleted": true,
+      "deleted_at": 1776679038.2786226
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260420-185100-desktopi.md": {
+      "mtime": 1776678660.685023,
+      "size": 16198,
+      "drive_id": "1AFG9NwetqJqUpX_6aRB9T2wRy6HGNcw3",
+      "version": {
+        "desktopi": 1776678997533
+      },
+      "deleted": true,
+      "deleted_at": 1776678997.533535
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260420-185609-desktopi.md": {
+      "mtime": 1776678970.201202,
+      "size": 16403,
+      "drive_id": "1fYDbVJE1EjYCou1bf7e5pgfhw8mK9mWP",
+      "version": {
+        "desktopi": 1776678997530
+      },
+      "deleted": true,
+      "deleted_at": 1776678997.5305345
+    },
+    "Pasted image 20260420200635.png": {
+      "mtime": 1776683195.2978296,
+      "size": 78646,
+      "drive_id": "1S96bVtk5tr8GKkEQX3p2t3PsMHpiFQYt",
+      "version": {
+        "desktopi": 1776721614378
+      },
+      "deleted": true,
+      "deleted_at": 1776721614.3781629
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260420200731.png": {
+      "mtime": 1776683251.5108807,
+      "size": 78646,
+      "drive_id": "1gcqqIAC9GxrwnUQCwBxNctaS4vbHVc3K",
+      "version": {
+        "desktopi": 1776683257333
+      },
+      "md5": "f611a8de19cdba40cb4d438fc93fda7d"
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260420200852.png": {
+      "mtime": 1776683332.436478,
+      "size": 86683,
+      "drive_id": "17-vO1JRVjYUES-5ABBOIB2Wnz2UDSEQU",
+      "version": {
+        "desktopi": 1776683337820
+      },
+      "md5": "b7f0a12d224dcbb56bafe0650289fdd0"
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260420-203653-desktopi.md": {
+      "mtime": 1776685013.5330591,
+      "size": 19857,
+      "drive_id": "1ck0BiaYn5vq5spt3SF_joqAztn3gcweR",
+      "version": {
+        "desktopi": 1776702001272
+      },
+      "deleted": true,
+      "deleted_at": 1776702001.2721095
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260420-204541-desktopi.md": {
+      "mtime": 1776685541.374638,
+      "size": 20031,
+      "drive_id": "1t93Lwnq5yaDy81F5nBfK5XD5bo3OYNtf",
+      "version": {
+        "desktopi": 1776702001276
+      },
+      "deleted": true,
+      "deleted_at": 1776702001.2761114
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260421010934.png": {
+      "mtime": 1776701374.4728456,
+      "size": 160327,
+      "drive_id": "1kXKWwTvkyJSlIpkXcyWuB9PoaPWZup3_",
+      "version": {
+        "desktopi": 1776701380933
+      },
+      "md5": "b14b444b43eb3d89c09a61a5d635d520"
+    },
+    "무제/_Index_of_무제.md": {
+      "mtime": 1776731780.0097084,
+      "size": 131,
+      "drive_id": "19KVBENVM3vnOETZu34WTkZg7VIWqfzED",
+      "version": {
+        "desktopi": 1776731813796
+      },
+      "deleted": true,
+      "deleted_at": 1776731813.7960045
+    },
+    "프로그래밍_네트워크/_Index_of_프로그래밍_네트워크.md": {
+      "mtime": 1776731834.7769592,
+      "size": 254,
+      "drive_id": "1dGe7gpMbvT2T0Mf7LzEtsMcX_VD3v1Mn",
+      "version": {
+        "desktopi": 1776743331765
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.76539
+    },
+    "프로그래밍_네트워크/무제.md": {
+      "mtime": 1776731824.4438152,
+      "size": 6044,
+      "drive_id": "1aVW60PPZ1BAbC7mkiMirogokRojRmt2B",
+      "version": {
+        "desktopi": 1776731831766
+      },
+      "deleted": true,
+      "deleted_at": 1776731833.3176274
+    },
+    "프로그래밍_네트워크/공인 IP · HTTPS 엔드포인트 정리.md": {
+      "mtime": 1776731870.8834229,
+      "size": 5662,
+      "drive_id": "16wOdTyEkCpqwKzk9-L16uYQ4HaJ1PsVv",
+      "version": {
+        "desktopi": 1776743331769
+      },
+      "deleted": true,
+      "deleted_at": 1776743331.7693903
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260421-094810-desktopi.md": {
+      "mtime": 1776732490.3597445,
+      "size": 34221,
+      "drive_id": "1nxrMao8_SPqZNiHUwI5SmAqHin5q4UZY",
+      "version": {
+        "desktopi": 1776762535159
+      },
+      "deleted": true,
+      "deleted_at": 1776762535.1594954
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/DIP(고수준 모듈과 저수준 모듈).md": {
+      "mtime": 1776742713.905759,
+      "size": 21020,
+      "drive_id": "1NoZqLeAEX-31yUYRh0_zBJSaQ8ko0Xkv",
+      "version": {
+        "desktopi": 1776742943654
+      },
+      "md5": "c7a7dfcafd70bffdb1bbd45d8c749cd0"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/OCP (개방 폐쇄 원칙).md": {
+      "mtime": 1776742503.6947258,
+      "size": 13711,
+      "drive_id": "1G8cBEoc2vuzw7yejuk4N-K8JdsWEOAv6",
+      "version": {
+        "desktopi": 1776742947515
+      },
+      "md5": "a19b3ede49018aa9e3d4798369fbb136"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/LSP (Liskov Substitution).md": {
+      "mtime": 1776742434.3182795,
+      "size": 15865,
+      "drive_id": "1mZm4JUtKGLJAwp9l_v5P45kyT8iDqHdw",
+      "version": {
+        "desktopi": 1776742950129
+      },
+      "md5": "c7ae044484f6f2a3be3cc0daa2158fda"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/SOLID_ O와 D의 차이.md": {
+      "mtime": 1776735817.2802458,
+      "size": 9929,
+      "drive_id": "1-L8qroigBUtNa8RBHYhGKNDphaYE0-mj",
+      "version": {
+        "desktopi": 1776742952783
+      },
+      "md5": "addf39361c90edb8cee0df7918972992"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/SOLID원칙.md": {
+      "mtime": 1776735811.6640422,
+      "size": 13088,
+      "drive_id": "16uh3Pwwo39iyUqF-XjLiFt5pudVQ1t6-",
+      "version": {
+        "desktopi": 1776742955447
+      },
+      "md5": "3f9127f0e7509bd8af2485bf44c99a3d"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/SRP (단일 책임 원칙).md": {
+      "mtime": 1776742405.758234,
+      "size": 13923,
+      "drive_id": "1n0pPfOfla8vE9zi0Rbkcgm0Of9_S1Gw6",
+      "version": {
+        "desktopi": 1776742958007
+      },
+      "md5": "1af7c55753eb31a20df57ad208f2366b"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/역할별 인터페이스 분리(SOLID ISP).md": {
+      "mtime": 1776742552.8391256,
+      "size": 17309,
+      "drive_id": "1AjiAvhmzY_nwS5KEfG46jTM--1u9SxSj",
+      "version": {
+        "desktopi": 1776742960796
+      },
+      "md5": "de7b26aecdcb904c608aa6728ea31cdd"
+    },
+    "프로그래밍_설계원칙/SOLID 원칙/SOLID_index.md": {
+      "mtime": 1776742742.3249023,
+      "size": 2577,
+      "drive_id": "1IRxIhV88cK5pt5LDrFDNcCvAyxINSV6b",
+      "version": {
+        "desktopi": 1776742963443
+      },
+      "md5": "93ebebc26c01a9c72f2a684538f51aa7"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Builder 패턴.md": {
+      "mtime": 1776741130.1339586,
+      "size": 8902,
+      "drive_id": "1mrPuHFvVt_5daLcHNpTQIBFBfrJN0JMe",
+      "version": {
+        "desktopi": 1776742966411
+      },
+      "md5": "ac2e2279a6d995c9e73b1f040371448c"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Chain of Responsibility 패턴.md": {
+      "mtime": 1776741189.3482234,
+      "size": 12526,
+      "drive_id": "1l0X3WcYPiWx-wkInEyOrK3679yeEsjEp",
+      "version": {
+        "desktopi": 1776742970316
+      },
+      "md5": "106f0e11014fd32978c3df549fb797d8"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Adapter 패턴.md": {
+      "mtime": 1776741195.2837784,
+      "size": 9967,
+      "drive_id": "1zGc_CyplIvvDRQMADkEIzr3VM8UzuXGF",
+      "version": {
+        "desktopi": 1776742972943
+      },
+      "md5": "9df78714ce9607219e882450c36fcb8b"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Facade 패턴.md": {
+      "mtime": 1776741256.7934065,
+      "size": 9577,
+      "drive_id": "174_14JbSgjuI0Qi_EWqwvUgyU_x4yjeF",
+      "version": {
+        "desktopi": 1776742975401
+      },
+      "md5": "da8e6f4b1f4ab4db95666e6e46a4588c"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Decorator 패턴.md": {
+      "mtime": 1776741439.1764872,
+      "size": 12243,
+      "drive_id": "1W1aZh11fNymyPnj_OXSJhjol5q2hx9xA",
+      "version": {
+        "desktopi": 1776742978007
+      },
+      "md5": "98a41cceec905537877c1e306f995a0f"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Command 패턴(요청의 객체화).md": {
+      "mtime": 1776741240.0496519,
+      "size": 8820,
+      "drive_id": "1-3J0lWylfn9CByugyg_KL7ToBqvZHFmV",
+      "version": {
+        "desktopi": 1776742980774
+      },
+      "md5": "5eebb82dab7b52f855aa6f0316ff5a30"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Factory 패턴.md": {
+      "mtime": 1776741274.605192,
+      "size": 12840,
+      "drive_id": "1OLDHNAP9Cc2jdcur4iDoHsLmJQBli3rP",
+      "version": {
+        "desktopi": 1776742983001
+      },
+      "md5": "89a387ee856fa775a11dbed837f1a8f2"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Iterator 패턴(순회).md": {
+      "mtime": 1776741183.4355357,
+      "size": 7276,
+      "drive_id": "1OF3KSv-ySS84Y4ztLCN5z3V7OsP9SWZ8",
+      "version": {
+        "desktopi": 1776742985550
+      },
+      "md5": "deb7aa0dcaf8f6178bff14442ca7ca48"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Proxy 패턴(대리 처리).md": {
+      "mtime": 1776741131.9094539,
+      "size": 7758,
+      "drive_id": "1W_7O4eNpIuIZHoME50V5TvDTjQdb8unE",
+      "version": {
+        "desktopi": 1776743008968
+      },
+      "md5": "946872a68bb153f4ac62f5764325c945"
+    },
+    "프로그래밍_CS/시간복잡도_기초.md": {
+      "mtime": 1776735136.3352666,
+      "size": 7795,
+      "drive_id": "1E_lZ3yLbUZzuFoE1kWQkVGrakgC42JhE",
+      "version": {
+        "desktopi": 1776743031669
+      },
+      "md5": "64e1e6d29949b7ccb5e3e9719c3112d9"
+    },
+    "프로그래밍_CS/직렬화_JSON_YAML.md": {
+      "mtime": 1776735212.946669,
+      "size": 10160,
+      "drive_id": "15bg4Sg2yHktVJMSA43jZzALtqTcEjBoo",
+      "version": {
+        "desktopi": 1776743035353
+      },
+      "md5": "0515175ed494667c9efc7c22b5792d19"
+    },
+    "프로그래밍_CS/큐.md": {
+      "mtime": 1776735015.6256356,
+      "size": 6127,
+      "drive_id": "1wWL1glOvsKE2j753xuRJYVmBfD1T0bsV",
+      "version": {
+        "desktopi": 1776743037901
+      },
+      "md5": "8544617477349aaee0790c254f615715"
+    },
+    "프로그래밍_CS/트리.md": {
+      "mtime": 1776735072.0253837,
+      "size": 7822,
+      "drive_id": "1ofGbwAd8u2MJR1mvyUHfuHZQprYsIViW",
+      "version": {
+        "desktopi": 1776743040499
+      },
+      "md5": "805a5a184f152c8661f8dbd2efc9ad3d"
+    },
+    "프로그래밍_CS/해시맵.md": {
+      "mtime": 1776734968.1274557,
+      "size": 5776,
+      "drive_id": "1zDJwhPSkB4xoVYlkR74p7Wo84uRtcVYM",
+      "version": {
+        "desktopi": 1776743042946
+      },
+      "md5": "74fa0c006f08e48a21a8483e3425aba9"
+    },
+    "프로그래밍_Fine-tunning/Untitled": {
+      "mtime": 1776737580.4388556,
+      "size": 2326,
+      "drive_id": "1QQPBhD1DE15LxsbQakDawmRuh9wDxSlb",
+      "version": {
+        "desktopi": 1776743056334
+      },
+      "md5": "352a1ec0aae014f4480932f60a5fef32"
+    },
+    "프로그래밍_OS/동시성과 async-await.md": {
+      "mtime": 1776734908.4251573,
+      "size": 7842,
+      "drive_id": "1funnAJf_a1mvYfRXUgam8OQpn9UMyWiM",
+      "version": {
+        "desktopi": 1776743062554
+      },
+      "md5": "365125c40d75ffa08de2d56c7a24c3c0"
+    },
+    "프로그래밍_OS/메모리 구조.md": {
+      "mtime": 1776734968.6383753,
+      "size": 7946,
+      "drive_id": "1aoYkC_C8LjsfVAswNESeAM4NHVkxQo-y",
+      "version": {
+        "desktopi": 1776743066010
+      },
+      "md5": "a48e5e4493ea8a798959b13440feac2a"
+    },
+    "프로그래밍_OS/파일 I-O.md": {
+      "mtime": 1776735048.9493794,
+      "size": 9631,
+      "drive_id": "1TUMOTzJ2o6mit4Wue7mttHxIhwc4qI7A",
+      "version": {
+        "desktopi": 1776743068505
+      },
+      "md5": "83108401e299805df2334e26c1e4ceeb"
+    },
+    "프로그래밍_OS/프로세스 vs 스레드.md": {
+      "mtime": 1776734854.1951566,
+      "size": 7026,
+      "drive_id": "1Clk_dye-erFKMOtRUqXO5vB7w49wvJu2",
+      "version": {
+        "desktopi": 1776743070894
+      },
+      "md5": "7549810252b18cf9070c7e7669aa1fbc"
+    },
+    "프로그래밍_OS/환경변수.md": {
+      "mtime": 1776735120.3301916,
+      "size": 9918,
+      "drive_id": "1rDpk85SlXMxwJJ929BnqUR0ksmUJ3tAh",
+      "version": {
+        "desktopi": 1776743073569
+      },
+      "md5": "04ff63f556ea5db031e769be5ccbcf24"
+    },
+    "프로그래밍_네트워크/DNS.md": {
+      "mtime": 1776734940.7966828,
+      "size": 8163,
+      "drive_id": "1lpYlgqfDe52sHUxwqdsf6YhXs5GdK1EA",
+      "version": {
+        "desktopi": 1776743183502
+      },
+      "md5": "169b03284015f19b66f505129c4f56c8"
+    },
+    "프로그래밍_네트워크/HTTP_HTTPS.md": {
+      "mtime": 1776734759.9118657,
+      "size": 8535,
+      "drive_id": "1AGv_66sqhLAZ9N5_EVaJzKgFuY4wfeEu",
+      "version": {
+        "desktopi": 1776743185945
+      },
+      "md5": "97a0a14db77b1482c9f9fc886b37f881"
+    },
+    "프로그래밍_네트워크/REST_API.md": {
+      "mtime": 1776734814.3640392,
+      "size": 7948,
+      "drive_id": "132zWwr1my5nk7ZvaGDE1bXeRe6hGhzOT",
+      "version": {
+        "desktopi": 1776743188401
+      },
+      "md5": "6b2c1ef4af0196f6b458b9da67ed87f7"
+    },
+    "프로그래밍_네트워크/WebSocket.md": {
+      "mtime": 1776734865.9341934,
+      "size": 7345,
+      "drive_id": "1prEEzjhjC1yihCrmIHNSNoetK3a8MTxd",
+      "version": {
+        "desktopi": 1776743190968
+      },
+      "md5": "47daba64395668a459dda32240ddf060"
+    },
+    "프로그래밍_네트워크/포트.md": {
+      "mtime": 1776734996.9653425,
+      "size": 7544,
+      "drive_id": "14bvBU7AZaRxCVIlvWQVlLj8qiHn9q6TP",
+      "version": {
+        "desktopi": 1776743196349
+      },
+      "md5": "0359b6b533aa4ec79dff160bbaf3f421"
+    },
+    "프로그래밍_네트워크/프록시.md": {
+      "mtime": 1776735077.732776,
+      "size": 11159,
+      "drive_id": "1lmGF0CCiRTDIrVuYfonwCzaw_kF8tsUQ",
+      "version": {
+        "desktopi": 1776743198688
+      },
+      "md5": "9cca62519f211c3b4308036826139932"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Mediator 패턴(중재자).md": {
+      "mtime": 1776741298.255676,
+      "size": 8878,
+      "drive_id": "17Yk1ecqDZ9HvFaxcwKA1e20rF3Fhht9F",
+      "version": {
+        "desktopi": 1776743218876
+      },
+      "md5": "b5a93642a48d092c4f1107f85d68187f"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Observer 패턴.md": {
+      "mtime": 1776741115.065552,
+      "size": 11484,
+      "drive_id": "1ZCJ50MX6xyx0kJ6HORRGug-7hc_XklYR",
+      "version": {
+        "desktopi": 1776743221301
+      },
+      "md5": "2fab5f30209a0c4560219d8946cbca19"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Pub-Sub 패턴.md": {
+      "mtime": 1776741471.0800264,
+      "size": 11325,
+      "drive_id": "1kWBOscAtaieEZijUDRynYzFSr7o7l2pe",
+      "version": {
+        "desktopi": 1776743223762
+      },
+      "md5": "78ccbc63e3dede0f8907defc056fa000"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Repository 패턴(데이터 접근 통일).md": {
+      "mtime": 1776741363.1946757,
+      "size": 10958,
+      "drive_id": "1ENEmzn0kVIP7WOc6PBj8uIeNmQl0YWp6",
+      "version": {
+        "desktopi": 1776743226257
+      },
+      "md5": "486b9952fa08eba8ab68f14fc78a267f"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Singleton 패턴.md": {
+      "mtime": 1776741353.5433493,
+      "size": 11595,
+      "drive_id": "1lMYVdkdtnr_7tnJlRofPhrwc1Qjg3zPI",
+      "version": {
+        "desktopi": 1776743228586
+      },
+      "md5": "5465f46b351485a4811f3595f99af8b1"
+    },
+    "프로그래밍_설계원칙/디자인패턴/State 패턴.md": {
+      "mtime": 1776741392.874392,
+      "size": 10993,
+      "drive_id": "1IBnzEyYZv9O6uScXkOm7i7ho8Lt6G0im",
+      "version": {
+        "desktopi": 1776743230863
+      },
+      "md5": "cb8d0c8539c1d36de0ebdebf45684781"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Strategy 패턴.md": {
+      "mtime": 1776741044.3906045,
+      "size": 9578,
+      "drive_id": "1osulqimpUIr8wqX7FYry5ds-HGG408BD",
+      "version": {
+        "desktopi": 1776743233412
+      },
+      "md5": "ddaca58ccdbde543cbd9266f6eaf4a86"
+    },
+    "프로그래밍_설계원칙/디자인패턴/Template Method 패턴.md": {
+      "mtime": 1776741324.4826024,
+      "size": 10845,
+      "drive_id": "1J5EDE1BNfXY4j-sWD2LaUkUSkVyJe2Kc",
+      "version": {
+        "desktopi": 1776743235922
+      },
+      "md5": "ca42742868f1486fdd212722a643048d"
+    },
+    "프로그래밍_설계원칙/디자인패턴/디자인패턴_index.md": {
+      "mtime": 1776741754.4572866,
+      "size": 2879,
+      "drive_id": "1x9NfIc31H7U2ykZRkDIS6Gn2AKYhAfgb",
+      "version": {
+        "desktopi": 1776743238318
+      },
+      "md5": "73fb94dc718d1d6c8d2ea87ddfb1cd15"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/API Gateway 패턴.md": {
+      "mtime": 1776741421.903745,
+      "size": 11696,
+      "drive_id": "1fNtZcYWiausO45Zr7QZOzEQzFjK8c1J6",
+      "version": {
+        "desktopi": 1776743240881
+      },
+      "md5": "4391ecc26c7d6d7597d09cbcf16395db"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/CQRS 패턴.md": {
+      "mtime": 1776741691.109975,
+      "size": 14694,
+      "drive_id": "1pjVQlum9KGSNgxLAi09agesbINEQmh0x",
+      "version": {
+        "desktopi": 1776743244448
+      },
+      "md5": "a5416a62a211267aafd986ed421b5da9"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/Event-Driven 아키텍처.md": {
+      "mtime": 1776741438.6602485,
+      "size": 18895,
+      "drive_id": "149d2UV_AVXy7Y2K16dJn1qDyETKGl1uS",
+      "version": {
+        "desktopi": 1776743246814
+      },
+      "md5": "d8c13a65e573741b3e53222ff5989592"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/MVC 패턴.md": {
+      "mtime": 1776741501.8947518,
+      "size": 10815,
+      "drive_id": "1KO0-FiCKlnrT2LvkzVBAuo_8gOzQyITv",
+      "version": {
+        "desktopi": 1776743249557
+      },
+      "md5": "473418e0f4ab4e9f21a41470460774cb"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/Microservices vs Monolith.md": {
+      "mtime": 1776741585.904686,
+      "size": 12260,
+      "drive_id": "1z9ziyVs9cIOFcFbyD3nccv38yDDQCE_m",
+      "version": {
+        "desktopi": 1776743252131
+      },
+      "md5": "ec898619c18f21eca2a5dcfd80e23bf2"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/Orchestrator-Worker 아키텍처.md": {
+      "mtime": 1776741686.0371492,
+      "size": 20477,
+      "drive_id": "1EJG4kqr3ebsaufXdM6-o1Ji8OhPbaZCh",
+      "version": {
+        "desktopi": 1776743254683
+      },
+      "md5": "aa9521017ebfd6a4b0338e6efb76b9f2"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/Pipeline 아키텍처.md": {
+      "mtime": 1776741555.4369745,
+      "size": 17182,
+      "drive_id": "1RBDWnbrMzw7jOAtaecYuNrgqvIsPP61_",
+      "version": {
+        "desktopi": 1776743257053
+      },
+      "md5": "fc6d46eef8cdf153d1001a9eb9290bce"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/Pub-Sub 아키텍처.md": {
+      "mtime": 1776741825.535833,
+      "size": 22085,
+      "drive_id": "119Q8E-5mAuNR5je-HDs1mljavLI1XshQ",
+      "version": {
+        "desktopi": 1776743259432
+      },
+      "md5": "add2ebcd0b75f608329ef28425261646"
+    },
+    "프로그래밍_설계원칙/아키텍처패턴/아키텍처패턴_index.md": {
+      "mtime": 1776741795.3854175,
+      "size": 1807,
+      "drive_id": "1NS2Dskt7UCqW3G49ddxHytl6nlZTpesO",
+      "version": {
+        "desktopi": 1776743261699
+      },
+      "md5": "ba654b5849d01c12fb482580e358abb3"
+    },
+    "프로그래밍_환경설정/Untitled": {
+      "mtime": 1776738912.2602262,
+      "size": 2173,
+      "drive_id": "1CekBZmKG-LvYWfGblcfR3RELCKG_uWeL",
+      "version": {
+        "desktopi": 1776743270801
+      },
+      "md5": "70be5b6c456c2843d9beafa5da579aaa"
+    },
+    "프로그래밍_설계원칙/코딩 앱 설계 원칙/12-Factor App.md": {
+      "mtime": 1776745519.930972,
+      "size": 23132,
+      "drive_id": "1PfUKAoS6UYfdUEaw8enupngLjSfj9lSo",
+      "version": {
+        "desktopi": 1776745525719
+      },
+      "md5": "0b543796f4073c839c35a6128d1da02c"
+    },
+    "프로그래밍_설계원칙/코딩 앱 설계 원칙/YAGNI (필요할 때 만든다).md": {
+      "mtime": 1776745519.9389708,
+      "size": 20559,
+      "drive_id": "1RE9yTXLnpPKm6UeGL5pH34YX5P5OEGiX",
+      "version": {
+        "desktopi": 1776745529658
+      },
+      "md5": "5b004f610ed66ce946df957b1212c716"
+    },
+    "프로그래밍_설계원칙/코딩 앱 설계 원칙/Composition over Inheritance.md": {
+      "mtime": 1776745519.9359727,
+      "size": 11501,
+      "drive_id": "1dpPCV9tWAOJvZLGPstmOi7Crl1PNZKcV",
+      "version": {
+        "desktopi": 1776745532424
+      },
+      "md5": "f9ca358927109430b8653d30a53e2b43"
+    },
+    "프로그래밍_설계원칙/코딩 앱 설계 원칙/코딩 앱 설계 원칙_index.md": {
+      "mtime": 1776745519.9519727,
+      "size": 2808,
+      "drive_id": "18_Xr0MXn-oXVwnU8Afs7rOZUCI7DTkRF",
+      "version": {
+        "desktopi": 1776745534755
+      },
+      "md5": "cbe474062e51fca37e00805e98201a00"
+    },
+    "프로그래밍_설계원칙/코딩 앱 설계 원칙/_Index_of_코딩 앱 설계 원칙.md": {
+      "mtime": 1776745522.421724,
+      "size": 602,
+      "drive_id": "1OHzdX_UtxClcr4QjA1uULZ5zJN1r0TsJ",
+      "version": {
+        "desktopi": 1776745537376
+      },
+      "md5": "f01f4964b3d9909b02c2f0deacc43438"
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260421-173243-desktopi.md": {
+      "mtime": 1776760363.839869,
+      "size": 28801,
+      "drive_id": "106s8xf0RZ007KqSfJckCaGyqCY4UlKma",
+      "version": {
+        "desktopi": 1776762535162
+      },
+      "deleted": true,
+      "deleted_at": 1776762535.162497
+    },
+    "프로젝트_슈퍼개발자프로젝트/슈퍼 개발자 프로젝트_PART1.sync-conflict-20260421-182853-desktopi.md": {
+      "mtime": 1776763734.1022289,
+      "size": 28008,
+      "drive_id": "1gxRzfKvV-Hzht9f6ItEmOTacz3FIdeDR",
+      "version": {
+        "desktopi": 1776764762729
+      },
+      "deleted": true,
+      "deleted_at": 1776764762.7297661
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260421190448.png": {
+      "mtime": 1776765888.916282,
+      "size": 4223,
+      "drive_id": "1zXXDFTQJNebiC9BT3fp-eOyuiukQX_qL",
+      "version": {
+        "desktopi": 1776765897584
+      },
+      "md5": "0d32f9800da44b2d145ce97da05c8298"
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/Gemini_Generated_Image_tfxrgstfxrgstfxr.png": {
+      "mtime": 1776778346.1475055,
+      "size": 9390321,
+      "drive_id": "1tdNui2oGOJOPY9llnIwGZ8ZFcx9MnUVD",
+      "version": {
+        "desktopi": 1776778352526
+      },
+      "md5": "274880e1452add21033f06735fc0e523"
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/Pasted image 20260421223746.png": {
+      "mtime": 1776778666.2529743,
+      "size": 3425,
+      "drive_id": "1Vh8_xiFP4MRu5CWSMFL45XpCYq_dfkH1",
+      "version": {
+        "desktopi": 1776778671613
+      },
+      "md5": "aecfb3f013f9238e3747b8e60a95bb43"
+    },
+    "프로젝트_슈퍼개발자프로젝트/첨부파일/제목 없는 디자인 (3).png": {
+      "mtime": 1776779193.7082121,
+      "size": 2829011,
+      "drive_id": "1K4OAgF22a6GiG-P01i6S7QqdAxxvRFgU",
+      "version": {
+        "desktopi": 1776779199137
+      },
+      "md5": "471cad3d1174f89bc203f1fdebfb9de4"
+    }
+  }
 }

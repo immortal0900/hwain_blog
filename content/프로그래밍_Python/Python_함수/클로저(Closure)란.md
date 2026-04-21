@@ -4,36 +4,71 @@
 마지막수정날짜:
 - 2026-01-27-화요일 22:45
 tags:
+- Python
+- 함수
+- 클로저
+- 스코프
+- 데코레이터
+- LangGraph
+- AI_Agent
 별칭:
+- closure
+- LEGB
+- enclosing scope
+- nonlocal
 type:
 - 자료수집
 Area/Reasource:
+- 프로그래밍/Python/함수
 Project:
 ---
-## 클로저(Closure)란?
+
+## 한마디 요약
+
+**클로저(closure, 폐쇄)** 는 "안쪽 함수가 자신을 감싼 바깥 함수의 변수를 기억하는 현상". 바깥 함수가 끝나도 그 변수들이 살아남아 안쪽 함수에 묶여 있다. [[@데코레이터]] 의 작동 원리이자, 팩토리 함수·콜백·LangGraph 노드 주입의 밑바닥 메커니즘. AI Agent 코드에서 "설정값을 미리 기억시킨 함수" 를 만드는 거의 모든 패턴이 클로저로 돌아간다.
+
+---
+
+## 1. 클로저란?
 
 **"안쪽 함수가 바깥 함수의 변수를 기억하는 현상"**
-- `return` 없어도 변수 사용만 하면 기억됨
-- Python이 메모리에 변수 환경을 저장해둠
-- 이게 데코레이터가 작동하는 핵심 원리!
+
+- `return` 없어도 변수를 사용만 하면 Python 이 자동으로 기억
+- 메모리에 "변수 환경(cell)" 을 저장
+- 이게 데코레이터·팩토리·콜백이 돌아가는 핵심 원리
+
 ```python
 def outer(x):
-    # x = 10이 여기 있음
+    # x = 10 이 여기 있음
     
     def inner():
-        print(x)  # ← outer의 x를 기억해서 접근 가능!
+        print(x)    # ← outer 의 x 를 기억해서 접근 가능
     
-    return inner  # inner 함수 자체를 반환
+    return inner    # inner 함수 자체를 반환
 
 func = outer(10)
-# outer는 실행 끝났지만...
-func()  # 10 출력! ← x=10을 아직도 기억!
-
+# outer 는 실행 끝났지만...
+func()   # 10 출력! ← x=10 을 아직도 기억
 ```
 
-## 어떻게 기억하나?
+### 포함 관계
 
-**Python이 자동으로 "환경"을 저장**
+```
+함수 스코프 시스템 (LEGB)
+├─ L (Local)        현재 함수 안
+├─ E (Enclosing)    바깥 함수                 ← 클로저가 이걸 참조
+├─ G (Global)       모듈 전역
+└─ B (Built-in)     Python 내장
+```
+
+클로저는 LEGB 중 **E(Enclosing)** 스코프를 "끌고 다니는" 현상이라고 보면 된다.
+
+---
+
+## 2. 어떻게 기억하나
+
+### Python 이 자동으로 "환경" 을 저장
+
 ```python
 def retry(max_attempts=3):
     # max_attempts = 3 (여기서 선언)
@@ -41,206 +76,33 @@ def retry(max_attempts=3):
     def decorator(func):
         # func = call_api (여기서 받음)
         
-        def wrapper(*args, **kwargs):# ← 여기서 *args, **kwargs 받음
-            # ← 여기서 max_attempts와 func 사용 가능!
-            for attempt in range(max_attempts):  # max_attempts 기억
-                return func(*args, **kwargs)  # func 기억, *args, **kwargs 전달
+        def wrapper(*args, **kwargs):
+            # 여기서 max_attempts 와 func 사용 가능
+            for attempt in range(max_attempts):
+                return func(*args, **kwargs)
         
         return wrapper
     return decorator
-
 ```
 
-**내부 메모리 구조**:
+### 내부 메모리 구조 확인
+
 ```python
-# wrapper 함수가 반환될 때, 함께 저장되는 것들:
-wrapper.__closure__  # 클로저 정보
-# → max_attempts = 3
-# → func = call_api 함수 객체
+# wrapper 함수가 반환될 때 함께 저장되는 것들
+print(wrapper.__closure__)
+# → (<cell at 0x...: int object at ...>, <cell at 0x...: function ...>)
+#   max_attempts=3, func=call_api 가 cell 로 박혀 있음
 
-# 이게 "기억"의 정체!
+# cell 에 실제로 들어있는 값 꺼내기
+print([cell.cell_contents for cell in wrapper.__closure__])
+# → [3, <function call_api at 0x...>]
 ```
 
-## 왜 이렇게 작동하나?
-**Python의 스코프 규칙 (LEGB)**:[](https://realpython.com/inner-functions-what-are-they-good-for/)
-
-1. **L**ocal: 현재 함수 안
-2. **E**nclosing: 바깥 함수 (← 클로저가 이거 참조!)
-3. **G**lobal: 전역
-4. **B**uilt-in: Python 내장
+`__closure__` 속성이 "기억" 의 정체. 각 cell 하나가 바깥 변수 하나에 대응.
 
 ---
----
-## *args, **kwargs란?
 
-**"몇 개가 들어올지 모르는 인자들을 다 받는 방법"**[](https://velog.io/@clueless_coder/%ED%8C%8C%EC%9D%B4%EC%8D%AC-args-%EC%99%80-kwargs-%EA%B0%80-%EB%AD%90%EC%98%88%EC%9A%94)
-
-- `*args` = 위치 인자들을 **튜플**로 받음[](https://pybo.kr/pybo/question/detail/30/)
-- `**kwargs` = 키워드 인자들을 **딕셔너리**로 받음
-
-**실행 흐름**:
-```python
-# 1. call_api("강남", limit=20) 호출
-#    ↓
-# 2. 실제로는 wrapper("강남", limit=20) 실행 (데코레이터 때문에)
-#    ↓
-# 3. wrapper 안에서:
-#    args = ("강남",)       # 위치 인자 → 튜플
-#    kwargs = {"limit": 20} # 키워드 인자 → 딕셔너리
-#    ↓
-# 4. func(*args, **kwargs) 실행
-#    = call_api("강남", limit=20)  # 원본 함수에 그대로 전달
-```
-
-## 왜 *args, **kwargs를 쓰나?
-
-**원본 함수가 어떤 인자를 받는지 모르니까!**[](https://ddanggle.gitbooks.io/interpy-kr/content/ch1-args-kwargs.html)
-
-## 문제 상황: 인자를 고정하면?
-```python
-def decorator(func):
-    def wrapper():  # ← 인자 없음!
-        return func()
-    return wrapper
-
-@decorator
-def call_api(region):  # region 인자 필요
-    return f"{region} 데이터"
-
-call_api("강남")  # ❌ TypeError: wrapper() 인자 안 받음!
-```
-
-## 해결: *args, **kwargs 사용
-```python
-def decorator(func):
-    def wrapper(*args, **kwargs):  # ← 모든 인자 받음!
-        return func(*args, **kwargs)  # 그대로 전달
-    return wrapper
-
-@decorator
-def call_api(region, limit=10):
-    return f"{region} 데이터 {limit}개"
-
-call_api("강남", limit=20)  # ✅ 작동!
-```
-
-## *args 상세 설명
-
-**위치 인자를 튜플로 받음**
-```python
-def print_all(*args):
-    print(f"args 타입: {type(args)}")
-    print(f"args 내용: {args}")
-    for i, value in enumerate(args):
-        print(f"  {i}번째: {value}")
-
-print_all(1, 2, 3)
-# args 타입: <class 'tuple'>
-# args 내용: (1, 2, 3)
-#   0번째: 1
-#   1번째: 2
-#   2번째: 3
-
-print_all("A", "B")
-# args 타입: <class 'tuple'>
-# args 내용: ('A', 'B')
-#   0번째: A
-#   1번째: B
-```
-
-## **kwargs 상세 설명
-
-**키워드 인자를 딕셔너리로 받음**
-```python
-def print_info(**kwargs):
-    print(f"kwargs 타입: {type(kwargs)}")
-    print(f"kwargs 내용: {kwargs}")
-    for key, value in kwargs.items():
-        print(f"  {key} = {value}")
-
-print_info(name="김철수", age=30, city="서울")
-# kwargs 타입: <class 'dict'>
-# kwargs 내용: {'name': '김철수', 'age': 30, 'city': '서울'}
-#   name = 김철수
-#   age = 30
-#   city = 서울
-```
-
-## 둘 다 사용하기
-```python
-def flexible_function(*args, **kwargs):
-    print("위치 인자들:", args)
-    print("키워드 인자들:", kwargs)
-
-flexible_function(1, 2, 3, name="test", value=100)
-# 위치 인자들: (1, 2, 3)
-# 키워드 인자들: {'name': 'test', 'value': 100}
-```
-
-**결론**:[](https://junghogit.github.io/python/args-kwargs/)
-
-- `*args, **kwargs`는 **wrapper 호출 시** 전달된 인자를 받음
-- `func(*args, **kwargs)`로 **원본 함수에 그대로 전달**
-- 데코레이터는 원본 함수의 인자를 몰라도 됨 (범용성)
-- `*args` = 튜플 (위치 인자)[](https://velog.io/@clueless_coder/%ED%8C%8C%EC%9D%B4%EC%8D%AC-args-%EC%99%80-kwargs-%EA%B0%80-%EB%AD%90%EC%98%88%EC%9A%94)
-- `**kwargs` = 딕셔너리 (키워드 인자)
-
----
----
-함수를 사용할 시 일어나는 것들
-
-```python
-def outer(x):          # 1. x=10 받음
-    def inner():       # 2. inner 함수 정의 (실행 X)
-        print(x)       # 3. "이 함수는 x를 쓸 거야" Python이 감지
-    return inner       # 4. inner + x 정보를 함께 반환
-```
-- ❌ "inner가 x를 사용했으니, 그 이후부터 기억"
-- ✅ "inner가 x를 **사용할 예정**이니, 미리 기억해둠"
-
-**Python이 하는 일**:
-```python
-# 2~3단계에서 Python 내부 분석:
-# "inner 함수가 x를 참조하네?"
-# "x는 outer의 지역 변수인데..."
-# "outer 끝나면 x 사라지겠네?"
-# "→ x를 inner에 묶어서(bind) 기억시키자!"
-
-# 4단계: 반환 시
-return inner  # inner 함수 + x=10 정보 묶음 반환
-```
-
-## 일반 변수 vs 클로저 변수
-
-## 일반 변수 (클로저 아님)
-```python
-def outer():
-    x = 10  # 지역 변수
-    print(x)
-    # outer 끝나면 x 사라짐
-
-outer()  # 10 출력
-# x는 이제 메모리에서 삭제됨
-```
-
-## 클로저 변수
-```python
-def outer():
-    x = 10
-    
-    def inner():
-        print(x)  # ← x 참조! 클로저 형성
-    
-    return inner
-    # outer 끝나도 x는 inner에 묶여서 유지됨!
-
-func = outer()
-# x는 아직 살아있음 (inner에 묶임)
-
-func()  # 10 출력 (x 사용 가능)
-```
-
-## 코드 작성 vs 코드 실행 -> 클로저가 발동되는 시점은 코드 실행시
+## 3. 코드 작성 vs 코드 실행 (클로저가 발동되는 시점)
 
 ```python
 # 이건 그냥 "코드 작성" (파일에 적기만 함)
@@ -250,183 +112,204 @@ def outer(x):
     return inner
 
 # 아직 아무 일도 안 일어남!
-# outer도 실행 안 함, inner도 정의 안 됨
-```
-**inner가 실제로 정의되는 시점:**
-```python
-func = outer(5)  # ← 바로 이 순간!
+# outer 도 실행 안 함, inner 도 정의 안 됨
 ```
 
-## 단계별 실행
+### inner 가 실제로 정의되는 시점
+
 ```python
-def outer(x):          # 1. outer 함수 "작성"만 함 (실행 X)
-    def inner():       # 2. 아직 안 읽음
-        print(x)       
+func = outer(5)    # ← 바로 이 순간
+```
+
+### 단계 분해
+
+```
+1단계: def outer(x): ...           # 함수 "작성" 만 함 (실행 X)
+2단계: def inner(): print(x)       # 아직 안 읽음
+3단계: return inner
+
+--- 여기까지는 아무것도 실행 안 됨 ---
+
+4단계: func = outer(5)
+       → x=5 로 outer 내부 실행
+       → inner 정의됨 (여기서!)
+       → 클로저 생성 (x=5 저장)
+       → inner 반환
+
+5단계: func()                      # 마침내 inner 실행 → 5 출력
+```
+
+---
+
+## 4. 일반 변수 vs 클로저 변수
+
+### 일반 변수 (클로저 아님)
+
+```python
+def outer():
+    x = 10   # 지역 변수
+    print(x)
+    # outer 끝나면 x 사라짐
+
+outer()   # 10 출력
+# x 는 이제 메모리에서 삭제됨
+```
+
+### 클로저 변수
+
+```python
+def outer():
+    x = 10
+    
+    def inner():
+        print(x)    # ← x 참조! 클로저 형성
+    
     return inner
+    # outer 끝나도 x 는 inner 에 묶여서 유지됨
 
-# ===== 여기까지는 아무것도 실행 안 됨 =====
+func = outer()
+# x 는 아직 살아있음 (inner 에 묶임)
 
-func = outer(5)        # 3. outer(5) 실행!
-                       #    → x=5로 outer 내부 실행
-                       #    → inner 정의됨 (여기서!)
-                       #    → 클로저 생성 (x=5 저장)
-                       #    → inner 반환
-
-func()                 # 4. inner 실행
+func()   # 10 출력 (x 사용 가능)
 ```
 
-
-
-
 ---
----
-# 복잡한 개념_함수에 인자를 넣고 실행해서 함수 내부에 있는 함수를 반환 
+
+## 5. `nonlocal`: 바깥 변수를 "수정" 하려면
+
+클로저는 바깥 변수를 **읽기**는 자유롭지만, 대입(`=`) 으로 바꾸려면 `nonlocal` 선언이 필요하다.
+
 ```python
-def make_multiplier(factor):  # factor = 2
-    def multiply(value):      # 이 함수를 만들기만 함
+def make_counter():
+    count = 0
+    
+    def counter():
+        nonlocal count       # "바깥 count 를 건드릴게"
+        count += 1           # 선언 없으면 새 지역 변수로 오해함
+        return count
+    
+    return counter
+
+c1 = make_counter()
+c2 = make_counter()
+print(c1(), c1(), c1())   # 1 2 3
+print(c2())               # 1   ← 독립적 상태
+```
+
+### 비교표
+
+| 키워드 | 범위 | 사용 목적 |
+|---|---|---|
+| (없음) | 지역 | 읽기는 LEGB 탐색, 쓰기는 Local 변수 새로 만듦 |
+| `nonlocal` | Enclosing | 바깥 함수 변수를 수정 |
+| `global` | Global | 모듈 전역 변수를 수정 |
+
+---
+
+## 6. 핵심 오해 정정 (클로저는 "정의 시점" 이 아니라 "실행 결과")
+
+```python
+def outer(x):          # 1. x=10 받음
+    def inner():       # 2. inner 함수 정의 (실행 X)
+        print(x)       # 3. "이 함수는 x 를 쓸 거야" Python 이 감지
+    return inner       # 4. inner + x 정보를 함께 반환
+```
+
+- ❌ "inner 가 x 를 사용했으니, 그 이후부터 기억"
+- ✅ "inner 가 x 를 **사용할 예정** 이니, 미리 묶어둠"
+
+Python 내부의 판단 흐름:
+```
+"inner 함수가 x 를 참조하네?"
+"x 는 outer 의 지역 변수인데..."
+"outer 끝나면 x 사라지겠네?"
+→ "x 를 inner 에 묶어서(bind) 기억시키자!"
+```
+
+---
+
+## 7. 복잡한 개념 복습: 설정값 고정 팩토리
+
+```python
+def make_multiplier(factor):   # factor = 2
+    def multiply(value):       # 이 함수를 만들기만 함
         return factor * value
-    return multiply           # ← 괄호 없음! 실행 X, 함수 자체 반환
+    return multiply            # ← 괄호 없음! 실행 X, 함수 자체 반환
 
 step1 = make_multiplier(2)
-# step1 = multiply 함수 (아직 실행 안 함!)
-# "factor=2를 기억하는 multiply 함수"를 담음
+# step1 = multiply 함수 (factor=2 를 기억)
+# 계산 0%, 준비 100%
+
 step2 = step1(10)
-#
-```
-- Step 1에서는 multiply **실행 안 됨** (함수만 반환)
-- Step 2에서 **처음으로** multiply 실행됨
-
-**step1은 이제 이런 함수를 담고 있음**:
-```python
-# step1이 가리키는 함수 (개념적으로)
-def step1(value):  # 원래 이름은 multiply
-    return 2 * value  # factor=2로 고정됨
+# step1(10) = multiply(10) → factor(2) * value(10) = 20
 ```
 
-```python
-step1 = make_multiplier(2)
-# step1 = "2를 곱하는 기능을 가진 함수"
-# 계산 안 함, value도 필요 없음
-```
+### 타입 확인으로 증명
 
-## 타입 확인으로 증명(변수가 함수 내부의 함수를 받았다는 것)
 ```python
-def make_multiplier(factor):
-    def multiply(value):
-        return factor * value
-    return multiply
-
 step1 = make_multiplier(2)
 
 print(type(step1))        # <class 'function'> ← 함수!
-print(step1)              # <function multiply at 0x...>
 print(step1.__name__)     # 'multiply'
-
-# step1은 숫자가 아니라 "함수 객체"
+print(step1.__closure__)  # (<cell at 0x...: int object at 0x...>,)
+print(step1.__closure__[0].cell_contents)   # 2   ← factor
 ```
 
-## 네 오해 정정
+`step1` 은 숫자가 아니라 **"factor=2 를 기억하는 함수 객체"**.
 
-**❌ 잘못된 이해:**
+### 올바른 이해
+
 ```python
 step1 = make_multiplier(2)
-# "2 * value를 계산했다" → 틀림!
-# value가 없으니 2가 나온다? → 틀림!
-
-step2 = step1(10)
-# "factor를 10으로 바꾼다" → 틀림!
-```
-
-**✅ 올바른 이해:**
-```python
-step1 = make_multiplier(2)
-# "factor=2를 기억하는 multiply 함수를 받았다"
+# "factor=2 를 기억하는 multiply 함수를 받았다"
 # 아직 아무것도 계산 안 함!
 
 step2 = step1(10)
-# "step1 함수를 실행 (value=10 전달)"
-# multiply(10) 실행 → 2 * 10 → 20
-
-
-step2 = step1(10)
-# step1 함수 실행 (factor=2 고정, value=10 새로 받음)
-# multiply(value=10) 실행
-# factor(2) * value(10) = 20
-
+# "step1 함수 실행 (value=10 전달)"
+# multiply(10) → 2 * 10 = 20
 ```
 
-## 계산기 비유
+**핵심 3가지**:
+1. `step1` 은 **값이 아니라 함수**
+2. `factor` 는 **절대 안 바뀜** (클로저로 고정)
+3. `value` 는 **step1(10) 호출 시 전달**됨
+
+---
+
+## 8. `*args`, `**kwargs` 와의 결합 (데코레이터 자연사)
+
+클로저로 바깥 변수를 기억하고, `*args/**kwargs` 로 호출 시 전달된 인자를 받는다. 이 조합이 데코레이터의 표준형. [[함수(별args, 별별kwargs)]]
+
 ```python
-# 계산기 공장
-def make_multiplier(factor):
-    def multiply(value):
-        return factor * value
-    return multiply
-
-# "2를 곱하는 계산기" 주문
-calculator = make_multiplier(2)
-# 계산기를 받았지만 아직 버튼 안 누름!
-
-# 계산기에 10 입력
-result = calculator(10)
-# 계산기: "내 곱셈 값은 2니까... 10 × 2 = 20"
-# 결과: 20
+def decorator(func):
+    def wrapper(*args, **kwargs):      # 호출 인자 유연 수신
+        # func 는 클로저로 기억 (바깥에서 묶임)
+        print(f"[call] {func.__name__}")
+        return func(*args, **kwargs)
+    return wrapper
 ```
 
-## 메모리 관점으로 보기
-```python
-# 메모리 상태 추적
-def make_multiplier(factor):
-    # factor=2가 메모리 어딘가에 저장됨
-    
-    def multiply(value):
-        # 이 함수는 factor가 있는 메모리 위치를 기억
-        return factor * value
-    
-    return multiply  # multiply + factor 위치 정보 반환
-
-step1 = make_multiplier(2)
-# step1 = {
-#   함수 코드: multiply,
-#   기억하는 변수: factor=2 (메모리 0x1234 주소)
-# }
-
-step2 = step1(10)
-# step1 실행:
-#   1. value=10 받음
-#   2. factor 주소(0x1234) 가서 2 가져옴
-#   3. 2 * 10 = 20 반환
+**실행 흐름**:
+```
+1. call_api("강남", limit=20) 호출
+    ↓
+2. 실제로는 wrapper("강남", limit=20) 실행 (데코레이터 때문에)
+    ↓
+3. wrapper 안에서:
+    func         = call_api         (클로저로 기억)
+    args         = ("강남",)         (위치 인자 → 튜플)
+    kwargs       = {"limit": 20}    (키워드 인자 → 딕셔너리)
+    ↓
+4. func(*args, **kwargs) 실행
+    = call_api("강남", limit=20)    (원본 함수에 그대로 전달)
 ```
 
-## 최종 정리
-```python
-def make_multiplier(factor):
-    def multiply(value):
-        return factor * value
-    return multiply
+---
 
-# 1단계
-step1 = make_multiplier(2)
-# step1 = multiply 함수 (factor=2 기억)
-# 계산 0%, 준비 100%
+## 9. 실무 활용
 
-# 2단계  
-step2 = step1(10)
-# step1(10) = multiply(10)
-# factor=2, value=10
-# 2 * 10 = 20
-# 계산 100%, 결과: 20
-```
-**핵심 3가지:**
+### 9-1. 설정 값 기억 (로거 팩토리)
 
-1. `step1`은 **값이 아니라 함수**
-2. factor는 **절대 안 바뀜** (클로저로 고정)
-3. value는 **step1(10) 호출 시 전달**됨
-
-
-## 실무 활용
-
-## 1. 설정 값 기억
 ```python
 def create_logger(log_level):
     def log(message):
@@ -436,54 +319,141 @@ def create_logger(log_level):
             print(f"[INFO] {message}")
     return log
 
-debug_log = create_logger("DEBUG") # -> 아직 실행된 상태 아님 def create_logger()는 log()를 반환함 
-# 근데 log_level 인자가 "DEBUG" 인 상태의 log()를 반환함
-info_log = create_logger("INFO")
+debug_log = create_logger("DEBUG")   # 아직 실행 안 됨
+info_log  = create_logger("INFO")
 
-debug_log("테스트")  # [DEBUG] 테스트
-info_log("테스트")   # [INFO] 테스트
-
+debug_log("테스트")   # [DEBUG] 테스트
+info_log("테스트")    # [INFO] 테스트
 ```
 
-## 2. 카운터 만들기
+### 9-2. 독립 카운터
+
 ```python
 def make_counter():
-    count = 0  # ← 이 변수를 기억!
+    count = 0
     
     def counter():
-        nonlocal count  # 바깥 변수 수정 가능
+        nonlocal count
         count += 1
         return count
     
     return counter
 
-counter1 = make_counter()
-counter2 = make_counter()
-
-print(counter1())  # 1
-print(counter1())  # 2
-print(counter2())  # 1 (독립적!)
+c1, c2 = make_counter(), make_counter()
+print(c1())   # 1
+print(c1())   # 2
+print(c2())   # 1   ← 독립 상태
 ```
 
-## 3. LangGraph 코드_인스턴스 변수 기억하는 것도 클로저임
+### 9-3. LangGraph 노드 팩토리 (AI Agent 실전)
+
+```python
+from langchain_openai import ChatOpenAI
+
+def make_planner_node(model_name: str, system_prompt: str):
+    llm = ChatOpenAI(model=model_name)    # 클로저가 기억
+    
+    def planner_node(state):              # 그래프가 매번 호출
+        messages = [("system", system_prompt)] + state["messages"]
+        response = llm.invoke(messages)
+        return {"messages": [response]}
+    
+    return planner_node
+
+# 그래프 구성 시 주입
+graph.add_node("planner",
+    make_planner_node("gpt-4o", "당신은 계획 수립 전문가..."))
+graph.add_node("critic",
+    make_planner_node("gpt-4o-mini", "당신은 비판적 검토자..."))
+```
+
+**포인트**: 각 노드가 자기만의 `llm`, `system_prompt` 를 클로저로 들고 다닌다. 클래스 만들 필요 없이 함수 팩토리로 해결.
+
+### 9-4. 인스턴스 메서드가 self 를 기억하는 것도 같은 원리
+
 ```python
 class RealEstateAgent:
     def __init__(self, region, api_key):
-        self.region = region  # ← 인스턴스 변수로 저장
+        self.region = region
         self.api_key = api_key
         
-        # 내부 함수가 self.region, self.api_key 기억
+        # 내부 함수가 self 를 기억 (클로저)
         def fetch_data():
-            return f"{self.region}의 데이터 (키: {self.api_key})"
+            return f"{self.region} 데이터 (키: {self.api_key})"
         
         self.fetcher = fetch_data
     
     def get_data(self):
-        return self.fetcher()  # region, api_key 기억!
+        return self.fetcher()   # region, api_key 기억
 
 agent = RealEstateAgent("강남", "secret123")
-print(agent.get_data())  # 강남의 데이터 (키: secret123)
-
+print(agent.get_data())   # 강남 데이터 (키: secret123)
 ```
 
+메서드가 `self` 를 참조하는 것도 결국 클로저의 일반화된 형태. Agent 객체의 상태(설정, 도구 리스트, 메모리) 가 메서드에 "기억" 되는 것.
 
+---
+
+## 10. 클로저 vs 클래스 (언제 뭘 쓸까)
+
+| 상황 | 클로저 | 클래스 |
+|---|---|---|
+| 기억할 상태가 1~2개, 동작도 1개 | ✅ | 과함 |
+| 기억할 상태가 여러 개, 동작도 여러 개 | 복잡해짐 | ✅ |
+| 타입 힌트/자동완성 중요 | 약함 | 강함 |
+| 데코레이터 | ✅ 표준 | `__call__` 사용 시 가능 |
+| LangGraph 노드 | ✅ 가볍게 | 더 큰 에이전트면 클래스 |
+| 테스트 격리 | 호출마다 독립 | 인스턴스마다 독립 |
+
+경험칙: "함수 한 개에 설정만 꽂으면 되는 상황" 이면 클로저, "여러 메서드가 같은 상태를 공유해야 한다" 면 클래스.
+
+---
+
+## 11. 함정: 반복문 안에서 lambda 로 클로저 생성하기
+
+유명한 "late binding" 함정.
+
+```python
+# ❌ 기대와 다르게 동작
+funcs = []
+for i in range(3):
+    funcs.append(lambda: i)
+
+print([f() for f in funcs])   # [2, 2, 2]   ← 왜?!
+
+# 이유: 각 lambda 가 "i 라는 변수" 를 참조할 뿐,
+#       반복이 끝났을 때 i 는 2 로 고정
+```
+
+### 해결법 2가지
+
+```python
+# 방법 1: 기본 인자로 "지금 값" 을 묶어두기
+funcs = [lambda i=i: i for i in range(3)]
+print([f() for f in funcs])   # [0, 1, 2] ✅
+
+# 방법 2: 팩토리 함수로 새 스코프 만들기
+def make(i):
+    return lambda: i
+
+funcs = [make(i) for i in range(3)]
+print([f() for f in funcs])   # [0, 1, 2] ✅
+```
+
+클로저는 "변수 이름" 을 묶는 것이지 "변수 값" 을 복사하지 않는다는 걸 기억.
+
+---
+
+## 관련 문서
+
+- [[@데코레이터]]  (클로저가 가장 자주 드러나는 형태)
+- [[함수(별args, 별별kwargs)]]  (wrapper 안에서 쓰이는 가변 인자)
+- [[함수의 반환값을 파라미터로 넣기]]  (함수 객체 전달 = 클로저 반환)
+- [[lambda와 순회함수]]  (짧은 클로저 생성 수단)
+- [[함수의 타입 힌트]]  (`Callable` 힌트로 반환된 함수 타입 명시)
+
+---
+
+## 한마디 재요약
+
+클로저는 **"함수가 자기 태어난 동네의 변수를 들고 다니는 현상"**. Python 이 알아서 묶어주니 개발자는 "바깥 값을 미리 꽂아둔 함수" 를 공짜로 얻는다. 데코레이터·팩토리·Agent 노드 주입의 배후에서 늘 돌아가는 메커니즘.

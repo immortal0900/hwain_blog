@@ -4,21 +4,23 @@
 마지막수정날짜:
   - 2026-03-21-토요일 17:36
 tags:
+  - langfuse
+  - metrics-api
+  - observations-api
+  - 토큰집계
 별칭:
 type:
   - 자료수집
 Area/Reasource:
 Project:
 ---
-Langfuse에서 특정 시점 이후의 토큰/호출량을 집계하는 방법을 찾아볼게요.HWAIN, 좋은 질문이에요. Langfuse에서 특정 시점 이후의 토큰/호출량을 일괄 집계하는 방법이 크게 3가지 있어요.
+Langfuse에서 **특정 시점 이후의 토큰/호출량만 일괄 집계**하는 방법 3가지. Hobby 플랜이면 Cloud API 그대로 사용 가능.
 
----
+## 방법 1: Metrics API (가장 추천)
 
-**방법 1: Metrics API (가장 추천)**
+Langfuse **Metrics API**(시간 범위별 집계 지표를 한 번에 반환하는 엔드포인트)로 `fromTimestamp`/`toTimestamp` 지정 + `totalCost`/`count` 같은 measure를 aggregation해서 한 방에 받을 수 있다.
 
-Langfuse의 Metrics API를 사용하면 `fromTimestamp`/`toTimestamp`로 시간 범위를 지정하고, `totalCost`, `count` 등의 measure를 aggregation해서 한 번에 받을 수 있어요. Hobby 플랜이니 Cloud API 사용 가능합니다.
-
-Python SDK로 하면 이렇게 됩니다:
+Python SDK 기준:
 
 ```python
 from langfuse import get_client
@@ -43,7 +45,9 @@ result = langfuse.api.metrics.get(query=query_v2)
 print(result)
 ```
 
-토큰 관련 measure로는 `totalTokens`(sum), `count`(count), `totalCost`(sum), `latency`(avg/p95) 등을 사용할 수 있어요. 다만 v2에서 `totalTokens`가 observations view에서 지원되는지는 v1의 traces view에서 확인된 것이라, 안 되면 v1 legacy를 쓰면 됩니다:
+사용 가능한 measure 예시: `totalTokens`(sum), `count`(count), `totalCost`(sum), `latency`(avg/p95).
+
+v2 `observations` view에서 `totalTokens`가 막힐 경우 **v1 legacy**로 폴백:
 
 ```python
 # v1 Legacy (totalTokens 확실히 지원)
@@ -64,11 +68,9 @@ result = langfuse.api.legacy.metrics_v1.metrics(query=query_v1)
 print(result)
 ```
 
----
+## 방법 2: Observations API로 raw 데이터 긁어와 합산
 
-**방법 2: Observations API로 raw 데이터 가져와서 합산**
-
-SDK의 `api.observations.get_many()`를 사용하면 individual observation 단위로 usage 정보를 가져올 수 있어요. Metrics API가 안 되는 경우 이걸 쓰면 됩니다:
+SDK의 `api.observations.get_many()`는 **개별 observation**(span 단위) 레벨의 usage 정보를 반환. Metrics API가 안 되는 경우 수동 집계용으로 쓴다.
 
 ```python
 from langfuse import get_client
@@ -108,17 +110,15 @@ print(f"Output tokens: {total_output}")
 print(f"Total tokens: {total_input + total_output}")
 ```
 
----
+## 방법 3: UI에서 Export
 
-**방법 3: UI에서 Export**
+Tracing 화면 우측 상단 다운로드 아이콘 → 시간 필터를 커스텀 구간으로 설정한 뒤 CSV 내보내기 → 스프레드시트에서 합산.
 
-스크린샷에서 보이는 Tracing 화면 우측 상단에 다운로드 아이콘이 있어요. 시간 필터를 "Past 1 day" 대신 커스텀으로 설정한 후 CSV로 export하면 스프레드시트에서 합산할 수 있습니다. 다만 이건 수동에 가까워서 반복하기엔 비효율적이에요.
+수동에 가까워서 반복 작업에는 부적합. 1회성 확인용.
 
----
+## 세션 미분리 문제에 대한 제안
 
-**세션 미분리 문제에 대한 제안**
-
-현재 DeepEval 테스트를 세션 없이 돌리고 있다면, 앞으로는 테스트 실행 시 trace에 **tag**나 **metadata**를 붙이는 걸 추천합니다. 예를 들어:
+DeepEval 테스트를 세션 없이 돌리는 중이라면, 앞으로 trace에 **tag** 또는 **metadata**, **session_id**를 명시해 두면 집계/필터링이 훨씬 편해진다.
 
 ```python
 from langfuse import get_client
@@ -130,6 +130,21 @@ langfuse.update_current_trace(
 )
 ```
 
-이렇게 해두면 Metrics API에서 tag 기반 필터링도 가능하고, 대시보드에서도 분리해서 볼 수 있어요.
+이렇게 박아두면 Metrics API에서 tag 필터가 가능하고, 대시보드에서도 깔끔하게 분리된다.
 
-가장 빠르게 결과를 얻으려면 **방법 1 (Metrics API)**를 먼저 시도해보세요. 환경변수에 `LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`, `LANGFUSE_BASE_URL`만 설정돼 있으면 바로 돌릴 수 있습니다.
+## 포함 관계 & 선택 기준
+
+- **Metrics API** ⊃ 여러 `measure`(`totalCost`, `totalTokens`, `count`, `latency`) ⊃ `aggregation`(`sum`, `count`, `avg`, `p95`)
+- **Observations API**는 Metrics API가 숨기는 **raw row**(개별 span)를 그대로 노출 → 더 유연하지만 느림
+- 포함 관계 관점: Metrics API = 집계된 결과, Observations API = 그 집계의 원천 데이터
+
+선택 기준
+1. 빠른 합산이 필요하면 **방법 1 (Metrics API)**
+2. measure가 안 맞거나 커스텀 계산이 필요하면 **방법 2 (Observations API)**
+3. 1회성 공유/엑셀 가공이면 **방법 3 (UI Export)**
+
+환경변수 `LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`, `LANGFUSE_BASE_URL` 세팅돼 있으면 방법 1은 바로 돌릴 수 있음.
+
+## 연관노트
+- [[langfuse_한번 요청시 나온 토큰등 추적 정보를 묶어서 보기]]
+- [[langfuse_SessionID_ContextVar]]

@@ -4,19 +4,23 @@
 마지막수정날짜:
 - 2026-01-29-목요일 19:44
 tags:
+  - langfuse
+  - langsmith
+  - 관측성
+  - self-hosting
 별칭:
 type:
 - 자료수집
 Area/Reasource:
 Project:
 ---
-좋은 질문입니다! 각각 명확하게 설명드리겠습니다.
+LangFuse와 LangSmith 둘 중 뭘 쓸지 정리하면서 Self-Hosting이 뭔지부터 명확히 잡아둔다.
 
-langfuse 공식문서 langfuse vs langsmith 설명
-- https://langfuse.com/faq/all/langsmith-alternative
-## 1. LangFuse Self-Hosting
+참고: langfuse 공식문서 비교 페이지 - https://langfuse.com/faq/all/langsmith-alternative
 
-**Self-Hosting = LangFuse를 내 서버에 직접 설치**
+## 1. LangFuse Self-Hosting이 뭔가
+
+**Self-Hosting(셀프 호스팅, 자체 서버에 직접 설치해 운영하는 방식) = LangFuse 소프트웨어를 내 서버에 올려서 쓰는 것.**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -46,7 +50,7 @@ langfuse 공식문서 langfuse vs langsmith 설명
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**Self-Hosting 시 LangFuse 소프트웨어는 사용하지만, LangFuse Cloud 서비스는 사용하지 않습니다.**
+핵심: **Self-Hosting을 쓰면 LangFuse 오픈소스 코드는 그대로 쓰지만, LangFuse Cloud 서비스는 거치지 않는다.** 즉 소프트웨어는 쓰되 클라우드는 안 쓰는 것.
 
 ### Self-Hosting 설정 예시
 
@@ -70,7 +74,7 @@ services:
       - NEXTAUTH_URL=http://localhost:3000
 ```
 
-그 후 `.env` 변경:
+`.env`에서 엔드포인트만 교체하면 끝.
 ```bash
 # Cloud 대신 내 서버 사용
 LANGFUSE_HOST=http://localhost:3000  # 또는 http://my-server.com
@@ -80,18 +84,18 @@ LANGFUSE_HOST=http://localhost:3000  # 또는 http://my-server.com
 
 ## 2. LangSmith의 한계
 
-### LangSmith가 안 되는 이유
+### 왜 LangSmith는 내 환경에 맞지 않는가
 
 | 항목 | LangSmith | LangFuse |
 |------|-----------|----------|
-| **Self-Hosting** | ❌ **불가능** | ✅ 가능 (오픈소스) |
+| **Self-Hosting** | ❌ 불가능 | ✅ 가능 (오픈소스) |
 | **클라우드 종속** | ✅ 필수 (LangChain 운영) | ⚠️ 선택사항 |
 | **데이터 주권** | ❌ 불가능 | ✅ Self-hosting 시 가능 |
 | **무료 티어** | 5,000 traces/월 | 50,000 observations/월 |
 | **가격** | $39/월 (50K traces) | 무료 (Self-hosting) |
 | **오픈소스** | ❌ 아님 | ✅ MIT 라이선스 |
 
-### LangSmith 사용 시 문제점
+### LangSmith를 쓰면 걸리는 지점
 
 ```python
 # LangSmith는 환경 변수만 설정하면 자동 추적
@@ -108,13 +112,13 @@ LANGCHAIN_PROJECT=memory_labyrinth
 
 ---
 
-## 3. 권장 선택지
+## 3. 내 선택
 
 ### 현재 프로젝트에 최적인 방법
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              권장: LangFuse Cloud (1단계)                │
+│              1단계: LangFuse Cloud로 시작                │
 ├─────────────────────────────────────────────────────────┤
 │  1. 빠른 시작 (5분 내 설정 완료)                        │
 │  2. 무료 티어 충분 (50,000 observations/월)             │
@@ -125,7 +129,7 @@ LANGCHAIN_PROJECT=memory_labyrinth
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│          선택사항: Self-Hosting (2단계)                  │
+│          2단계: 필요 시 Self-Hosting으로 전환            │
 ├─────────────────────────────────────────────────────────┤
 │  언제 필요한가?                                          │
 │  - 민감한 대화 데이터를 외부에 보내고 싶지 않을 때      │
@@ -141,9 +145,9 @@ LANGCHAIN_PROJECT=memory_labyrinth
 
 ---
 
-## 4. 실전 추천
+## 4. 실전 적용 순서
 
-### Phase 1: LangFuse Cloud로 시작 (지금)
+### Phase 1: LangFuse Cloud로 시작
 
 ```bash
 # .env 설정
@@ -152,12 +156,12 @@ LANGFUSE_PUBLIC_KEY=pk-lf-...
 LANGFUSE_HOST=https://cloud.langfuse.com
 ```
 
-**장점:**
+장점
 - 5분 내 바로 사용 가능
 - 서버 관리 불필요
 - 무료 (50,000 observations/월)
 
-### Phase 2: Self-Hosting 전환 (필요시)
+### Phase 2: Self-Hosting 전환 (필요할 때)
 
 ```yaml
 # docker-compose.yml에 추가
@@ -196,16 +200,20 @@ LANGFUSE_HOST=http://localhost:3000  # Cloud → Self-hosted
 | LangGraph 지원 | ✅ 네이티브 | ✅ 콜백 |
 | 커스텀 모델 가격 | ⚠️ 제한적 | ✅ 완전 지원 |
 
-**결론:** LangFuse가 더 유연하고 비용 효율적입니다.
+결론: 유연성과 비용 모두 LangFuse가 낫다.
 
 ---
 
-## 요약
+## 한마디 요약
 
-1. **Self-Hosting** = LangFuse 소프트웨어를 내 서버에 설치 (LangFuse Cloud 미사용)
+1. **Self-Hosting** = LangFuse 소프트웨어를 내 서버에 설치하는 것 (LangFuse Cloud 미사용)
 2. **LangSmith 문제점** = Self-hosting 불가능, 비쌈, 오픈소스 아님
-3. **권장 방법** = LangFuse Cloud로 시작 → 필요시 Self-hosting 전환
+3. **내 선택** = LangFuse Cloud로 시작 → 필요 시 Self-hosting 전환
 
-질문하신 내용에 대한 답변:
-- ✅ Self-hosting은 LangFuse Cloud를 이용하지 않고 내 서버에 설치하는 것입니다
-- ✅ LangSmith는 Self-hosting이 아예 불가능합니다 (이게 가장 큰 단점)
+핵심 정리
+- Self-hosting은 LangFuse Cloud를 안 쓰고 내 서버에 설치하는 방식
+- LangSmith는 Self-hosting이 아예 불가능 (이게 가장 큰 단점)
+
+## 연관노트
+- [[langfuse_한번 요청시 나온 토큰등 추적 정보를 묶어서 보기]]
+- [[langfuse_한번 호출한 분량 분리해서 호출]]

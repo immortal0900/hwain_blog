@@ -9,3 +9,12 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# Smart Connections / Smart Composer 캐시 (기기마다 재생성되므로 공유 안 함)
+content/.smart-env/
+**/.smart-env/
+
+# Remotely Save 충돌 파일 (생기지 않도록 2단계에서 설정하지만, 혹시 생겨도 커밋 방지)
+**/*.sync-conflict-*.md
+**/conflict-*-*/
+
