@@ -1,8 +1,8 @@
 
 > **SUPER DEVELOPER PROJECT 3부작 시리즈**
-> 1편 (현재): 서론 + THE FORGE: 정밀 대장간
-> 2편 (예정): MEMEX: 평생 축적되는 지식 그래프
-> 3편 (예정): ENGRAM: 기억을 새기는 촉매
+> - 1편 (현재): 서론 + THE FORGE: 정밀 대장간
+> - 2편 (예정): MEMEX: 평생 축적되는 지식 그래프
+> - 3편 (예정): ENGRAM: 기억을 새기는 촉매
 
 # SUPER DEVELOPER PROJECT
 
