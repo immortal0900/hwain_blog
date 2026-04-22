@@ -9,6 +9,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+THE_FORGE_PROJECT.md
 
 # Smart Connections / Smart Composer 캐시 (기기마다 재생성되므로 공유 안 함)
 content/.smart-env/

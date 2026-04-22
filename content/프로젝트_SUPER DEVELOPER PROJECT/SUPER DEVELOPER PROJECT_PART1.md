@@ -83,10 +83,6 @@ Andrej Karpathy의 LLM Wiki 글을 읽었다. 그는 LLM을 코드 생성용이 
 
 그의 제안은 3계층 구조다.
 
-Layer 1 RULE BOOK Schema
-Layer 2 원본을 찾기위한 wikilinks
-Layer 3 원본 자료 보관소
-
 - **Layer 1 - RULE BOOK Schema**: LLM이 항상 읽고 있는 규칙 
 - **Layer 2 - Wikilinks**: 원본으로 가는 링크 모음 
 - **Layer 3 - 원본 자료 보관소**
