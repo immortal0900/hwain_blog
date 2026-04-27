@@ -632,7 +632,7 @@ Planner는 원래 작업을 하면 안 된다.
 
 구체적으로 이렇게 대응한다.
 
-1. **Generator 반복 실수** → `CLAUDE.md` 규칙 추가
+1. **Generator 반복 실수** → `AGENT.md` 규칙 추가
 2. **Evaluator 누락 패턴** → `AGENT.md` 기준 추가
 3. **Planner 빠뜨림** → `AGENT.md` 체크리스트 추가
 4. **forge 자체의 오류** → Python 코드 수정 → `uv tool install --force .`로 즉시 반영
